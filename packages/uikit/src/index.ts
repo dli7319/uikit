@@ -1,3 +1,5 @@
+import './panel/interaction/pointer-events.js'
+export * from './events.js'
 export type { EventHandlersProperties as EventHandlers, ThreePointerEvent as ThreeEvent } from './events.js'
 export { reversePainterSortStable } from './order.js'
 export { abortableEffect, searchFor } from './utils.js'
@@ -18,4 +20,5 @@ export type { CaretTransformation, SelectionTransformation } from './text/index.
 export * from './properties/index.js'
 export { FontFamiliesSchema, FontFamilyWeightMapSchema, FontWeightSchema } from './text/index.js'
 export type { FontFamilies, FontWeight, FontFamilyWeightMap } from './text/index.js'
+export * from './text/font.js'
 export * from './loaders/index.js'

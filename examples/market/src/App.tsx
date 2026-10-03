@@ -1,5 +1,6 @@
 import { Canvas, useFrame } from '@react-three/fiber'
 import { Container, Text, Fullscreen } from '@react-three/uikit'
+import { createWebGPURenderer } from '@react-three/uikit/webgpu'
 import { CirclePlus } from '@react-three/uikit-lucide'
 import {
   colors,
@@ -30,7 +31,7 @@ export default function App() {
         frameloop="demand"
         camera={{ position: [0, 0, 18], fov: 35 }}
         style={{ height: '100dvh', touchAction: 'none' }}
-        gl={{ localClippingEnabled: true }}
+        gl={createWebGPURenderer}
       >
         <PointerEvents />
         <CountFrames />

@@ -1,4 +1,14 @@
-import { Box3, InstancedBufferAttribute, Material, Mesh, Object3DEventMap, PlaneGeometry, Sphere } from 'three'
+import {
+  Box3,
+  InstancedBufferAttribute,
+  InstancedInterleavedBuffer,
+  InterleavedBufferAttribute,
+  Material,
+  Mesh,
+  Object3DEventMap,
+  PlaneGeometry,
+  Sphere,
+} from 'three'
 import { RootContext } from '../../context.js'
 import { computeWorldToGlobalMatrix } from '../../utils.js'
 
@@ -26,10 +36,23 @@ export class InstancedGlyphMesh extends Mesh {
     planeGeometry.translate(0.5, -0.5, 0)
     super(planeGeometry, material)
     this.pointerEvents = 'none'
+    planeGeometry.attributes.instanceMatrix = instanceMatrix
     planeGeometry.attributes.instanceUVOffset = instanceUV
     planeGeometry.attributes.instanceRGBA = instanceRGBA
     planeGeometry.attributes.instanceClipping = instanceClipping
     planeGeometry.attributes.instanceRenderSolid = instanceRenderSolid
+
+    // Provide vec4 attributes for WebGPU TSL compatibility
+    const clippingInterleaved = new InstancedInterleavedBuffer(instanceClipping.array, 16, 1)
+    planeGeometry.attributes.instanceClipping0 = new InterleavedBufferAttribute(clippingInterleaved, 4, 0)
+    planeGeometry.attributes.instanceClipping1 = new InterleavedBufferAttribute(clippingInterleaved, 4, 4)
+    planeGeometry.attributes.instanceClipping2 = new InterleavedBufferAttribute(clippingInterleaved, 4, 8)
+    planeGeometry.attributes.instanceClipping3 = new InterleavedBufferAttribute(clippingInterleaved, 4, 12)
+
+    this.onBeforeRender = () => {
+      clippingInterleaved.version = instanceClipping.version
+    }
+
     this.frustumCulled = false
     root.onUpdateMatrixWorldSet.add(this.customUpdateMatrixWorld)
   }

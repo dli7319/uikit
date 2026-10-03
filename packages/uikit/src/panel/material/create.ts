@@ -1,5 +1,6 @@
 import { FrontSide, Material, WebGLProgramParametersWithUniforms, WebGLRenderer } from 'three'
 import { compilePanelMaterial } from './shader.js'
+import { getWebGPUHandlers } from '../../webgpu/registry.js'
 
 export type MaterialClass = { new (...args: Array<any>): Material }
 
@@ -22,6 +23,7 @@ export function createPanelMaterial<T extends MaterialClass>(MaterialClass: T, i
   material.defines.USE_UV = ''
   material.defines.USE_TANGENT = ''
 
+  // WebGL support via onBeforeCompile
   const superOnBeforeCompile = material.onBeforeCompile
   material.onBeforeCompile = (parameters: WebGLProgramParametersWithUniforms, renderer: WebGLRenderer) => {
     superOnBeforeCompile.call(material, parameters, renderer)
@@ -30,5 +32,12 @@ export function createPanelMaterial<T extends MaterialClass>(MaterialClass: T, i
     }
     compilePanelMaterial(parameters, info.type === 'instanced')
   }
+
+  // WebGPU support (invoked only when WebGPU is enabled)
+  const webgpu = getWebGPUHandlers()
+  if (webgpu?.applyPanelMaterial) {
+    webgpu.applyPanelMaterial(material, info)
+  }
+
   return material
 }

@@ -19,7 +19,8 @@ export function build<T extends Component, P>(Component: { new (): T }, name = C
     latestPropsRef.current = props
     useImperativeHandle(forwardRef, () => ref.current! as T, [])
     const renderContext = useRenderContext()
-    const args = useMemo(() => [latestPropsRef.current, undefined, { renderContext }], [renderContext])
+    const camera = useThree((s) => s.camera)
+    const args = useMemo(() => [latestPropsRef.current, undefined, { renderContext, camera }], [renderContext, camera])
     const outProps = useSetup(ref, props, args)
     return jsx(`vanilla${name}` as any, { ref, children, ...outProps })
   })
@@ -55,8 +56,10 @@ export function useSetup(ref: { current: Component | null }, inProps: any, args:
   }, [ref, store])
   const renderer = useThree((s) => s.gl)
   useEffect(() => {
-    renderer.localClippingEnabled = true
-    renderer.setTransparentSort(reversePainterSortStable)
+    if ('localClippingEnabled' in renderer) {
+      renderer.localClippingEnabled = true
+    }
+    renderer.setTransparentSort?.(reversePainterSortStable)
   }, [renderer])
   useLayoutEffect(() => {
     ref.current?.resetProperties(inProps)

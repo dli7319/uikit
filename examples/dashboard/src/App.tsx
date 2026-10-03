@@ -3,6 +3,7 @@ import type {} from '@pmndrs/pointer-events'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { Environment, Gltf, PerspectiveCamera } from '@react-three/drei'
 import { Container, Content, Fullscreen, Text, setPreferredColorScheme } from '@react-three/uikit'
+import { createWebGPURenderer } from '@react-three/uikit/webgpu'
 import { Activity, BellRing, CreditCard, DollarSign, Users } from '@react-three/uikit-lucide'
 import {
   Button,
@@ -65,12 +66,12 @@ export default function App() {
         flat
         camera={{ position: [0, 0, 18], fov: 35 }}
         style={{ height: '100dvh', touchAction: 'none' }}
+        gl={createWebGPURenderer}
       >
         <PerspectiveCamera fov={50} makeDefault={open} />
         <PerspectiveCamera fov={40} makeDefault={!open} />
         <Environment preset="studio" environmentIntensity={2} />
         <CountFrames />
-        <PointerEvents />
         <Fullscreen distanceToCamera={100} backgroundColor={0xffffff} dark={{ backgroundColor: 0x0 }}>
           <Dialog renderOrder={1} depthTest={false} ref={(ref) => setDialog(ref)} open={open} onOpenChange={setOpen}>
             <DialogContent positionType="relative" sm={{ maxWidth: 425 }}>

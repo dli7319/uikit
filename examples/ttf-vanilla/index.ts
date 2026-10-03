@@ -1,23 +1,39 @@
-import { Color, PerspectiveCamera, Scene, WebGLRenderer } from 'three'
+import { Color, PerspectiveCamera, Scene } from 'three'
+import '@pmndrs/uikit/webgpu'
+import { WebGPURenderer } from 'three/webgpu'
 import { reversePainterSortStable, Container, Text } from '@pmndrs/uikit'
 import { forwardHtmlEvents } from '@pmndrs/pointer-events'
 import { TTFLoader } from '@pmndrs/uikit'
 import fontUrl from './BitcountPropSingle-Regular.ttf?url'
 
+window.addEventListener('error', (e) => console.error('WINDOW ERROR:', e.error || e.message))
+window.addEventListener('unhandledrejection', (e) => console.error('REJECTION:', e.reason))
+
 const camera = new PerspectiveCamera(70, 1, 0.01, 100)
 camera.position.z = 5
 
 const scene = new Scene()
+;(window as any).__scene = scene
 scene.background = new Color('black')
 
 const canvas = document.getElementById('root') as HTMLCanvasElement
 const { update } = forwardHtmlEvents(canvas, camera, scene)
 
-const renderer = new WebGLRenderer({ antialias: true, canvas })
-renderer.localClippingEnabled = true
-renderer.setTransparentSort(reversePainterSortStable)
+const renderer = new WebGPURenderer({ antialias: true, canvas, forceWebGL: true })
+renderer.setTransparentSort(reversePainterSortStable as any)
+
+function updateSize() {
+  renderer.setSize(window.innerWidth, window.innerHeight)
+  renderer.setPixelRatio(window.devicePixelRatio)
+  camera.aspect = window.innerWidth / window.innerHeight
+  camera.updateProjectionMatrix()
+}
 
 async function init() {
+  await renderer.init()
+  updateSize()
+  window.addEventListener('resize', updateSize)
+
   const loader = new TTFLoader()
   const fontFamilies = await loader.loadAsync(fontUrl)
 
@@ -59,15 +75,5 @@ async function init() {
 
   renderer.setAnimationLoop(animation)
 }
-
-function updateSize() {
-  renderer.setSize(window.innerWidth, window.innerHeight)
-  renderer.setPixelRatio(window.devicePixelRatio)
-  camera.aspect = window.innerWidth / window.innerHeight
-  camera.updateProjectionMatrix()
-}
-
-updateSize()
-window.addEventListener('resize', updateSize)
 
 init()

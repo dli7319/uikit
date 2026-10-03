@@ -1,9 +1,7 @@
-import { Intersection, Object3DEventMap } from 'three'
+import { Intersection, Object3D, Object3DEventMap } from 'three'
 
 declare module 'three' {
   interface Object3DEventMap {
-    childadded: { child: Object3D }
-    childremoved: { child: Object3D }
     click: ThreeMouseEvent
     contextmenu: ThreeMouseEvent
     dblclick: ThreeMouseEvent

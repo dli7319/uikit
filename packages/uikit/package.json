@@ -23,8 +23,24 @@
     "dist"
   ],
   "main": "src/index.ts",
+  "exports": {
+    ".": {
+      "import": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "default": "./src/index.ts"
+    },
+    "./webgpu": {
+      "import": "./src/webgpu/index.ts",
+      "types": "./dist/webgpu/index.d.ts",
+      "default": "./src/webgpu/index.ts"
+    }
+  },
   "publishConfig": {
-    "main": "dist/index.js"
+    "main": "dist/index.js",
+    "exports": {
+      ".": "./dist/index.js",
+      "./webgpu": "./dist/webgpu/index.js"
+    }
   },
   "scripts": {
     "test": "mocha ./tests/*.spec.ts",

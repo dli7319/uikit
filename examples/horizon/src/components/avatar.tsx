@@ -5,7 +5,7 @@ export function AvatarDemo() {
   return (
     <Container alignItems="center">
       <Avatar
-        src="https://raw.githubusercontent.com/pmndrs/uikit/refs/heads/main/examples/horizon/public/avatar.png"
+        src="/uikit/examples/horizon/avatar.png"
         size="lg"
         attributionActive
       />

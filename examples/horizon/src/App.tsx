@@ -1,5 +1,6 @@
 import { Canvas } from '@react-three/fiber'
-import { Fullscreen, Text } from '@react-three/uikit'
+import { Fullscreen, Text, setPreferredColorScheme } from '@react-three/uikit'
+import { createWebGPURenderer } from '@react-three/uikit/webgpu'
 import { Panel, RadioGroup, RadioGroupItem, Button } from '@react-three/uikit-horizon'
 import { parseAsString, useQueryState } from 'nuqs'
 import { AvatarDemo } from './components/avatar.js'
@@ -18,6 +19,10 @@ import { SliderDemo } from './components/slider.js'
 import { ToggleDemo } from './components/toggle.js'
 import { noEvents, PointerEvents } from '@react-three/xr/dist/events.js'
 import { firaCode } from '@pmndrs/msdfonts/fira-code'
+
+setPreferredColorScheme('light')
+
+setPreferredColorScheme('light')
 
 const componentPages = {
   avatar: AvatarDemo,
@@ -44,7 +49,7 @@ export default function App() {
   const installCommand = 'npm install @react-three/uikit @react-three/uikit-horizon'
 
   return (
-    <Canvas events={noEvents} style={{ height: '100dvh', touchAction: 'none' }} gl={{ localClippingEnabled: true }}>
+    <Canvas events={noEvents} style={{ height: '100dvh', touchAction: 'none' }} gl={createWebGPURenderer}>
       <PointerEvents />
       <color attach="background" args={['black']} />
       <ambientLight intensity={0.5} />

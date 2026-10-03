@@ -1,6 +1,7 @@
 import { Environment, MeshPortalMaterial, PerspectiveCamera } from '@react-three/drei'
 import { Canvas, extend, useFrame } from '@react-three/fiber'
 import { Root, Container, Text, setPreferredColorScheme, Content, Fullscreen } from '@react-three/uikit'
+import { createWebGPURenderer } from '@react-three/uikit/webgpu'
 import { BellRing, Check } from '@react-three/uikit-lucide'
 import {
   Defaults,
@@ -27,7 +28,7 @@ export default function App() {
     <Canvas
       camera={{ position: [0, 0, 18], fov: 32.5 }}
       style={{ height: '100dvh', touchAction: 'none' }}
-      gl={{ localClippingEnabled: true }}
+      gl={createWebGPURenderer}
     >
       <Defaults>
         <ambientLight intensity={Math.PI} />

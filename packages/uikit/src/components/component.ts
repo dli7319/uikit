@@ -1,5 +1,6 @@
 import { batch, computed, ReadonlySignal, Signal, signal } from '@preact/signals-core'
 import { EventHandlersProperties } from '../events.js'
+import '../panel/interaction/pointer-events.js'
 import {
   BufferGeometry,
   Intersection,

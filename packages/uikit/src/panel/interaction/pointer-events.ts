@@ -1,4 +1,5 @@
-import type { Intersection, Object3D, Sphere } from 'three'
+import type {} from 'three/tsl'
+import { Intersection, Object3DEventMap, Sphere } from 'three'
 
 export type AllowedPointerEventsType =
   | 'all'

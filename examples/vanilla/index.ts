@@ -11,6 +11,8 @@ import {
   Scene,
   WebGLRenderer,
 } from 'three'
+import '@pmndrs/uikit/webgpu'
+import { WebGPURenderer } from 'three/webgpu'
 import { reversePainterSortStable, BaseOutProperties, Container, Fullscreen, InProperties, Text } from '@pmndrs/uikit'
 import { PlusIcon } from '@pmndrs/uikit-lucide'
 import { forwardHtmlEvents } from '@pmndrs/pointer-events'
@@ -111,7 +113,7 @@ declare global {
       report: () => PerfReport
       reset: () => void
       waitForSamples: (count: number) => Promise<PerfReport>
-      renderer: WebGLRenderer
+      renderer: WebGPURenderer
       scene: Scene
       camera: PerspectiveCamera
       fullscreen: Fullscreen
@@ -120,6 +122,15 @@ declare global {
       manualFrame: (time?: number) => void
     }
   }
+}
+
+function readIntegerParam(name: string, fallback: number) {
+  const raw = params.get(name)
+  if (raw == null) {
+    return fallback
+  }
+  const value = Number.parseInt(raw, 10)
+  return Number.isFinite(value) ? Math.max(0, value) : fallback
 }
 
 const params = new URLSearchParams(window.location.search)
@@ -141,10 +152,18 @@ scene.background = new Color(0xf6f8fb)
 scene.add(new AmbientLight(undefined, 1.5))
 scene.add(camera)
 
+const isWebGL = params.get('renderer') === 'webgl'
 const canvas = document.getElementById('root') as HTMLCanvasElement
-const renderer = new WebGLRenderer({ antialias: true, canvas })
-renderer.localClippingEnabled = true
-renderer.setTransparentSort(reversePainterSortStable)
+const renderer: any = isWebGL
+  ? new WebGLRenderer({ antialias: true, canvas })
+  : new WebGPURenderer({ antialias: true, canvas, forceWebGL: true })
+if (!isWebGL) {
+  await (renderer as WebGPURenderer).init()
+}
+if ('localClippingEnabled' in renderer) {
+  renderer.localClippingEnabled = true
+}
+renderer.setTransparentSort(reversePainterSortStable as any)
 startupMark('rendererReadyMs')
 
 const { update } = forwardHtmlEvents(canvas, camera, scene)
@@ -610,15 +629,6 @@ function loadRows(rows: number, motion = config.motion) {
   next.set('animatedBars', String(config.animatedBars))
   next.set('motion', motion ? '1' : '0')
   window.location.search = next.toString()
-}
-
-function readIntegerParam(name: string, fallback: number) {
-  const raw = params.get(name)
-  if (raw == null) {
-    return fallback
-  }
-  const value = Number.parseInt(raw, 10)
-  return Number.isFinite(value) ? Math.max(0, value) : fallback
 }
 
 function updateSize() {

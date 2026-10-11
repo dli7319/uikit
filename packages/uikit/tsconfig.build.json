@@ -1,4 +1,9 @@
 {
     "extends": "./tsconfig.json",
+    "compilerOptions": {
+        "skipLibCheck": true,
+        "verbatimModuleSyntax": false,
+        "isolatedModules": false
+    },
     "include": ["src"]
 }

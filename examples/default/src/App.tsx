@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { Fullscreen, Text, getPreferredColorScheme, setPreferredColorScheme } from '@react-three/uikit'
+import { createWebGPURenderer } from '@react-three/uikit/webgpu'
 import { Copy, Moon, Sun, SunMoon } from '@react-three/uikit-lucide'
 import { colors, Button, Card, Separator, Tabs, TabsContent, TabsList, TabsTrigger } from '@react-three/uikit-default'
 import { TooltipDemo } from './components/tooltip.js'
@@ -56,6 +57,7 @@ const componentPages = {
 }
 
 const defaultComponent = 'card'
+setPreferredColorScheme('light')
 
 export default function App() {
   const [component, set] = useState<keyof typeof componentPages>(() => {
@@ -74,7 +76,7 @@ export default function App() {
   }
   const [pcs, updatePCS] = useState(() => getPreferredColorScheme())
   return (
-    <Canvas events={noEvents} style={{ height: '100dvh', touchAction: 'none' }} gl={{ localClippingEnabled: true }}>
+    <Canvas events={noEvents} style={{ height: '100dvh', touchAction: 'none' }} gl={createWebGPURenderer}>
       <PointerEvents />
       <color attach="background" args={['black']} />
       <ambientLight intensity={0.5} />

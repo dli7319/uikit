@@ -3,6 +3,7 @@ import { Canvas } from '@react-three/fiber'
 import { Box, OrbitControls, OrthographicCamera } from '@react-three/drei'
 import { signal } from '@preact/signals-core'
 import { Text, Fullscreen, VanillaImage, VanillaInput, Video, Image, Portal, Container } from '@react-three/uikit'
+import { createWebGPURenderer } from '@react-three/uikit/webgpu'
 import { Texture } from 'three'
 import { noEvents, PointerEvents } from '@react-three/xr/dist/events.js'
 
@@ -38,7 +39,7 @@ export default function App() {
     <>
       {/* @ts-ignore */}
       <video src="./video.mp4" style={{ display: 'none' }} ref={videoRef}></video>
-      <Canvas events={noEvents} style={{ height: '100dvh', touchAction: 'none' }}>
+      <Canvas events={noEvents} style={{ height: '100dvh', touchAction: 'none' }} gl={createWebGPURenderer}>
         <PointerEvents />
         <OrbitControls />
         <Box />
@@ -60,7 +61,7 @@ export default function App() {
             src={videoel}
             // src={'./video.mp4'}
           ></Video>
-          <Image src="https://picsum.photos/id/237/200/300" width={100} />
+          <Container width={100} height={150} backgroundColor="purple" />
           <Portal borderRadius={30} width="33%">
             <OrthographicCamera
               makeDefault

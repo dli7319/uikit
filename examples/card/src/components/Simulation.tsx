@@ -6,7 +6,7 @@ import { useMemo, useRef } from 'react'
 
 // Shapes by https://app.spline.design/library/a4eeaee4-be03-4df8-ab05-5a073eda2eb4
 export function Floating(props: any) {
-  const { nodes, materials } = useGLTF('/uikit/examples/card/smileys-transformed.glb')
+  const { nodes, materials } = useGLTF('./smileys-transformed.glb')
   return (
     <group {...props} dispose={null}>
       <Float>

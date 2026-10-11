@@ -1,5 +1,6 @@
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { Container, Fullscreen, Text, VanillaContainer } from '@react-three/uikit'
+import { createWebGPURenderer } from '@react-three/uikit/webgpu'
 import { OrbitControls } from '@react-three/drei'
 import { noEvents, PointerEvents } from '@react-three/xr/dist/events.js'
 import { effect, signal } from '@preact/signals-core'
@@ -62,7 +63,7 @@ export default function App() {
     <Canvas
       events={noEvents}
       style={{ height: '100dvh', touchAction: 'none' }}
-      gl={{ localClippingEnabled: true, antialias: false }}
+      gl={createWebGPURenderer}
       camera={{ position: [0, 0, 900], near: 0.1, far: 5000 }}
     >
       <color attach="background" args={['#eef3f7']} />

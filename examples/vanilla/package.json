@@ -9,6 +9,7 @@
     "@pmndrs/uikit-default": "workspace:^"
   },
   "scripts": {
-    "dev": "vite"
+    "dev": "vite",
+    "build": "vite build"
   }
 }

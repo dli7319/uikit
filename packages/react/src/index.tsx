@@ -89,14 +89,14 @@ export {
   type TextareaProperties as VanillaTextareaProperties,
 } from '@pmndrs/uikit'
 
-export const Container = /* @__PURE__ */ build<VanillaContainer, ContainerProperties>(VanillaContainer)
-export const Content = /* @__PURE__ */ build<VanillaContent, ContentProperties>(VanillaContent)
-export const Custom = /* @__PURE__ */ build<VanillaCustom, CustomProperties>(VanillaCustom)
-export const Image = /* @__PURE__ */ build<VanillaImage, ImageProperties>(VanillaImage)
-export const Video = /* @__PURE__ */ build<VanillaVideo, VideoProperties>(VanillaVideo)
-export const Input = /* @__PURE__ */ build<VanillaInput, InputProperties>(VanillaInput)
-export const Svg = /* @__PURE__ */ build<VanillaSvg, SvgProperties>(VanillaSvg)
-export const Textarea = /* @__PURE__ */ build<VanillaTextarea, TextareaProperties>(VanillaTextarea)
+export const Container = /* @__PURE__ */ build<VanillaContainer, ContainerProperties>(VanillaContainer, 'Container')
+export const Content = /* @__PURE__ */ build<VanillaContent, ContentProperties>(VanillaContent, 'Content')
+export const Custom = /* @__PURE__ */ build<VanillaCustom, CustomProperties>(VanillaCustom, 'Custom')
+export const Image = /* @__PURE__ */ build<VanillaImage, ImageProperties>(VanillaImage, 'Image')
+export const Video = /* @__PURE__ */ build<VanillaVideo, VideoProperties>(VanillaVideo, 'Video')
+export const Input = /* @__PURE__ */ build<VanillaInput, InputProperties>(VanillaInput, 'Input')
+export const Svg = /* @__PURE__ */ build<VanillaSvg, SvgProperties>(VanillaSvg, 'Svg')
+export const Textarea = /* @__PURE__ */ build<VanillaTextarea, TextareaProperties>(VanillaTextarea, 'Textarea')
 
 export const Fullscreen = /* @__PURE__ */ (() => {
   extend({ VanillaFullscreen })

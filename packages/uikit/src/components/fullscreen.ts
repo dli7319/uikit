@@ -35,7 +35,7 @@ export class Fullscreen<
   private readonly pixelSize: Signal<number>
 
   constructor(
-    protected renderer: WebGLRenderer,
+    protected renderer: WebGLRenderer | any,
     properties?: InProperties<OutProperties>,
     initialClasses?: Array<InProperties<BaseOutProperties> | string>,
     protected inputConfig?: {
@@ -74,22 +74,30 @@ export class Fullscreen<
 
   update(delta: number) {
     super.update(delta)
-    const camera = searchFor(this, Camera, 2, true)
+    let camera = searchFor(this, Camera, 2, true)
     if (!(camera instanceof PerspectiveCamera || camera instanceof OrthographicCamera)) {
-      throw new Error(`fullscreen can only be added to a camera`)
+      camera = (this.inputConfig as any)?.camera || (this.root.value as any)?.camera || (this.renderer as any)?.__camera
+    }
+    if (!(camera instanceof PerspectiveCamera || camera instanceof OrthographicCamera)) {
+      return
     }
     const distanceToCamera = parseNumberValue(this.properties.peek().distanceToCamera ?? camera.near + 0.1)
     batch(() => {
       let pixelSize: number
+      const renderSize = this.renderer.getSize(vectorHelper)
+      let height = renderSize?.y
+      if (height == null || Number.isNaN(height) || height === 0) {
+        height = this.renderer.domElement?.height || (typeof window !== 'undefined' ? window.innerHeight : 720)
+      }
       if (camera instanceof PerspectiveCamera) {
         const cameraHeight = 2 * Math.tan((Math.PI * camera.fov) / 360) * distanceToCamera!
-        pixelSize = cameraHeight / this.renderer.getSize(vectorHelper).y
+        pixelSize = cameraHeight / height
         this.sizeY.value = cameraHeight
         this.sizeX.value = cameraHeight * camera.aspect
       } else if (camera instanceof OrthographicCamera) {
         const cameraHeight = (camera.top - camera.bottom) / camera.zoom
         const cameraWidth = (camera.right - camera.left) / camera.zoom
-        pixelSize = cameraHeight / this.renderer.getSize(vectorHelper).y
+        pixelSize = cameraHeight / height
         this.sizeY.value = cameraHeight
         this.sizeX.value = cameraWidth
       } else {
@@ -98,7 +106,7 @@ export class Fullscreen<
       }
 
       //if we are in a screen-based xr session, apply the pixel ratio to the pixel size to display the UI in the same size as outside of XR
-      if (this.renderer.xr.getSession()?.interactionMode === 'screen-space') {
+      if (this.renderer.xr?.getSession?.()?.interactionMode === 'screen-space') {
         pixelSize *= window.devicePixelRatio
       }
       this.pixelSize.value = pixelSize

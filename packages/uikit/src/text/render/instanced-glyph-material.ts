@@ -1,5 +1,6 @@
 import { MeshBasicMaterial } from 'three'
 import { Font } from '../font.js'
+import { getWebGPUHandlers } from '../../webgpu/registry.js'
 
 export class InstancedGlyphMaterial extends MeshBasicMaterial {
   constructor(font: Font) {
@@ -9,8 +10,9 @@ export class InstancedGlyphMaterial extends MeshBasicMaterial {
       toneMapped: false,
     })
 
+    // WebGL support via onBeforeCompile
     this.onBeforeCompile = (parameters, renderer) => {
-      font.page.anisotropy = renderer.capabilities.getMaxAnisotropy()
+      font.page.anisotropy = renderer.capabilities?.getMaxAnisotropy?.() ?? 1
       parameters.uniforms.fontPage = { value: font.page }
       parameters.uniforms.pageSize = { value: [font.pageWidth, font.pageHeight] }
       parameters.uniforms.distanceRange = { value: font.distanceRange }
@@ -86,6 +88,12 @@ export class InstancedGlyphMaterial extends MeshBasicMaterial {
           diffuseColor *= rgba;
             `,
       )
+    }
+
+    // WebGPU support (invoked only when WebGPU is enabled)
+    const webgpu = getWebGPUHandlers()
+    if (webgpu?.applyGlyphMaterial) {
+      webgpu.applyGlyphMaterial(this, font)
     }
   }
 }

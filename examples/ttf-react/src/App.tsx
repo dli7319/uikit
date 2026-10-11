@@ -1,6 +1,7 @@
 import { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
-import { Text, Fullscreen, Container } from '@react-three/uikit'
+import { Text, Fullscreen } from '@react-three/uikit'
+import { createWebGPURenderer } from '@react-three/uikit/webgpu'
 import { useTTF } from '@react-three/uikit'
 import fontUrl from '../BitcountPropSingle-Regular.ttf?url'
 import { noEvents, PointerEvents } from '@react-three/xr/dist/events.js'
@@ -32,7 +33,7 @@ function Loading() {
 
 export default function App() {
   return (
-    <Canvas events={noEvents} style={{ height: '100dvh', touchAction: 'none' }}>
+    <Canvas events={noEvents} style={{ height: '100dvh', touchAction: 'none' }} gl={createWebGPURenderer}>
       <PointerEvents />
       <color attach="background" args={['black']} />
       <Suspense fallback={<Loading />}>

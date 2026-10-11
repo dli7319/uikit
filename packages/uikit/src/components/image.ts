@@ -19,6 +19,7 @@ import {
   PanelMaterialConfig,
   writeColor,
 } from '../panel/material/index.js'
+import { getWebGPUHandlers } from '../webgpu/registry.js'
 import { createGlobalClippingPlanes } from '../clipping.js'
 import { Inset } from '../flex/index.js'
 import { ElementType, setupOrderInfo, setupRenderOrder } from '../order.js'
@@ -121,7 +122,15 @@ export class Image<
       this.root.peek().requestRender?.()
     }, this.abortSignal)
     abortableEffect(() => {
-      ;(this.material as any).map = this.texture.value ?? null
+      const tex = this.texture.value ?? null
+      ;(this.material as any).map = tex
+      if (tex) {
+        tex.needsUpdate = true
+      }
+      const webgpu = getWebGPUHandlers()
+      if (webgpu?.applyPanelMaterial) {
+        webgpu.applyPanelMaterial(this.material, info)
+      }
       this.material.needsUpdate = true
       this.root.peek().requestRender?.()
     }, this.abortSignal)

@@ -7,6 +7,7 @@ import {
 } from 'three'
 import type { PanelMaterialInfo } from './create.js'
 import { compilePanelDepthMaterial } from './shader.js'
+import { getWebGPUHandlers } from '../../webgpu/registry.js'
 
 export class PanelDistanceMaterial extends MeshDistanceMaterial {
   constructor(private info: PanelMaterialInfo) {
@@ -16,6 +17,11 @@ export class PanelDistanceMaterial extends MeshDistanceMaterial {
     }
     this.defines.USE_UV = ''
     this.clipShadows = true
+
+    const webgpu = getWebGPUHandlers()
+    if (webgpu?.applyPanelMaterial) {
+      webgpu.applyPanelMaterial(this, info)
+    }
   }
 
   onBeforeCompile(parameters: WebGLProgramParametersWithUniforms, renderer: WebGLRenderer): void {
@@ -35,6 +41,11 @@ export class PanelDepthMaterial extends MeshDepthMaterial {
     }
     this.defines.USE_UV = ''
     this.clipShadows = true
+
+    const webgpu = getWebGPUHandlers()
+    if (webgpu?.applyPanelMaterial) {
+      webgpu.applyPanelMaterial(this, info)
+    }
   }
 
   onBeforeCompile(parameters: WebGLProgramParametersWithUniforms, renderer: WebGLRenderer): void {

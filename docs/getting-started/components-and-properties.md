@@ -436,7 +436,7 @@ const theme = basedOnPreferredColorScheme({
 When composing colors, you can derive an alpha-adjusted color using `withOpacity(color, opacity)`. It returns a reactive color value (signal) that updates if either the base color or the opacity is reactive.
 
 ```tsx showLineNumbers
-import { withOpacity } from '@pmndrs/uikit'
+import { withOpacity } from '@david18284/uikit'
 
 const translucent = withOpacity('#000', 0.35)
 

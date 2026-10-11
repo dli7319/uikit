@@ -1,6 +1,6 @@
 import { object, string } from 'zod'
 import type { z } from 'zod'
-import { baseOutPropertyShape, createInPropertiesSchema, defineSchema } from '@pmndrs/uikit'
+import { baseOutPropertyShape, createInPropertiesSchema, defineSchema } from '@david18284/uikit'
 import {
   BaseOutProperties,
   componentDefaults,
@@ -10,7 +10,7 @@ import {
   Text,
   TextOutProperties,
   WithSignal,
-} from '@pmndrs/uikit'
+} from '@david18284/uikit'
 import { computed } from '@preact/signals-core'
 import { Dropdown } from './index.js'
 import { PhoneForwarded } from '@pmndrs/uikit-lucide'

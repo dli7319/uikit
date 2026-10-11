@@ -1,7 +1,7 @@
 import { boolean, object } from 'zod'
 import type { z } from 'zod'
-import { baseOutPropertyShape, createInPropertiesSchema, defineSchema } from '@pmndrs/uikit'
-import { BaseOutProperties, Container, InProperties } from '@pmndrs/uikit'
+import { baseOutPropertyShape, createInPropertiesSchema, defineSchema } from '@david18284/uikit'
+import { BaseOutProperties, Container, InProperties } from '@david18284/uikit'
 import { computed } from '@preact/signals-core'
 import { colors, componentDefaults } from '../theme.js'
 export const LabelOutPropertiesSchema = /* @__PURE__ */ defineSchema(() =>

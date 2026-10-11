@@ -1,7 +1,7 @@
 <h1>pmndrs/uikit</h1>
 
-[![Version](https://img.shields.io/npm/v/@pmndrs/uikit?style=flat&colorA=000000&colorB=000000)](https://npmjs.com/package/@pmndrs/uikit)
-[![Downloads](https://img.shields.io/npm/dt/@pmndrs/uikit.svg?style=flat&colorA=000000&colorB=000000)](https://npmjs.com/package/@pmndrs/uikit)
+[![Version](https://img.shields.io/npm/v/@david18284/uikit?style=flat&colorA=000000&colorB=000000)](https://npmjs.com/package/@david18284/uikit)
+[![Downloads](https://img.shields.io/npm/dt/@david18284/uikit.svg?style=flat&colorA=000000&colorB=000000)](https://npmjs.com/package/@david18284/uikit)
 [![Twitter](https://img.shields.io/twitter/follow/pmndrs?label=%40pmndrs&style=flat&colorA=000000&colorB=000000&logo=twitter&logoColor=000000)](https://twitter.com/pmndrs)
 [![Discord](https://img.shields.io/discord/740090768164651008?style=flat&colorA=000000&colorB=000000&label=discord&logo=discord&logoColor=000000)](https://discord.gg/ZZjjNvJ)
 
@@ -12,7 +12,7 @@ Build performant 3D user interfaces for **Three.js** using **yoga** with support
 > Perfect for games, XR (VR/AR), and any web-based Spatial Computing App.
 
 ```bash
-npm install three @pmndrs/uikit
+npm install three @david18284/uikit
 ```
 
 ### What does it look like ?
@@ -22,7 +22,7 @@ npm install three @pmndrs/uikit
 
 ```jsx
 import { PerspectiveCamera, Scene, WebGLRenderer } from 'three'
-import { reversePainterSortStable, Container } from '@pmndrs/uikit'
+import { reversePainterSortStable, Container } from '@david18284/uikit'
 
 const camera = new PerspectiveCamera(70, 1, 0.01, 100)
 camera.position.z = 10

@@ -1,6 +1,6 @@
 import type { z } from 'zod'
-import { ContainerPropertiesSchema } from '@pmndrs/uikit'
-import { BaseOutProperties, Container, InProperties, RenderContext } from '@pmndrs/uikit'
+import { ContainerPropertiesSchema } from '@david18284/uikit'
+import { BaseOutProperties, Container, InProperties, RenderContext } from '@david18284/uikit'
 import { signal } from '@preact/signals-core'
 import { colors, componentDefaults } from '../theme.js'
 export const TooltipPropertiesSchema = ContainerPropertiesSchema

@@ -1,7 +1,7 @@
 import { suspend, preload, clear } from 'suspend-react'
-import { TTFLoader, TTFInput, MSDFResult } from '@pmndrs/uikit'
+import { TTFLoader, TTFInput, MSDFResult } from '@david18284/uikit'
 
-export { TTFLoader, type TTFInput, type TTFInputItem, type TTFLoaderOptions, type MSDFResult } from '@pmndrs/uikit'
+export { TTFLoader, type TTFInput, type TTFInputItem, type TTFLoaderOptions, type MSDFResult } from '@david18284/uikit'
 
 const ttfLoaderSymbol = Symbol('ttf-loader')
 

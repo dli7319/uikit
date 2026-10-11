@@ -1,6 +1,6 @@
 import { boolean, enum as enumSchema, object } from 'zod'
 import type { z } from 'zod'
-import { baseOutPropertyShape, createInPropertiesSchema, defineSchema } from '@pmndrs/uikit'
+import { baseOutPropertyShape, createInPropertiesSchema, defineSchema } from '@david18284/uikit'
 import {
   Container,
   ContainerProperties,
@@ -8,7 +8,7 @@ import {
   BaseOutProperties,
   RenderContext,
   UnionizeVariants,
-} from '@pmndrs/uikit'
+} from '@david18284/uikit'
 import { computed } from '@preact/signals-core'
 import { borderRadius, colors, componentDefaults } from '../theme.js'
 type PaginationSizeProps = Pick<ContainerProperties, 'height' | 'width' | 'paddingX' | 'paddingY'>

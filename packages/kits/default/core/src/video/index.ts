@@ -14,7 +14,7 @@ import {
   abortableEffect,
   withOpacity,
   searchFor,
-} from '@pmndrs/uikit'
+} from '@david18284/uikit'
 import { signal, computed } from '@preact/signals-core'
 import { Play, Pause, VolumeX, Volume2 } from '@pmndrs/uikit-lucide'
 import { Slider } from '../slider/index.js'

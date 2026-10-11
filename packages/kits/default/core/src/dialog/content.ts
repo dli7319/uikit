@@ -1,6 +1,6 @@
 import type { z } from 'zod'
-import { baseOutPropertiesSchema, createInPropertiesSchema, defineSchema } from '@pmndrs/uikit'
-import { Container, InProperties, BaseOutProperties, RenderContext, searchFor } from '@pmndrs/uikit'
+import { baseOutPropertiesSchema, createInPropertiesSchema, defineSchema } from '@david18284/uikit'
+import { Container, InProperties, BaseOutProperties, RenderContext, searchFor } from '@david18284/uikit'
 import { borderRadius, colors, componentDefaults } from '../theme.js'
 import { XIcon } from '@pmndrs/uikit-lucide'
 import { Dialog } from './index.js'

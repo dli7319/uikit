@@ -3,7 +3,7 @@
   "dependencies": {
     "@react-three/uikit": "workspace:^",
     "@react-three/uikit-lucide": "workspace:^",
-    "@pmndrs/uikit": "workspace:^"
+    "@david18284/uikit": "workspace:^"
   },
   "scripts": {
     "dev": "vite --host",

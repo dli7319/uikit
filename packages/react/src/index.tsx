@@ -5,7 +5,7 @@ export {
   withOpacity,
   isDarkMode,
   canvasInputProps,
-} from '@pmndrs/uikit'
+} from '@david18284/uikit'
 
 declare module '@react-three/fiber' {
   interface ThreeElements {
@@ -38,7 +38,7 @@ import {
   TextareaProperties as VanillaTextareaProperties,
   InProperties,
   TextOutProperties,
-} from '@pmndrs/uikit'
+} from '@david18284/uikit'
 import { ReadonlySignal } from '@preact/signals-core'
 import { createPortal, extend, ThreeElement, useFrame, useLoader, useStore, useThree } from '@react-three/fiber'
 import { Object3D, SRGBColorSpace, TextureLoader } from 'three'
@@ -87,7 +87,7 @@ export {
   type TextProperties as VanillaTextProperties,
   Textarea as VanillaTextarea,
   type TextareaProperties as VanillaTextareaProperties,
-} from '@pmndrs/uikit'
+} from '@david18284/uikit'
 
 export const Container = /* @__PURE__ */ build<VanillaContainer, ContainerProperties>(VanillaContainer, 'Container')
 export const Content = /* @__PURE__ */ build<VanillaContent, ContentProperties>(VanillaContent, 'Content')

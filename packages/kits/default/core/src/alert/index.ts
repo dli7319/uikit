@@ -1,6 +1,6 @@
 import { enum as enumSchema, object } from 'zod'
 import type { z } from 'zod'
-import { baseOutPropertyShape, createInPropertiesSchema, defineSchema } from '@pmndrs/uikit'
+import { baseOutPropertyShape, createInPropertiesSchema, defineSchema } from '@david18284/uikit'
 import {
   BaseOutProperties,
   Container,
@@ -8,7 +8,7 @@ import {
   InProperties,
   RenderContext,
   UnionizeVariants,
-} from '@pmndrs/uikit'
+} from '@david18284/uikit'
 import { borderRadius, colors, componentDefaults } from '../theme.js'
 import { computed } from '@preact/signals-core'
 const _alertVariants = {

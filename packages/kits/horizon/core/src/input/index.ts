@@ -1,6 +1,6 @@
 import { custom, enum as enumSchema, object, string } from 'zod'
 import type { z } from 'zod'
-import { baseOutPropertyShape, createInPropertiesSchema, defineSchema } from '@pmndrs/uikit'
+import { baseOutPropertyShape, createInPropertiesSchema, defineSchema } from '@david18284/uikit'
 import {
   abortableEffect,
   BaseOutProperties,
@@ -11,7 +11,7 @@ import {
   RenderContext,
   Input as InputImpl,
   InputOutProperties as BaseInputOutProperties,
-} from '@pmndrs/uikit'
+} from '@david18284/uikit'
 import { computed, ReadonlySignal } from '@preact/signals-core'
 import { theme } from '../theme.js'
 type InputVariantProps = Pick<ContainerProperties, 'height' | 'fontSize' | 'lineHeight'>

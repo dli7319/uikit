@@ -1,7 +1,7 @@
 import { custom, object, string } from 'zod'
 import type { z } from 'zod'
-import { baseOutPropertyShape, createInPropertiesSchema, defineSchema } from '@pmndrs/uikit'
-import { Container, InProperties, BaseOutProperties, RenderContext } from '@pmndrs/uikit'
+import { baseOutPropertyShape, createInPropertiesSchema, defineSchema } from '@david18284/uikit'
+import { Container, InProperties, BaseOutProperties, RenderContext } from '@david18284/uikit'
 import { signal, computed } from '@preact/signals-core'
 export const RadioGroupOutPropertiesSchema = /* @__PURE__ */ defineSchema(() =>
   object({

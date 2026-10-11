@@ -1,6 +1,6 @@
 import type { z } from 'zod'
-import { SvgPropertiesSchema } from '@pmndrs/uikit'
-import { BaseOutProperties, InProperties, RenderContext, SvgOutProperties } from '@pmndrs/uikit'
+import { SvgPropertiesSchema } from '@david18284/uikit'
+import { BaseOutProperties, InProperties, RenderContext, SvgOutProperties } from '@david18284/uikit'
 import { ChevronDownIcon } from '@pmndrs/uikit-lucide'
 import { computed } from '@preact/signals-core'
 import { Dropdown } from './index.js'

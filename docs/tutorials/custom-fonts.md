@@ -45,7 +45,7 @@ function App() {
 ### Vanilla Three.js
 
 ```js showLineNumbers
-import { TTFLoader, Container, Text } from '@pmndrs/uikit'
+import { TTFLoader, Container, Text } from '@david18284/uikit'
 
 const loader = new TTFLoader()
 const fontFamilies = await loader.loadAsync('/fonts/Roboto.ttf')

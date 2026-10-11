@@ -1,9 +1,9 @@
 import { Color, PerspectiveCamera, Scene } from 'three'
-import '@pmndrs/uikit/webgpu'
+import '@david18284/uikit/webgpu'
 import { WebGPURenderer } from 'three/webgpu'
-import { reversePainterSortStable, Container, Text } from '@pmndrs/uikit'
+import { reversePainterSortStable, Container, Text } from '@david18284/uikit'
 import { forwardHtmlEvents } from '@pmndrs/pointer-events'
-import { TTFLoader } from '@pmndrs/uikit'
+import { TTFLoader } from '@david18284/uikit'
 import fontUrl from './BitcountPropSingle-Regular.ttf?url'
 
 window.addEventListener('error', (e) => console.error('WINDOW ERROR:', e.error || e.message))

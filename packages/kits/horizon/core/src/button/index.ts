@@ -1,6 +1,6 @@
 import { boolean, enum as enumSchema, object } from 'zod'
 import type { z } from 'zod'
-import { baseOutPropertyShape, createInPropertiesSchema, defineSchema } from '@pmndrs/uikit'
+import { baseOutPropertyShape, createInPropertiesSchema, defineSchema } from '@david18284/uikit'
 import {
   BaseOutProperties,
   Component,
@@ -9,7 +9,7 @@ import {
   InProperties,
   RenderContext,
   UnionizeVariants,
-} from '@pmndrs/uikit'
+} from '@david18284/uikit'
 import { computed } from '@preact/signals-core'
 import { theme } from '../theme.js'
 type ButtonVariantProps = Pick<ContainerProperties, 'backgroundColor' | 'hover' | 'color' | 'active' | 'important'>

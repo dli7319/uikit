@@ -29,6 +29,6 @@
     "main": "dist/index.js"
   },
   "dependencies": {
-    "@pmndrs/uikit": "workspace:^"
+    "@david18284/uikit": "workspace:^"
   }
 }

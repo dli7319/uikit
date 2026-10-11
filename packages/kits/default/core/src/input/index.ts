@@ -7,7 +7,7 @@ import {
   InputOutProperties as BaseInputOutProperties,
   RenderContext,
   withOpacity,
-} from '@pmndrs/uikit'
+} from '@david18284/uikit'
 import { computed } from '@preact/signals-core'
 import { borderRadius, colors, inputDefaults } from '../theme.js'
 export type InputOutProperties = BaseInputOutProperties

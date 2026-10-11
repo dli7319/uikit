@@ -9,7 +9,7 @@ import {
 } from 'react'
 import { computed } from '@preact/signals-core'
 import { Euler, Matrix4, Quaternion, Vector3 } from 'three'
-import { BaseOutProperties } from '@pmndrs/uikit'
+import { BaseOutProperties } from '@david18284/uikit'
 
 const matrixHelper = new Matrix4()
 const quaternionHelper = new Quaternion()

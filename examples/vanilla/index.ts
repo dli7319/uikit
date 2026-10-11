@@ -11,22 +11,20 @@ import {
   Scene,
   WebGLRenderer,
 } from 'three'
-import '@pmndrs/uikit/webgpu'
+import '@david18284/uikit/webgpu'
 import { WebGPURenderer } from 'three/webgpu'
-import { reversePainterSortStable, BaseOutProperties, Container, Fullscreen, InProperties, Text } from '@pmndrs/uikit'
+import {
+  reversePainterSortStable,
+  BaseOutProperties,
+  Container,
+  Fullscreen,
+  InProperties,
+  Text,
+} from '@david18284/uikit'
 import { PlusIcon } from '@pmndrs/uikit-lucide'
 import { forwardHtmlEvents } from '@pmndrs/pointer-events'
 import { OrbitHandles } from '@pmndrs/handle'
-import {
-  Badge,
-  Button,
-  ButtonIcon,
-  ButtonLabel,
-  Checkbox,
-  Panel,
-  ProgressBar,
-  Toggle,
-} from '@pmndrs/uikit-horizon'
+import { Badge, Button, ButtonIcon, ButtonLabel, Checkbox, Panel, ProgressBar, Toggle } from '@pmndrs/uikit-horizon'
 
 type PerfSample = {
   frameMs: number
@@ -269,7 +267,8 @@ function animation(time: number) {
   }
   const motionEnd = performance.now()
 
-  const detailProbe = params.get('startupDetail') === '1' && frameIndex <= 8 ? createStartupFrameProbe(frameIndex) : undefined
+  const detailProbe =
+    params.get('startupDetail') === '1' && frameIndex <= 8 ? createStartupFrameProbe(frameIndex) : undefined
   fullscreen.update(frameMs)
   const uiEnd = performance.now()
   detailProbe?.finish()
@@ -420,7 +419,11 @@ function buildSidebar(parent: Container) {
   addText(meters, `Rows ${config.rows}`, { color: 0xd1d5db, fontSize: 12 })
   addText(meters, `Cards ${config.cards}`, { color: 0xd1d5db, fontSize: 12 })
   addText(meters, `Animated ${config.motion ? 'yes' : 'no'}`, { color: 0xd1d5db, fontSize: 12 })
-  meters.add(makeButton(config.motion ? 'Pause motion' : 'Start motion', 'tertiary', () => loadRows(config.rows, !config.motion)))
+  meters.add(
+    makeButton(config.motion ? 'Pause motion' : 'Start motion', 'tertiary', () =>
+      loadRows(config.rows, !config.motion),
+    ),
+  )
 }
 
 function buildWorkspace(parent: Container) {
@@ -446,7 +449,11 @@ function buildWorkspace(parent: Container) {
   header.add(makeButton('Open issue', 'primary', () => console.log('open issue')))
   header.add(makeButton('Export', 'secondary', () => console.log('export')))
 
-  const cards = ui(Container, { height: 102, flexShrink: 0, flexDirection: 'row', flexWrap: 'no-wrap', gap: 10 }, workspace)
+  const cards = ui(
+    Container,
+    { height: 102, flexShrink: 0, flexDirection: 'row', flexWrap: 'no-wrap', gap: 10 },
+    workspace,
+  )
   for (let i = 0; i < config.cards; i++) {
     cards.add(makeMetricCard(i))
   }
@@ -539,7 +546,9 @@ function makeRow(index: number) {
 
   const tagWrap = ui(Container, { width: 260, flexShrink: 0, flexDirection: 'row', gap: 6 }, row)
   for (let i = 0; i < config.tags; i++) {
-    tagWrap.add(new Badge({ variant: ['secondary', 'positive', 'negative'][i % 3] as any, label: `p${(index + i) % 9}` }))
+    tagWrap.add(
+      new Badge({ variant: ['secondary', 'positive', 'negative'][i % 3] as any, label: `p${(index + i) % 9}` }),
+    )
     componentCount += 2
   }
 
@@ -646,21 +655,42 @@ function report(): PerfReport {
     config,
     frames,
     avgFps: frameAvg === 0 ? 0 : 1000 / frameAvg,
-    p95FrameMs: percentile(data.map((sample) => sample.frameMs), 0.95),
+    p95FrameMs: percentile(
+      data.map((sample) => sample.frameMs),
+      0.95,
+    ),
     droppedFrames: data.filter((sample) => sample.frameMs > 40).length,
     longFrames: data.filter((sample) => sample.frameMs > 50).length,
     avgEventsMs: avg(data.map((sample) => sample.eventsMs)),
-    p95EventsMs: percentile(data.map((sample) => sample.eventsMs), 0.95),
+    p95EventsMs: percentile(
+      data.map((sample) => sample.eventsMs),
+      0.95,
+    ),
     avgUiMs: avg(data.map((sample) => sample.uiMs)),
-    p95UiMs: percentile(data.map((sample) => sample.uiMs), 0.95),
+    p95UiMs: percentile(
+      data.map((sample) => sample.uiMs),
+      0.95,
+    ),
     avgMotionMs: avg(data.map((sample) => sample.motionMs)),
-    p95MotionMs: percentile(data.map((sample) => sample.motionMs), 0.95),
+    p95MotionMs: percentile(
+      data.map((sample) => sample.motionMs),
+      0.95,
+    ),
     avgLayoutMs: avg(data.map((sample) => sample.layoutMs)),
-    p95LayoutMs: percentile(data.map((sample) => sample.layoutMs), 0.95),
+    p95LayoutMs: percentile(
+      data.map((sample) => sample.layoutMs),
+      0.95,
+    ),
     avgRenderMs: avg(data.map((sample) => sample.renderMs)),
-    p95RenderMs: percentile(data.map((sample) => sample.renderMs), 0.95),
+    p95RenderMs: percentile(
+      data.map((sample) => sample.renderMs),
+      0.95,
+    ),
     avgTotalJsMs: avg(data.map((sample) => sample.totalJsMs)),
-    p95TotalJsMs: percentile(data.map((sample) => sample.totalJsMs), 0.95),
+    p95TotalJsMs: percentile(
+      data.map((sample) => sample.totalJsMs),
+      0.95,
+    ),
     components: componentCount,
     renderCalls: renderer.info.render.calls,
     triangles: renderer.info.render.triangles,

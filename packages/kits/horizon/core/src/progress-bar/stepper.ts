@@ -1,6 +1,6 @@
 import type { z } from 'zod'
-import { baseOutPropertiesSchema, createInPropertiesSchema, defineSchema } from '@pmndrs/uikit'
-import { BaseOutProperties, Container, InProperties, RenderContext } from '@pmndrs/uikit'
+import { baseOutPropertiesSchema, createInPropertiesSchema, defineSchema } from '@david18284/uikit'
+import { BaseOutProperties, Container, InProperties, RenderContext } from '@david18284/uikit'
 export const ProgressBarStepperOutPropertiesSchema = baseOutPropertiesSchema
 
 export const ProgressBarStepperPropertiesSchema = /* @__PURE__ */ defineSchema(() =>

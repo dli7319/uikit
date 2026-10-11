@@ -1,4 +1,4 @@
-import { isDarkMode, withOpacity } from '@pmndrs/uikit'
+import { isDarkMode, withOpacity } from '@david18284/uikit'
 import { computed, Signal } from '@preact/signals-core'
 
 const lightTheme = {

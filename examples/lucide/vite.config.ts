@@ -6,14 +6,14 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   optimizeDeps: {
-    include: ['@react-three/uikit-lucide', '@pmndrs/uikit'],
+    include: ['@react-three/uikit-lucide', '@david18284/uikit'],
   },
   base: '/uikit/examples/lucide/',
   resolve: {
-    dedupe: ['@react-three/fiber', 'three', '@react-three/uikit', '@pmndrs/uikit'],
+    dedupe: ['@react-three/fiber', 'three', '@react-three/uikit', '@david18284/uikit'],
     alias: {
-      '@pmndrs/uikit/webgpu': path.resolve(__dirname, '../../packages/uikit/src/webgpu/index.ts'),
-      '@pmndrs/uikit': path.resolve(__dirname, '../../packages/uikit/src/index.ts'),
+      '@david18284/uikit/webgpu': path.resolve(__dirname, '../../packages/uikit/src/webgpu/index.ts'),
+      '@david18284/uikit': path.resolve(__dirname, '../../packages/uikit/src/index.ts'),
       '@react-three/uikit/webgpu': path.resolve(__dirname, '../../packages/react/src/webgpu/index.tsx'),
       '@react-three/uikit': path.resolve(__dirname, '../../packages/react/src/index.tsx'),
       '@pmndrs/uikit-lucide': path.resolve(__dirname, '../../packages/icons/lucide/core/src/index.ts'),

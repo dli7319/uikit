@@ -3,7 +3,7 @@
   "dependencies": {
     "@pmndrs/handle": "^6.6.29",
     "@pmndrs/pointer-events": "^6.6.29",
-    "@pmndrs/uikit": "workspace:^",
+    "@david18284/uikit": "workspace:^",
     "@pmndrs/uikit-lucide": "workspace:^",
     "@pmndrs/uikit-horizon": "workspace:^",
     "@pmndrs/uikit-default": "workspace:^"

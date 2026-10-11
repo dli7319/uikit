@@ -8,7 +8,7 @@ The vanilla version of uikit allows to build user interfaces with plain Three.js
 
 ### Differences to @react-three/uikit
 
-The vanilla version of uikit (`@pmndrs/uikit`) is the core part of uikit while the react version is a slim wrapper around it. Therefore all features that are available in react are available in vanilla threejs. The only difference is that, since three.js ships no event system, no event system is available out of the box. For interactivity, such as hover effects, attach a pointer event system that emits W3C-compatible events to your UI elements. We recommend [@pmndrs/pointer-events](https://github.com/pmndrs/xr/tree/main/packages/pointer-events#readme).
+The vanilla version of uikit (`@david18284/uikit`) is the core part of uikit while the react version is a slim wrapper around it. Therefore all features that are available in react are available in vanilla threejs. The only difference is that, since three.js ships no event system, no event system is available out of the box. For interactivity, such as hover effects, attach a pointer event system that emits W3C-compatible events to your UI elements. We recommend [@pmndrs/pointer-events](https://github.com/pmndrs/xr/tree/main/packages/pointer-events#readme).
 
 ## The uikit `Component`
 
@@ -58,19 +58,19 @@ All uikit components have a common base class (`Component`), which exposes a set
 - Read `size` to get the computed layout size of a component after an `update`.
 - Use `properties` to inspect computed values such as margins and padding.
 
-## Building a user interface with `@pmndrs/uikit`
+## Building a user interface with `@david18284/uikit`
 
 The first step is to install the dependencies.
 
 ```bash
-pnpm add three @pmndrs/uikit
+pnpm add three @david18284/uikit
 ```
 
 Next, create the `index.ts` file and import the necessary dependencies and set up a threejs scene.
 
 ```ts
 import { PerspectiveCamera, Scene, WebGLRenderer } from 'three'
-import { reversePainterSortStable, Container } from '@pmndrs/uikit'
+import { reversePainterSortStable, Container } from '@david18284/uikit'
 
 const camera = new PerspectiveCamera(70, 1, 0.01, 100)
 camera.position.z = 10

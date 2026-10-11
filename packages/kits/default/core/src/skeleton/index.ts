@@ -1,6 +1,6 @@
 import type { z } from 'zod'
-import { ContainerPropertiesSchema } from '@pmndrs/uikit'
-import { abortableEffect, BaseOutProperties, Container, InProperties, RenderContext } from '@pmndrs/uikit'
+import { ContainerPropertiesSchema } from '@david18284/uikit'
+import { abortableEffect, BaseOutProperties, Container, InProperties, RenderContext } from '@david18284/uikit'
 import { Signal, signal } from '@preact/signals-core'
 import { borderRadius, colors, componentDefaults } from '../theme.js'
 export const SkeletonPropertiesSchema = ContainerPropertiesSchema

@@ -1,6 +1,6 @@
 import type { z } from 'zod'
-import { baseOutPropertiesSchema, createInPropertiesSchema, defineSchema } from '@pmndrs/uikit'
-import { Container, InProperties, BaseOutProperties } from '@pmndrs/uikit'
+import { baseOutPropertiesSchema, createInPropertiesSchema, defineSchema } from '@david18284/uikit'
+import { Container, InProperties, BaseOutProperties } from '@david18284/uikit'
 import { colors, componentDefaults } from '../theme.js'
 export const DialogFooterOutPropertiesSchema = baseOutPropertiesSchema
 

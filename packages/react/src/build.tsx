@@ -1,4 +1,4 @@
-import { Component, EventHandlers, RenderContext, reversePainterSortStable } from '@pmndrs/uikit'
+import { Component, EventHandlers, RenderContext, reversePainterSortStable } from '@david18284/uikit'
 import { effect } from '@preact/signals-core'
 import { extend, useStore, useThree, Instance, applyProps } from '@react-three/fiber'
 import { forwardRef, useEffect, useImperativeHandle, useLayoutEffect, useMemo, useRef } from 'react'

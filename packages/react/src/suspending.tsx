@@ -3,7 +3,13 @@ import { Video, VanillaVideo, Image, VanillaImage, ClassListProperties } from '.
 import { useLoader } from '@react-three/fiber'
 import { SRGBColorSpace, TextureLoader } from 'three'
 import { suspend } from 'suspend-react'
-import { ImageOutProperties, InProperties, updateVideoElementSrc, VideoOutProperties, VideoSrc } from '@david18284/uikit'
+import {
+  ImageOutProperties,
+  InProperties,
+  updateVideoElementSrc,
+  VideoOutProperties,
+  VideoSrc,
+} from '@david18284/uikit'
 
 export type SuspendingImageProperties = InProperties<Omit<ImageOutProperties<never>, 'src'>> & {
   src: string

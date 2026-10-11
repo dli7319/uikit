@@ -63,7 +63,7 @@ export const ${name}: ForwardRefExoticComponent<
       .filter((componentFolderName) => !componentFolderName.endsWith('.ts'))
       .map((componentFolderName) => `export * from "./${componentFolderName}/index.js";`)
       .join('\n') +
-      `\n\nexport { theme, setTheme, defaults, colors, defaultThemes, borderRadius } from '@pmndrs/uikit-default'`,
+      `\n\nimport { ReactNode } from 'react'\nimport { ContainerProperties, DefaultProperties } from '@react-three/uikit'\nimport { colors } from '@pmndrs/uikit-default'\n\nexport function Defaults(props: ContainerProperties['*'] & { children?: ReactNode }) {\n  return DefaultProperties({\n    scrollbarColor: colors.foreground,\n    scrollbarBorderRadius: 4,\n    lineHeight: '150%',\n    borderColor: colors.border,\n    color: colors.foreground,\n    ...props,\n  })\n}\n\nexport { theme, setTheme, defaults, colors, defaultThemes, borderRadius } from '@pmndrs/uikit-default'`,
   )
 }
 

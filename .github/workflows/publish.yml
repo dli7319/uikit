@@ -1,0 +1,64 @@
+name: Publish
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version to publish (e.g. 1.0.76-dli.1)'
+        required: true
+        type: string
+
+# Trusted publishing (npm OIDC): no NPM_TOKEN needed. The publish
+# authenticates via the trusted-publisher config bound to this workflow.
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v2
+        name: Install pnpm
+        with:
+          version: 10
+          run_install: false
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Update npm (trusted publishing support)
+        run: npm install -g npm@latest
+
+      - name: Install Dependencies
+        run: pnpm install
+
+      - name: Build
+        run: |
+          pnpm --filter @david18284/uikit run generate
+          pnpm --filter @david18284/uikit run build
+
+      - name: Set package version
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          INPUT_VERSION: ${{ inputs.version }}
+        run: |
+          if [ "$EVENT_NAME" = "workflow_dispatch" ]; then
+            VERSION="$INPUT_VERSION"
+          else
+            VERSION="${GITHUB_REF_NAME#v}"
+          fi
+          echo "Publishing version: $VERSION"
+          node -e 'const fs=require("fs");const p="packages/uikit/package.json";const d=JSON.parse(fs.readFileSync(p,"utf8"));d.version=process.argv[1];fs.writeFileSync(p,JSON.stringify(d,null,2)+"\n")' "$VERSION"
+
+      - name: Publish to npm
+        working-directory: packages/uikit
+        run: npm publish --access public

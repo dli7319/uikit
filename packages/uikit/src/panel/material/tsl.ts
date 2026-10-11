@@ -181,7 +181,8 @@ export function createPanelTSLNode({
 
 export function applyPanelMaterialTSL(material: Material, info: PanelMaterialInfo) {
   const instanced = info.type === 'instanced'
-  const dataMatrix = info.type === 'normal' ? (info.data instanceof Matrix4 ? info.data : new Matrix4().fromArray(info.data)) : undefined
+  const dataMatrix =
+    info.type === 'normal' ? (info.data instanceof Matrix4 ? info.data : new Matrix4().fromArray(info.data)) : undefined
   const dataNode = info.type === 'normal' ? uniform((material as any).dataUniform || dataMatrix) : undefined
   const mapTexture = (material as any).map ? TSL.texture((material as any).map) : undefined
   let customGradient: any

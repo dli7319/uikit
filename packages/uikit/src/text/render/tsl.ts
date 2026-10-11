@@ -2,23 +2,8 @@ import type { Material } from 'three'
 import * as TSL from 'three/tsl'
 import type { Font } from '../font.js'
 
-const {
-  Fn,
-  float,
-  vec2,
-  vec4,
-  uv,
-  texture,
-  attribute,
-  fwidth,
-  length,
-  smoothstep,
-  pow,
-  positionLocal,
-  min,
-  max,
-  dot,
-} = TSL
+const { Fn, float, vec2, vec4, uv, texture, attribute, fwidth, length, smoothstep, pow, positionLocal, min, max, dot } =
+  TSL
 
 export function createGlyphTSLNode(font: Font) {
   return Fn(() => {
@@ -41,7 +26,9 @@ export function createGlyphTSLNode(font: Font) {
     const median = max(min(msdf.r, msdf.g), min(max(msdf.r, msdf.g), msdf.b))
     const dist = median.sub(0.5).mul(distanceRange)
 
-    const aaDist = length(fwidth(fontUv.mul(pageSize))).mul(0.5).clamp(0.0, distanceRange.mul(0.5))
+    const aaDist = length(fwidth(fontUv.mul(pageSize)))
+      .mul(0.5)
+      .clamp(0.0, distanceRange.mul(0.5))
     const rawAlpha = smoothstep(aaDist.negate(), aaDist, dist)
 
     const gamma = float(1.3)

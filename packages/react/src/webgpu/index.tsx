@@ -1,4 +1,4 @@
-import '@pmndrs/uikit/webgpu'
+import '@david18284/uikit/webgpu'
 import { WebGPURenderer } from 'three/webgpu'
 
 export async function createWebGPURenderer(props: any) {

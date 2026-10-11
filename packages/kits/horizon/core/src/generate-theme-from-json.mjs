@@ -242,7 +242,7 @@ const buildThemes = (root) => {
 
 const generateTs = ({ light, dark }) => {
   const header = [
-    "import { isDarkMode, withOpacity } from '@pmndrs/uikit'",
+    "import { isDarkMode, withOpacity } from '@david18284/uikit'",
     "import { computed, Signal } from '@preact/signals-core'",
     '',
   ].join('\n')

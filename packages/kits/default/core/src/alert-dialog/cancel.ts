@@ -1,6 +1,6 @@
 import type { z } from 'zod'
-import { baseOutPropertiesSchema, createInPropertiesSchema, defineSchema } from '@pmndrs/uikit'
-import { searchFor, Container, InProperties, BaseOutProperties, RenderContext } from '@pmndrs/uikit'
+import { baseOutPropertiesSchema, createInPropertiesSchema, defineSchema } from '@david18284/uikit'
+import { searchFor, Container, InProperties, BaseOutProperties, RenderContext } from '@david18284/uikit'
 import { borderRadius, colors, componentDefaults } from '../theme.js'
 import { AlertDialog } from './index.js'
 export const AlertDialogCancelOutPropertiesSchema = baseOutPropertiesSchema

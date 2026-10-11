@@ -128,7 +128,7 @@ importers:
 
   examples/auth:
     dependencies:
-      '@pmndrs/uikit':
+      '@david18284/uikit':
         specifier: workspace:^
         version: link:../../packages/uikit
       '@pmndrs/uikit-lucide':
@@ -149,7 +149,7 @@ importers:
 
   examples/card:
     dependencies:
-      '@pmndrs/uikit':
+      '@david18284/uikit':
         specifier: workspace:^
         version: link:../../packages/uikit
       '@pmndrs/uikit-default':
@@ -203,12 +203,12 @@ importers:
 
   examples/dashboard:
     dependencies:
+      '@david18284/uikit':
+        specifier: workspace:^
+        version: link:../../packages/uikit
       '@pmndrs/pointer-events':
         specifier: ^6.6.29
         version: 6.6.29
-      '@pmndrs/uikit':
-        specifier: workspace:^
-        version: link:../../packages/uikit
       '@pmndrs/uikit-lucide':
         specifier: workspace:^
         version: link:../../packages/icons/lucide/core
@@ -233,7 +233,7 @@ importers:
 
   examples/default:
     dependencies:
-      '@pmndrs/uikit':
+      '@david18284/uikit':
         specifier: workspace:^
         version: link:../../packages/uikit
       '@preact/signals-core':
@@ -251,12 +251,12 @@ importers:
 
   examples/horizon:
     dependencies:
+      '@david18284/uikit':
+        specifier: workspace:^
+        version: link:../../packages/uikit
       '@pmndrs/msdfonts':
         specifier: workspace:^
         version: link:../../packages/msdfonts
-      '@pmndrs/uikit':
-        specifier: workspace:^
-        version: link:../../packages/uikit
       '@pmndrs/uikit-lucide':
         specifier: workspace:^
         version: link:../../packages/icons/lucide/core
@@ -278,7 +278,7 @@ importers:
 
   examples/lucide:
     dependencies:
-      '@pmndrs/uikit':
+      '@david18284/uikit':
         specifier: workspace:^
         version: link:../../packages/uikit
       '@react-three/uikit':
@@ -290,7 +290,7 @@ importers:
 
   examples/market:
     dependencies:
-      '@pmndrs/uikit':
+      '@david18284/uikit':
         specifier: workspace:^
         version: link:../../packages/uikit
       '@pmndrs/uikit-lucide':
@@ -329,12 +329,12 @@ importers:
 
   examples/ttf-vanilla:
     dependencies:
+      '@david18284/uikit':
+        specifier: workspace:^
+        version: link:../../packages/uikit
       '@pmndrs/pointer-events':
         specifier: ^6.6.29
         version: 6.6.29
-      '@pmndrs/uikit':
-        specifier: workspace:^
-        version: link:../../packages/uikit
 
   examples/uikit:
     dependencies:
@@ -350,15 +350,15 @@ importers:
 
   examples/vanilla:
     dependencies:
+      '@david18284/uikit':
+        specifier: workspace:^
+        version: link:../../packages/uikit
       '@pmndrs/handle':
         specifier: ^6.6.29
         version: 6.6.29(@types/react@19.1.8)(react@19.1.0)
       '@pmndrs/pointer-events':
         specifier: ^6.6.29
         version: 6.6.29
-      '@pmndrs/uikit':
-        specifier: workspace:^
-        version: link:../../packages/uikit
       '@pmndrs/uikit-default':
         specifier: workspace:^
         version: link:../../packages/kits/default/core
@@ -380,7 +380,7 @@ importers:
 
   packages/icons/lucide/core:
     dependencies:
-      '@pmndrs/uikit':
+      '@david18284/uikit':
         specifier: workspace:^
         version: link:../../../uikit
 
@@ -395,7 +395,7 @@ importers:
 
   packages/kits/default/core:
     dependencies:
-      '@pmndrs/uikit':
+      '@david18284/uikit':
         specifier: workspace:^
         version: link:../../../uikit
       '@pmndrs/uikit-lucide':
@@ -420,7 +420,7 @@ importers:
 
   packages/kits/horizon/core:
     dependencies:
-      '@pmndrs/uikit':
+      '@david18284/uikit':
         specifier: workspace:^
         version: link:../../../uikit
       '@pmndrs/uikit-lucide':
@@ -462,12 +462,12 @@ importers:
 
   packages/react:
     dependencies:
+      '@david18284/uikit':
+        specifier: workspace:^
+        version: link:../uikit
       '@pmndrs/pointer-events':
         specifier: ^6.6.29
         version: 6.6.29
-      '@pmndrs/uikit':
-        specifier: workspace:^
-        version: link:../uikit
       '@preact/signals-core':
         specifier: ^1.5.1
         version: 1.8.0
@@ -506,11 +506,11 @@ importers:
   packages/uikit:
     dependencies:
       '@pmndrs/msdfonts':
-        specifier: workspace:^
-        version: link:../msdfonts
+        specifier: ^1.0.76
+        version: 1.0.76
       '@pmndrs/uikit-pub-sub':
-        specifier: workspace:^
-        version: link:../pub-sub
+        specifier: ^1.0.76
+        version: 1.0.76
       '@preact/signals-core':
         specifier: ^1.5.1
         version: 1.8.0
@@ -1607,8 +1607,14 @@ packages:
   '@pmndrs/handle@6.6.29':
     resolution: {integrity: sha512-zfvakgxva2P5nB6HeOuSMGyFFFP6B5cRO61DeHKSm4z7WRW2FT8baaxW5izsYqymzc4Xutc9fpeIxbFL/GbmAw==}
 
+  '@pmndrs/msdfonts@1.0.76':
+    resolution: {integrity: sha512-NKBJIOIrEoJovhes8TzAAmRtUuOPJIpyHjiCSMVfJLoV2MGRsArXiPkEm6+BDCk1N8eiHWuWGlw4/+LoCmHB2A==}
+
   '@pmndrs/pointer-events@6.6.29':
     resolution: {integrity: sha512-o4YD6VfJgDYjFgde/YyAw2X5KY454tdmOXrHGOvKTWJBHzkL90B5vH4rqmexwRVvaDfT3YLvVh/Dm5cBbgZXMg==}
+
+  '@pmndrs/uikit-pub-sub@1.0.76':
+    resolution: {integrity: sha512-+DVXInyj+/GAJJDTvElLrVqh8b1kmnPGZW1UQApUIwxZmhzCPmr2cAz0j1/vNyDG5VQNLWWmkItLi50/chKcwA==}
 
   '@pmndrs/xr@6.6.29':
     resolution: {integrity: sha512-+17cGaV6tlYM6UJznKiPR1qw39NQDAvYchb2TRg8MnxUc9hOXKe/3a62DlLIe3uGfK9dnd7DlZlegeR/jIDEWg==}
@@ -7840,7 +7846,13 @@ snapshots:
       - immer
       - react
 
+  '@pmndrs/msdfonts@1.0.76': {}
+
   '@pmndrs/pointer-events@6.6.29': {}
+
+  '@pmndrs/uikit-pub-sub@1.0.76':
+    dependencies:
+      '@preact/signals-core': 1.8.0
 
   '@pmndrs/xr@6.6.29(@types/react@19.0.8)(react@19.0.0)(three@0.183.2)':
     dependencies:

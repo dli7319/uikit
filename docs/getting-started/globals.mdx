@@ -12,14 +12,14 @@ uikit exposes a few global utilities that influence styling and behavior across 
 - `StyleSheet` (global class registry)
 - `setPreferredColorScheme`, `getPreferredColorScheme`, `basedOnPreferredColorScheme`, `isDarkMode`
 
-These are framework-agnostic (work in `@pmndrs/uikit` and `@react-three/uikit`).
+These are framework-agnostic (work in `@david18284/uikit` and `@react-three/uikit`).
 
 ### Global properties
 
 Use `setGlobalProperties` to set default properties that apply to all components. This is useful for global defaults such as `fontFamilies`, base `color`, `pixelSize`, or shared layout values. Later calls merge into existing defaults; use `resetGlobalProperties` to overwrite.
 
 ```tsx showLineNumbers
-import { setGlobalProperties, resetGlobalProperties } from '@pmndrs/uikit'
+import { setGlobalProperties, resetGlobalProperties } from '@david18284/uikit'
 
 // set or merge global defaults
 setGlobalProperties({
@@ -41,7 +41,7 @@ resetGlobalProperties({
 `StyleSheet` is a global map of reusable classes. You can define named styles once and assign them via a component's `classList` (string names) or by passing inline objects.
 
 ```tsx showLineNumbers
-import { StyleSheet } from '@pmndrs/uikit'
+import { StyleSheet } from '@david18284/uikit'
 
 // define classes globally
 StyleSheet.button = {
@@ -82,7 +82,7 @@ import {
   getPreferredColorScheme,
   basedOnPreferredColorScheme,
   isDarkMode,
-} from '@pmndrs/uikit'
+} from '@david18284/uikit'
 
 setPreferredColorScheme('light') // 'light' | 'dark' | 'system'
 console.log(getPreferredColorScheme())

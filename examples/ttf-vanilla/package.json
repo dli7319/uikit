@@ -2,7 +2,7 @@
   "type": "module",
   "dependencies": {
     "@pmndrs/pointer-events": "^6.6.29",
-    "@pmndrs/uikit": "workspace:^"
+    "@david18284/uikit": "workspace:^"
   },
   "scripts": {
     "build": "vite build",

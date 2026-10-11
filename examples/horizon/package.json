@@ -1,7 +1,7 @@
 {
   "type": "module",
   "dependencies": {
-    "@pmndrs/uikit": "workspace:^",
+    "@david18284/uikit": "workspace:^",
     "@pmndrs/uikit-lucide": "workspace:^",
     "@preact/signals-core": "^1.5.1",
     "@react-three/uikit": "workspace:^",

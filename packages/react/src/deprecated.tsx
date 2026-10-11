@@ -1,6 +1,6 @@
 import { forwardRef, ReactNode } from 'react'
 import { Container, ContainerProperties, VanillaContainer, VanillaSvg, SvgProperties, Svg } from './index.js'
-import { FontFamilies } from '@pmndrs/uikit'
+import { FontFamilies } from '@david18284/uikit'
 import { Signal } from '@preact/signals-core'
 
 /**

@@ -11,9 +11,9 @@ import {
   Scene,
   WebGLRenderer,
 } from 'three'
-import '@pmndrs/uikit/webgpu'
+import '@david18284/uikit/webgpu'
 import { WebGPURenderer } from 'three/webgpu'
-import { reversePainterSortStable, BaseOutProperties, Container, Fullscreen, InProperties, Text } from '@pmndrs/uikit'
+import { reversePainterSortStable, BaseOutProperties, Container, Fullscreen, InProperties, Text } from '@david18284/uikit'
 import { PlusIcon } from '@pmndrs/uikit-lucide'
 import { forwardHtmlEvents } from '@pmndrs/pointer-events'
 import { OrbitHandles } from '@pmndrs/handle'

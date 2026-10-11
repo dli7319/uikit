@@ -1,7 +1,7 @@
 import { object, string } from 'zod'
 import type { z } from 'zod'
-import { baseOutPropertyShape, createInPropertiesSchema, defineSchema } from '@pmndrs/uikit'
-import { BaseOutProperties, Container, InProperties, RenderContext, WithSignal } from '@pmndrs/uikit'
+import { baseOutPropertyShape, createInPropertiesSchema, defineSchema } from '@david18284/uikit'
+import { BaseOutProperties, Container, InProperties, RenderContext, WithSignal } from '@david18284/uikit'
 import { Dropdown } from './index.js'
 export const DropdownListItemOutPropertiesSchema = /* @__PURE__ */ defineSchema(() =>
   object({

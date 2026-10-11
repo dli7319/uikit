@@ -1,7 +1,7 @@
 import { enum as enumSchema, object } from 'zod'
 import type { z } from 'zod'
-import { baseOutPropertyShape, createInPropertiesSchema, defineSchema } from '@pmndrs/uikit'
-import { BaseOutProperties, Container, InProperties } from '@pmndrs/uikit'
+import { baseOutPropertyShape, createInPropertiesSchema, defineSchema } from '@david18284/uikit'
+import { BaseOutProperties, Container, InProperties } from '@david18284/uikit'
 import { colors, componentDefaults } from '../theme.js'
 import { computed } from '@preact/signals-core'
 export const SeparatorOutPropertiesSchema = /* @__PURE__ */ defineSchema(() =>

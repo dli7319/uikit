@@ -1,5 +1,5 @@
 import type { z } from 'zod'
-import { InProperties, BaseOutProperties, RenderContext, Text } from '@pmndrs/uikit'
+import { InProperties, BaseOutProperties, RenderContext, Text } from '@david18284/uikit'
 import { ChevronRight } from '@pmndrs/uikit-lucide'
 import { PaginationLink, PaginationLinkOutProperties, PaginationLinkPropertiesSchema } from './link.js'
 import { colors, componentDefaults, contentDefaults, textDefaults } from '../theme.js'

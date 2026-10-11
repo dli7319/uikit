@@ -1,6 +1,6 @@
 import { custom, enum as enumSchema, literal, object, string, union } from 'zod'
 import type { z } from 'zod'
-import { baseOutPropertyShape, createInPropertiesSchema, defineSchema, numberValueSchema } from '@pmndrs/uikit'
+import { baseOutPropertyShape, createInPropertiesSchema, defineSchema, numberValueSchema } from '@david18284/uikit'
 import {
   abortableEffect,
   BaseOutProperties,
@@ -9,7 +9,7 @@ import {
   InProperties,
   RenderContext,
   Text,
-} from '@pmndrs/uikit'
+} from '@david18284/uikit'
 import { computed, signal } from '@preact/signals-core'
 import { theme } from '../theme.js'
 import { Vector3 } from 'three'

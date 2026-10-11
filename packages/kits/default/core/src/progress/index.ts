@@ -10,7 +10,7 @@ import {
   defineSchema,
   numberOrPercentageValueSchema,
   type NumberOrPercentageValue,
-} from '@pmndrs/uikit'
+} from '@david18284/uikit'
 import { computed } from '@preact/signals-core'
 import { colors, componentDefaults } from '../theme.js'
 export const ProgressOutPropertiesSchema = /* @__PURE__ */ defineSchema(() =>

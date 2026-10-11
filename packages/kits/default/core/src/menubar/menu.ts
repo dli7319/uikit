@@ -1,6 +1,6 @@
 import type { z } from 'zod'
-import { ContainerPropertiesSchema } from '@pmndrs/uikit'
-import { Container, InProperties, BaseOutProperties, RenderContext, ContainerProperties } from '@pmndrs/uikit'
+import { ContainerPropertiesSchema } from '@david18284/uikit'
+import { Container, InProperties, BaseOutProperties, RenderContext, ContainerProperties } from '@david18284/uikit'
 import { colors, componentDefaults } from '../theme.js'
 export const MenubarMenuPropertiesSchema = ContainerPropertiesSchema
 

@@ -1,6 +1,6 @@
 import type { z } from 'zod'
-import { ContainerPropertiesSchema } from '@pmndrs/uikit'
-import { InProperties, BaseOutProperties, RenderContext, Container } from '@pmndrs/uikit'
+import { ContainerPropertiesSchema } from '@david18284/uikit'
+import { InProperties, BaseOutProperties, RenderContext, Container } from '@david18284/uikit'
 import { Ellipsis } from '@pmndrs/uikit-lucide'
 import { colors, componentDefaults, contentDefaults } from '../theme.js'
 import type { Object3D } from 'three'

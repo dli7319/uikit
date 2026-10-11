@@ -1,7 +1,7 @@
 import { custom, object } from 'zod'
 import type { z } from 'zod'
-import { baseOutPropertyShape, createInPropertiesSchema, defineSchema } from '@pmndrs/uikit'
-import { Container, InProperties, BaseOutProperties, RenderContext } from '@pmndrs/uikit'
+import { baseOutPropertyShape, createInPropertiesSchema, defineSchema } from '@david18284/uikit'
+import { Container, InProperties, BaseOutProperties, RenderContext } from '@david18284/uikit'
 import type { ToggleSize, ToggleVariant } from './item.js'
 import { colors, componentDefaults } from '../theme.js'
 export const ToggleGroupOutPropertiesSchema = /* @__PURE__ */ defineSchema(() =>

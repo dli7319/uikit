@@ -1,5 +1,5 @@
 import type { z } from 'zod'
-import { SvgPropertiesSchema } from '@pmndrs/uikit'
+import { SvgPropertiesSchema } from '@david18284/uikit'
 import {
   searchFor,
   SvgOutProperties,
@@ -7,7 +7,7 @@ import {
   InProperties,
   RenderContext,
   BaseOutProperties,
-} from '@pmndrs/uikit'
+} from '@david18284/uikit'
 import { ChevronDown } from '@pmndrs/uikit-lucide'
 import { computed } from '@preact/signals-core'
 import { Accordion } from './index.js'

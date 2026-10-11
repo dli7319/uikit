@@ -1,5 +1,5 @@
 import type { z } from 'zod'
-import { ContainerPropertiesSchema } from '@pmndrs/uikit'
+import { ContainerPropertiesSchema } from '@david18284/uikit'
 import {
   BaseOutProperties,
   componentDefaults,
@@ -8,7 +8,7 @@ import {
   InProperties,
   RenderContext,
   WithSignal,
-} from '@pmndrs/uikit'
+} from '@david18284/uikit'
 export const ButtonLabelPropertiesSchema = ContainerPropertiesSchema
 
 export type ButtonLabelProperties = z.input<typeof ButtonLabelPropertiesSchema>

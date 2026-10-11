@@ -8,7 +8,7 @@ import {
   inputDefaults as baseInputDefaults,
   textDefaults as baseTextDefaults,
   contentDefaults as baseContentDefaults,
-} from '@pmndrs/uikit'
+} from '@david18284/uikit'
 import { Color, ColorRepresentation } from 'three'
 
 function hsl(h: number, s: number, l: number): Signal<ColorRepresentation> | ColorRepresentation {

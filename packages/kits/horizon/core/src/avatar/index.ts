@@ -1,6 +1,6 @@
 import { boolean, enum as enumSchema, object, string } from 'zod'
 import type { z } from 'zod'
-import { baseOutPropertyShape, createInPropertiesSchema, defineSchema } from '@pmndrs/uikit'
+import { baseOutPropertyShape, createInPropertiesSchema, defineSchema } from '@david18284/uikit'
 import {
   Image,
   ImageOutProperties,
@@ -10,7 +10,7 @@ import {
   Container,
   abortableEffect,
   UnionizeVariants,
-} from '@pmndrs/uikit'
+} from '@david18284/uikit'
 import { Texture } from 'three'
 import { theme } from '../theme.js'
 import { computed } from '@preact/signals-core'

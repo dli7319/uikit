@@ -1,7 +1,7 @@
 import { boolean, custom, enum as enumSchema, object, string } from 'zod'
 import type { z } from 'zod'
-import { baseOutPropertyShape, createInPropertiesSchema, defineSchema } from '@pmndrs/uikit'
-import { BaseOutProperties, Container, ContainerProperties, InProperties, RenderContext } from '@pmndrs/uikit'
+import { baseOutPropertyShape, createInPropertiesSchema, defineSchema } from '@david18284/uikit'
+import { BaseOutProperties, Container, ContainerProperties, InProperties, RenderContext } from '@david18284/uikit'
 import { computed, signal } from '@preact/signals-core'
 import { theme } from '../theme.js'
 type DropdownSizeProps = Pick<ContainerProperties, 'paddingX' | 'paddingY' | 'fontSize' | 'lineHeight'>

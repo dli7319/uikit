@@ -1,6 +1,6 @@
 import type { z } from 'zod'
-import { ContainerPropertiesSchema } from '@pmndrs/uikit'
-import { Container, ContainerProperties, InProperties, BaseOutProperties, RenderContext } from '@pmndrs/uikit'
+import { ContainerPropertiesSchema } from '@david18284/uikit'
+import { Container, ContainerProperties, InProperties, BaseOutProperties, RenderContext } from '@david18284/uikit'
 import { borderRadius, colors, componentDefaults } from '../theme.js'
 export const TabsListPropertiesSchema = ContainerPropertiesSchema
 

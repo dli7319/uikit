@@ -1,4 +1,4 @@
-import { isDarkMode } from '@pmndrs/uikit'
+import { isDarkMode } from '@david18284/uikit'
 import { computed } from '@preact/signals-core'
 import { Color, MeshBasicMaterial } from 'three'
 

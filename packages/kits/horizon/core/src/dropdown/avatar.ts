@@ -1,5 +1,12 @@
 import type { z } from 'zod'
-import { BaseOutProperties, componentDefaults, Container, InProperties, RenderContext, WithSignal } from '@david18284/uikit'
+import {
+  BaseOutProperties,
+  componentDefaults,
+  Container,
+  InProperties,
+  RenderContext,
+  WithSignal,
+} from '@david18284/uikit'
 import { computed } from '@preact/signals-core'
 import { Dropdown } from './index.js'
 import { Avatar, AvatarOutProperties, AvatarPropertiesSchema } from '../avatar/index.js'

@@ -61,4 +61,6 @@ jobs:
 
       - name: Publish to npm
         working-directory: packages/uikit
-        run: npm publish --access public
+        # --tag is required: npm refuses to publish prerelease versions (e.g.
+        # 1.0.76-dli.1) without an explicit dist-tag.
+        run: npm publish --access public --tag latest

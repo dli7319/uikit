@@ -2,7 +2,7 @@
   "name": "@david18284/uikit",
   "type": "module",
   "description": "Build performant 3D user interfaces with Three.js and yoga.",
-  "version": "1.0.76-dli.0",
+  "version": "1.0.76-dli.1",
   "sideEffects": false,
   "license": "SEE LICENSE IN LICENSE",
   "homepage": "https://github.com/pmndrs/uikit",

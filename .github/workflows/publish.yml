@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: 'Version to publish (e.g. 1.0.76-dli.1)'
+        description: 'Version to publish (e.g. 1.0.76-dli.2)'
         required: true
         type: string
 
@@ -46,21 +46,42 @@ jobs:
           pnpm --filter @david18284/uikit run generate
           pnpm --filter @david18284/uikit run build
 
-      - name: Set package version
+      - name: Prepare publish manifest
         env:
           EVENT_NAME: ${{ github.event_name }}
           INPUT_VERSION: ${{ inputs.version }}
         run: |
           if [ "$EVENT_NAME" = "workflow_dispatch" ]; then
             VERSION="$INPUT_VERSION"
-          else
+          elif [ "$GITHUB_REF_TYPE" = "tag" ]; then
             VERSION="${GITHUB_REF_NAME#v}"
+          else
+            # fallback (e.g. re-run without ref change): version in package.json
+            VERSION="$(node -p "require('./packages/uikit/package.json').version")"
           fi
+          echo "VERSION=$VERSION" >> "$GITHUB_ENV"
           echo "Publishing version: $VERSION"
-          node -e 'const fs=require("fs");const p="packages/uikit/package.json";const d=JSON.parse(fs.readFileSync(p,"utf8"));d.version=process.argv[1];fs.writeFileSync(p,JSON.stringify(d,null,2)+"\n")' "$VERSION"
+          # Inline the publishConfig remapping (main/exports): npm 13 stops
+          # honoring publishConfig field overrides, and provenance wants the
+          # final manifest to be correct as published.
+          node -e '
+            const fs = require("fs");
+            const p = "packages/uikit/package.json";
+            const d = JSON.parse(fs.readFileSync(p, "utf8"));
+            if (process.argv[1]) d.version = process.argv[1];
+            d.main = "dist/index.js";
+            d.exports = { ".": "./dist/index.js", "./webgpu": "./dist/webgpu/index.js" };
+            delete d.publishConfig;
+            fs.writeFileSync(p, JSON.stringify(d, null, 2) + "\n");
+          ' "$VERSION"
 
       - name: Publish to npm
         working-directory: packages/uikit
-        # --tag is required: npm refuses to publish prerelease versions (e.g.
-        # 1.0.76-dli.1) without an explicit dist-tag.
-        run: npm publish --access public --tag latest
+        run: |
+          if npm view "@david18284/uikit@$VERSION" version >/dev/null 2>&1; then
+            echo "Version $VERSION is already on npm — skipping publish."
+          else
+            # --tag is required: npm refuses to publish prerelease versions
+            # (e.g. 1.0.76-dli.2) without an explicit dist-tag.
+            npm publish --access public --tag latest
+          fi

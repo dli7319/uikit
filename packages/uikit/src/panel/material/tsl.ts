@@ -1,5 +1,5 @@
 import { Material, Matrix4 } from 'three'
-import * as TSL from 'three/tsl'
+import { TSL } from 'three/webgpu'
 import type { PanelMaterialInfo } from './create.js'
 
 const {

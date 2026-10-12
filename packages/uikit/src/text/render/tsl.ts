@@ -1,5 +1,5 @@
 import type { Material } from 'three'
-import * as TSL from 'three/tsl'
+import { TSL } from 'three/webgpu'
 import type { Font } from '../font.js'
 
 const { Fn, float, vec2, vec4, uv, texture, attribute, fwidth, length, smoothstep, pow, positionLocal, min, max, dot } =

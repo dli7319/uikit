@@ -348,8 +348,10 @@ function applyAppearancePropertiesToGroup(
 
     child.renderOrder = renderOrder
     const material: MeshBasicMaterial = child.material
-    child.userData.color ??= material.color.clone()
-    material.color.copy(color != null ? colorHelper : child.userData.color)
+    if (material.color != null) {
+      child.userData.color ??= material.color.clone()
+      material.color.copy(color != null ? colorHelper : child.userData.color)
+    }
     material.opacity = color != null ? colorArrayHelper[3]! : opacity
     material.depthTest = depthTest
     material.depthWrite = depthWrite

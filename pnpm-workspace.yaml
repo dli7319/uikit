@@ -5,6 +5,9 @@ packages:
 
 overrides:
   three-stdlib: ^2.36.1
+  # force ONE three instance: R3F/drei peers otherwise resolve 0.183.x,
+  # which breaks instanceof checks against uikit (three 0.186) in builds
+  three: 0.186.0
 
 onlyBuiltDependencies:
   - esbuild

@@ -6,7 +6,6 @@ settings:
 
 overrides:
   three-stdlib: ^2.36.1
-  three: 0.186.0
 
 importers:
 
@@ -14,19 +13,19 @@ importers:
     devDependencies:
       '@mdx-js/mdx':
         specifier: ^3.1.0
-        version: 3.1.1(supports-color@8.1.1)
+        version: 3.1.1
       '@react-three/drei':
         specifier: ^10.4.2
-        version: 10.4.2(@react-three/fiber@9.0.0-rc.10(@types/react@19.0.8)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(three@0.186.0)(use-sync-external-store@1.4.0(react@19.0.0)))(@types/react@19.0.8)(@types/three@0.175.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(three@0.186.0)
+        version: 10.4.2(@react-three/fiber@9.0.0-rc.10(@types/react@19.0.8)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(three@0.183.2)(use-sync-external-store@1.4.0(react@19.0.0)))(@types/react@19.0.8)(@types/three@0.175.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(three@0.183.2)
       '@react-three/eslint-plugin':
         specifier: ^0.1.1
-        version: 0.1.2(supports-color@8.1.1)
+        version: 0.1.2
       '@react-three/fiber':
         specifier: rc
-        version: 9.0.0-rc.10(@types/react@19.0.8)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(three@0.186.0)(use-sync-external-store@1.4.0(react@19.0.0))
+        version: 9.0.0-rc.10(@types/react@19.0.8)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(three@0.183.2)(use-sync-external-store@1.4.0(react@19.0.0))
       '@react-three/xr':
         specifier: ^6.6.29
-        version: 6.6.29(@react-three/fiber@9.0.0-rc.10(@types/react@19.0.8)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(three@0.186.0)(use-sync-external-store@1.4.0(react@19.0.0)))(@types/react@19.0.8)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(three@0.186.0)
+        version: 6.6.29(@react-three/fiber@9.0.0-rc.10(@types/react@19.0.8)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(three@0.183.2)(use-sync-external-store@1.4.0(react@19.0.0)))(@types/react@19.0.8)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(three@0.183.2)
       '@types/chai':
         specifier: ^4.3.10
         version: 4.3.20
@@ -50,13 +49,13 @@ importers:
         version: 0.175.0
       '@typescript-eslint/eslint-plugin':
         specifier: ^7.0.2
-        version: 7.18.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1(supports-color@8.1.1))(supports-color@8.1.1)(typescript@5.7.3))(eslint@8.57.1(supports-color@8.1.1))(supports-color@8.1.1)(typescript@5.7.3)
+        version: 7.18.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.7.3))(eslint@8.57.1)(typescript@5.7.3)
       '@typescript-eslint/parser':
         specifier: ^7.0.2
-        version: 7.18.0(eslint@8.57.1(supports-color@8.1.1))(supports-color@8.1.1)(typescript@5.7.3)
+        version: 7.18.0(eslint@8.57.1)(typescript@5.7.3)
       '@vitejs/plugin-react':
         specifier: ^4.2.1
-        version: 4.3.4(supports-color@8.1.1)(vite@5.4.14(@types/node@20.17.16)(terser@5.43.1))
+        version: 4.3.4(vite@5.4.14(@types/node@20.17.16)(terser@5.43.1))
       chai:
         specifier: ^4.3.10
         version: 4.5.0
@@ -65,28 +64,28 @@ importers:
         version: 7.1.2(chai@4.5.0)
       eslint:
         specifier: ^8.56.0
-        version: 8.57.1(supports-color@8.1.1)
+        version: 8.57.1
       eslint-config-prettier:
         specifier: ^9.1.0
-        version: 9.1.0(eslint@8.57.1(supports-color@8.1.1))
+        version: 9.1.0(eslint@8.57.1)
       eslint-import-resolver-alias:
         specifier: ^1.1.2
-        version: 1.1.2(eslint-plugin-import@2.31.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1(supports-color@8.1.1))(supports-color@8.1.1)(typescript@5.7.3))(eslint@8.57.1(supports-color@8.1.1))(supports-color@8.1.1))
+        version: 1.1.2(eslint-plugin-import@2.31.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.7.3))(eslint@8.57.1))
       eslint-plugin-import:
         specifier: ^2.29.1
-        version: 2.31.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1(supports-color@8.1.1))(supports-color@8.1.1)(typescript@5.7.3))(eslint@8.57.1(supports-color@8.1.1))(supports-color@8.1.1)
+        version: 2.31.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.7.3))(eslint@8.57.1)
       eslint-plugin-jest:
         specifier: ^27.9.0
-        version: 27.9.0(@typescript-eslint/eslint-plugin@7.18.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1(supports-color@8.1.1))(supports-color@8.1.1)(typescript@5.7.3))(eslint@8.57.1(supports-color@8.1.1))(supports-color@8.1.1)(typescript@5.7.3))(eslint@8.57.1(supports-color@8.1.1))(jest@29.7.0(@types/node@20.17.16)(supports-color@8.1.1)(ts-node@10.9.2(@types/node@20.17.16)(typescript@5.7.3)))(supports-color@8.1.1)(typescript@5.7.3)
+        version: 27.9.0(@typescript-eslint/eslint-plugin@7.18.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.7.3))(eslint@8.57.1)(typescript@5.7.3))(eslint@8.57.1)(jest@29.7.0(@types/node@20.17.16)(ts-node@10.9.2(@types/node@20.17.16)(typescript@5.7.3)))(typescript@5.7.3)
       eslint-plugin-prettier:
         specifier: ^5.1.3
-        version: 5.2.3(@types/eslint@9.6.1)(eslint-config-prettier@9.1.0(eslint@8.57.1(supports-color@8.1.1)))(eslint@8.57.1(supports-color@8.1.1))(prettier@3.4.2)
+        version: 5.2.3(@types/eslint@9.6.1)(eslint-config-prettier@9.1.0(eslint@8.57.1))(eslint@8.57.1)(prettier@3.4.2)
       eslint-plugin-react:
         specifier: ^7.33.2
-        version: 7.37.4(eslint@8.57.1(supports-color@8.1.1))
+        version: 7.37.4(eslint@8.57.1)
       eslint-plugin-react-hooks:
         specifier: ^4.6.0
-        version: 4.6.2(eslint@8.57.1(supports-color@8.1.1))
+        version: 4.6.2(eslint@8.57.1)
       json:
         specifier: ^11.0.0
         version: 11.0.0
@@ -106,8 +105,8 @@ importers:
         specifier: ^19
         version: 19.0.0(react@19.0.0)
       three:
-        specifier: 0.186.0
-        version: 0.186.0
+        specifier: ^0.183.2
+        version: 0.183.2
       ts-node:
         specifier: ^10.9.2
         version: 10.9.2(@types/node@20.17.16)(typescript@5.7.3)
@@ -119,7 +118,7 @@ importers:
         version: 0.65.1
       vercel:
         specifier: ^34.1.8
-        version: 34.4.0(supports-color@8.1.1)
+        version: 34.4.0
       vite:
         specifier: ^5.4.14
         version: 5.4.14(@types/node@20.17.16)(terser@5.43.1)
@@ -164,13 +163,13 @@ importers:
         version: 1.8.0
       '@react-three/drei':
         specifier: ^9.121.4
-        version: 9.121.4(@react-three/fiber@8.17.12(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.186.0))(@types/react@18.3.18)(@types/three@0.175.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.186.0)(use-sync-external-store@1.4.0(react@18.3.1))
+        version: 9.121.4(@react-three/fiber@8.17.12(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.183.2))(@types/react@18.3.18)(@types/three@0.175.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.183.2)(use-sync-external-store@1.4.0(react@18.3.1))
       '@react-three/fiber':
         specifier: ^8.17.12
-        version: 8.17.12(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.186.0)
+        version: 8.17.12(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.183.2)
       '@react-three/rapier':
         specifier: ^1.3.0
-        version: 1.5.0(@react-three/fiber@8.17.12(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.186.0))(react@18.3.1)(three@0.186.0)
+        version: 1.5.0(@react-three/fiber@8.17.12(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.183.2))(react@18.3.1)(three@0.183.2)
       '@react-three/uikit':
         specifier: workspace:^
         version: link:../../packages/react
@@ -182,7 +181,7 @@ importers:
         version: link:../../packages/icons/lucide/react
       '@splinetool/r3f-spline':
         specifier: ^1.0.2
-        version: 1.0.2(@react-three/fiber@8.17.12(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.186.0))(@splinetool/loader@1.9.59(three@0.186.0))
+        version: 1.0.2(@react-three/fiber@8.17.12(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.183.2))(@splinetool/loader@1.9.59(three@0.183.2))
       '@types/react':
         specifier: ^18
         version: 18.3.18
@@ -191,7 +190,7 @@ importers:
         version: 18.3.5(@types/react@18.3.18)
       maath:
         specifier: ^0.10.7
-        version: 0.10.8(@types/three@0.175.0)(three@0.186.0)
+        version: 0.10.8(@types/three@0.175.0)(three@0.183.2)
       react:
         specifier: ^18
         version: 18.3.1
@@ -227,7 +226,7 @@ importers:
         version: link:../../packages/icons/lucide/react
       vite-plugin-mkcert:
         specifier: ^1.17.4
-        version: 1.17.6(supports-color@8.1.1)(vite@5.4.14(@types/node@20.17.16)(terser@5.43.1))
+        version: 1.17.6(vite@5.4.14(@types/node@20.17.16)(terser@5.43.1))
       zustand:
         specifier: ^4.4.7
         version: 4.5.6(@types/react@19.1.8)(react@19.1.0)
@@ -377,7 +376,7 @@ importers:
         version: 0.511.0
       oslllo-svg-fixer:
         specifier: ^5.0.0
-        version: 5.0.0(debug@4.4.3(supports-color@8.1.1))
+        version: 5.0.0
 
   packages/icons/lucide/core:
     dependencies:
@@ -450,7 +449,7 @@ importers:
     dependencies:
       msdf-bmfont-xml:
         specifier: ^2.7.0
-        version: 2.7.0(debug@4.4.3(supports-color@8.1.1))
+        version: 2.7.0
       sharp-cli:
         specifier: '4.1'
         version: 4.1.1
@@ -484,10 +483,10 @@ importers:
     devDependencies:
       '@react-three/fiber':
         specifier: rc
-        version: 9.0.0-rc.10(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.186.0)(use-sync-external-store@1.4.0(react@19.1.0))
+        version: 9.0.0-rc.10(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.183.2)(use-sync-external-store@1.4.0(react@19.1.0))
       '@react-three/test-renderer':
         specifier: ^9.1.0
-        version: 9.1.0(@react-three/fiber@9.0.0-rc.10(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.186.0)(use-sync-external-store@1.4.0(react@19.1.0)))(react@19.1.0)(three@0.186.0)
+        version: 9.1.0(@react-three/fiber@9.0.0-rc.10(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.183.2)(use-sync-external-store@1.4.0(react@19.1.0)))(react@19.1.0)(three@0.183.2)
       '@testing-library/react':
         specifier: ^16.3.0
         version: 16.3.0(@testing-library/dom@10.4.1)(@types/react-dom@19.0.3(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -496,13 +495,13 @@ importers:
         version: 10.2.0(@testing-library/dom@10.4.1)(@types/react-dom@19.0.3(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@vitest/coverage-v8':
         specifier: ^3.2.4
-        version: 3.2.4(supports-color@8.1.1)(vitest@3.2.4(@edge-runtime/vm@3.2.0)(@types/debug@4.1.12)(@types/node@20.17.16)(jsdom@27.0.0(postcss@8.5.1)(supports-color@8.1.1))(supports-color@8.1.1)(terser@5.43.1))
+        version: 3.2.4(vitest@3.2.4(@edge-runtime/vm@3.2.0)(@types/debug@4.1.12)(@types/node@20.17.16)(jsdom@27.0.0(postcss@8.5.1))(terser@5.43.1))
       jsdom:
         specifier: ^27.0.0
-        version: 27.0.0(postcss@8.5.1)(supports-color@8.1.1)
+        version: 27.0.0(postcss@8.5.1)
       vitest:
         specifier: ^3.2.4
-        version: 3.2.4(@edge-runtime/vm@3.2.0)(@types/debug@4.1.12)(@types/node@20.17.16)(jsdom@27.0.0(postcss@8.5.1)(supports-color@8.1.1))(supports-color@8.1.1)(terser@5.43.1)
+        version: 3.2.4(@edge-runtime/vm@3.2.0)(@types/debug@4.1.12)(@types/node@20.17.16)(jsdom@27.0.0(postcss@8.5.1))(terser@5.43.1)
 
   packages/uikit:
     dependencies:
@@ -519,8 +518,8 @@ importers:
         specifier: ^1.2.4
         version: 1.2.4
       three:
-        specifier: 0.186.0
-        version: 0.186.0
+        specifier: '>=0.162'
+        version: 0.183.2
       yoga-layout:
         specifier: ^3.2.1
         version: 3.2.1
@@ -979,6 +978,7 @@ packages:
 
   '@fortawesome/react-fontawesome@0.2.2':
     resolution: {integrity: sha512-EnkrprPNqI6SXJl//m29hpaNzOp1bruISWaOiRtkMi/xSvHJlzc2j2JAYS7egxt/EbjSNV/k6Xy0AQI6vB2+1g==}
+    deprecated: v0.2.x is no longer supported. Unless you are still using FontAwesome 5, please update to v3.1.1 or greater.
     peerDependencies:
       '@fortawesome/fontawesome-svg-core': ~1 || ~6
       react: '>=16.3'
@@ -1431,7 +1431,7 @@ packages:
   '@monogrid/gainmap-js@3.1.0':
     resolution: {integrity: sha512-Obb0/gEd/HReTlg8ttaYk+0m62gQJmCblMOjHSMHRrBP2zdfKMHLCRbh/6ex9fSUJMKdjjIEiohwkbGD3wj2Nw==}
     peerDependencies:
-      three: 0.186.0
+      three: '>= 0.159.0'
 
   '@napi-rs/nice-android-arm-eabi@1.0.1':
     resolution: {integrity: sha512-5qpvOu5IGwDo7MEKVqqyAxF90I6aLj4n07OzpARdgDRfz8UbBztTByBp0RC59r3J1Ij8uzYi6jI7r5Lws7nn6w==}
@@ -1474,42 +1474,49 @@ packages:
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
+    libc: [glibc]
 
   '@napi-rs/nice-linux-arm64-musl@1.0.1':
     resolution: {integrity: sha512-wG8fa2VKuWM4CfjOjjRX9YLIbysSVV1S3Kgm2Fnc67ap/soHBeYZa6AGMeR5BJAylYRjnoVOzV19Cmkco3QEPw==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
+    libc: [musl]
 
   '@napi-rs/nice-linux-ppc64-gnu@1.0.1':
     resolution: {integrity: sha512-lxQ9WrBf0IlNTCA9oS2jg/iAjQyTI6JHzABV664LLrLA/SIdD+I1i3Mjf7TsnoUbgopBcCuDztVLfJ0q9ubf6Q==}
     engines: {node: '>= 10'}
     cpu: [ppc64]
     os: [linux]
+    libc: [glibc]
 
   '@napi-rs/nice-linux-riscv64-gnu@1.0.1':
     resolution: {integrity: sha512-3xs69dO8WSWBb13KBVex+yvxmUeEsdWexxibqskzoKaWx9AIqkMbWmE2npkazJoopPKX2ULKd8Fm9veEn0g4Ig==}
     engines: {node: '>= 10'}
     cpu: [riscv64]
     os: [linux]
+    libc: [glibc]
 
   '@napi-rs/nice-linux-s390x-gnu@1.0.1':
     resolution: {integrity: sha512-lMFI3i9rlW7hgToyAzTaEybQYGbQHDrpRkg+1gJWEpH0PLAQoZ8jiY0IzakLfNWnVda1eTYYlxxFYzW8Rqczkg==}
     engines: {node: '>= 10'}
     cpu: [s390x]
     os: [linux]
+    libc: [glibc]
 
   '@napi-rs/nice-linux-x64-gnu@1.0.1':
     resolution: {integrity: sha512-XQAJs7DRN2GpLN6Fb+ZdGFeYZDdGl2Fn3TmFlqEL5JorgWKrQGRUrpGKbgZ25UeZPILuTKJ+OowG2avN8mThBA==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
+    libc: [glibc]
 
   '@napi-rs/nice-linux-x64-musl@1.0.1':
     resolution: {integrity: sha512-/rodHpRSgiI9o1faq9SZOp/o2QkKQg7T+DK0R5AkbnI/YxvAIEHf2cngjYzLMQSQgUhxym+LFr+UGZx4vK4QdQ==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
+    libc: [musl]
 
   '@napi-rs/nice-win32-arm64-msvc@1.0.1':
     resolution: {integrity: sha512-rEcz9vZymaCB3OqEXoHnp9YViLct8ugF+6uO5McifTedjq4QMQs3DHz35xBEGhH3gJWEsXMUbzazkz5KNM5YUg==}
@@ -1620,7 +1627,7 @@ packages:
   '@pmndrs/xr@6.6.29':
     resolution: {integrity: sha512-+17cGaV6tlYM6UJznKiPR1qw39NQDAvYchb2TRg8MnxUc9hOXKe/3a62DlLIe3uGfK9dnd7DlZlegeR/jIDEWg==}
     peerDependencies:
-      three: 0.186.0
+      three: '*'
 
   '@preact/signals-core@1.8.0':
     resolution: {integrity: sha512-OBvUsRZqNmjzCZXWLxkZfhcgT+Fk8DDcT/8vD6a1xhDemodyy87UJRJfASMuSD8FaAIeGgGm85ydXhm7lr4fyA==}
@@ -1659,7 +1666,7 @@ packages:
       '@react-three/fiber': ^9.0.0
       react: ^19
       react-dom: ^19
-      three: 0.186.0
+      three: '>=0.159'
     peerDependenciesMeta:
       react-dom:
         optional: true
@@ -1713,7 +1720,7 @@ packages:
       react: ^19.0.0
       react-dom: ^19.0.0
       react-native: '>=0.78'
-      three: 0.186.0
+      three: '>=0.156'
     peerDependenciesMeta:
       expo:
         optional: true
@@ -1748,7 +1755,7 @@ packages:
       '@react-three/fiber': '>=8'
       react: '>=18'
       react-dom: '>=18'
-      three: 0.186.0
+      three: '*'
 
   '@resvg/resvg-js-android-arm-eabi@2.6.2':
     resolution: {integrity: sha512-FrJibrAk6v29eabIPgcTUMPXiEz8ssrAk7TXxsiZzww9UTQ1Z5KAbFJs+Z0Ez+VZTYgnE5IQJqBcoSiMebtPHA==}
@@ -1785,24 +1792,28 @@ packages:
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
+    libc: [glibc]
 
   '@resvg/resvg-js-linux-arm64-musl@2.6.2':
     resolution: {integrity: sha512-3h3dLPWNgSsD4lQBJPb4f+kvdOSJHa5PjTYVsWHxLUzH4IFTJUAnmuWpw4KqyQ3NA5QCyhw4TWgxk3jRkQxEKg==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
+    libc: [musl]
 
   '@resvg/resvg-js-linux-x64-gnu@2.6.2':
     resolution: {integrity: sha512-IVUe+ckIerA7xMZ50duAZzwf1U7khQe2E0QpUxu5MBJNao5RqC0zwV/Zm965vw6D3gGFUl7j4m+oJjubBVoftw==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
+    libc: [glibc]
 
   '@resvg/resvg-js-linux-x64-musl@2.6.2':
     resolution: {integrity: sha512-UOf83vqTzoYQO9SZ0fPl2ZIFtNIz/Rr/y+7X8XRX1ZnBYsQ/tTb+cj9TE+KHOdmlTFBxhYzVkP2lRByCzqi4jQ==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
+    libc: [musl]
 
   '@resvg/resvg-js-win32-arm64-msvc@2.6.2':
     resolution: {integrity: sha512-7C/RSgCa+7vqZ7qAbItfiaAWhyRSoD4l4BQAbVDqRRsRgY+S+hgS3in0Rxr7IorKUpGE69X48q6/nOAuTJQxeQ==}
@@ -1864,51 +1875,61 @@ packages:
     resolution: {integrity: sha512-3pA7xecItbgOs1A5H58dDvOUEboG5UfpTq3WzAdF54acBbUM+olDJAPkgj1GRJ4ZqE12DZ9/hNS2QZk166v92A==}
     cpu: [arm]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-arm-musleabihf@4.32.0':
     resolution: {integrity: sha512-Y7XUZEVISGyge51QbYyYAEHwpGgmRrAxQXO3siyYo2kmaj72USSG8LtlQQgAtlGfxYiOwu+2BdbPjzEpcOpRmQ==}
     cpu: [arm]
     os: [linux]
+    libc: [musl]
 
   '@rollup/rollup-linux-arm64-gnu@4.32.0':
     resolution: {integrity: sha512-r7/OTF5MqeBrZo5omPXcTnjvv1GsrdH8a8RerARvDFiDwFpDVDnJyByYM/nX+mvks8XXsgPUxkwe/ltaX2VH7w==}
     cpu: [arm64]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-arm64-musl@4.32.0':
     resolution: {integrity: sha512-HJbifC9vex9NqnlodV2BHVFNuzKL5OnsV2dvTw6e1dpZKkNjPG6WUq+nhEYV6Hv2Bv++BXkwcyoGlXnPrjAKXw==}
     cpu: [arm64]
     os: [linux]
+    libc: [musl]
 
   '@rollup/rollup-linux-loongarch64-gnu@4.32.0':
     resolution: {integrity: sha512-VAEzZTD63YglFlWwRj3taofmkV1V3xhebDXffon7msNz4b14xKsz7utO6F8F4cqt8K/ktTl9rm88yryvDpsfOw==}
     cpu: [loong64]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-powerpc64le-gnu@4.32.0':
     resolution: {integrity: sha512-Sts5DST1jXAc9YH/iik1C9QRsLcCoOScf3dfbY5i4kH9RJpKxiTBXqm7qU5O6zTXBTEZry69bGszr3SMgYmMcQ==}
     cpu: [ppc64]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-riscv64-gnu@4.32.0':
     resolution: {integrity: sha512-qhlXeV9AqxIyY9/R1h1hBD6eMvQCO34ZmdYvry/K+/MBs6d1nRFLm6BOiITLVI+nFAAB9kUB6sdJRKyVHXnqZw==}
     cpu: [riscv64]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-s390x-gnu@4.32.0':
     resolution: {integrity: sha512-8ZGN7ExnV0qjXa155Rsfi6H8M4iBBwNLBM9lcVS+4NcSzOFaNqmt7djlox8pN1lWrRPMRRQ8NeDlozIGx3Omsw==}
     cpu: [s390x]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-x64-gnu@4.32.0':
     resolution: {integrity: sha512-VDzNHtLLI5s7xd/VubyS10mq6TxvZBp+4NRWoW+Hi3tgV05RtVm4qK99+dClwTN1McA6PHwob6DEJ6PlXbY83A==}
     cpu: [x64]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-x64-musl@4.32.0':
     resolution: {integrity: sha512-qcb9qYDlkxz9DxJo7SDhWxTWV1gFuwznjbTiov289pASxlfGbaOD54mgbs9+z94VwrXtKTu+2RqwlSTbiOqxGg==}
     cpu: [x64]
     os: [linux]
+    libc: [musl]
 
   '@rollup/rollup-win32-arm64-msvc@4.32.0':
     resolution: {integrity: sha512-pFDdotFDMXW2AXVbfdUEfidPAk/OtwE/Hd4eYMTNVVaCQ6Yl8et0meDaKNL63L44Haxv4UExpv9ydSf3aSayDg==}
@@ -1947,7 +1968,7 @@ packages:
   '@splinetool/loader@1.9.59':
     resolution: {integrity: sha512-bXJ5Sl4HPsBdJEFu6Ieq5O784GPoGBWUWfqAvvUZDBRD+WYR2N3G1tRYnDqK2Va6nY5SENAxBp+he2skdfB/JQ==}
     peerDependencies:
-      three: 0.186.0
+      three: '>=0.133.0'
 
   '@splinetool/r3f-spline@1.0.2':
     resolution: {integrity: sha512-Fl1qboRpTE8yJm4BAe1l6j3Xgh3HwIzvtdX2LjCpBiSo21+j0b2rilJpLHfsXJndrq4Hegz6oEUKlPvVWumaHg==}
@@ -2256,6 +2277,7 @@ packages:
 
   '@ungap/structured-clone@1.3.0':
     resolution: {integrity: sha512-WmoN8qaIAo7WTYWbAZuG8PYEhn5fkz7dZrqTBZ7dtt//lL2Gwms1IcnQ5yHqjDfX8Ft5j4YzDM23f87zBfDe9g==}
+    deprecated: Potential CWE-502 - Update to 1.3.1 or higher
 
   '@use-gesture/core@10.3.1':
     resolution: {integrity: sha512-WcINiDt8WjqBdUXye25anHiNxPc0VOrlT8F6LLkU6cycrOGUDyY/yyFmsg3k8i5OLvv25llc0QC45GhR/C8llw==}
@@ -2696,7 +2718,7 @@ packages:
   camera-controls@2.9.0:
     resolution: {integrity: sha512-TpCujnP0vqPppTXXJRYpvIy0xq9Tro6jQf2iYUxlDpPCNxkvE/XGaTuwIxnhINOkVP/ob2CRYXtY3iVYXeMEzA==}
     peerDependencies:
-      three: 0.186.0
+      three: '>=0.126.1'
 
   caniuse-lite@1.0.30001695:
     resolution: {integrity: sha512-vHyLade6wTgI2u1ec3WQBxv+2BrTERV28UXQu9LO6lZ9pYeMk34vjXFLOxo1A4UBA8XTL4njRQZdno/yYaSmWw==}
@@ -4501,7 +4523,7 @@ packages:
     resolution: {integrity: sha512-tRvbDF0Pgqz+9XUa4jjfgAQ8/aPKmQdWXilFu2tMy4GWj4NOsx99HlULO4IeREfbO3a0sA145DZYyvXPkybm0g==}
     peerDependencies:
       '@types/three': '>=0.134.0'
-      three: 0.186.0
+      three: '>=0.134.0'
 
   magic-string@0.30.19:
     resolution: {integrity: sha512-2N21sPY9Ws53PZvsEpVtNuSW+ScYbQdp4b9qUaL+9QkHUrGFKo56Lg9Emg5s9V/qrtNBmiR01sYhUOwu3H+VOw==}
@@ -4577,7 +4599,7 @@ packages:
   meshline@3.3.1:
     resolution: {integrity: sha512-/TQj+JdZkeSUOl5Mk2J7eLcYTLiQm2IDzmlSvYm7ov15anEcDJ92GHqqazxTSreeNgfnYu24kiEvvv0WlbCdFQ==}
     peerDependencies:
-      three: 0.186.0
+      three: '>=0.137'
 
   meshoptimizer@0.18.1:
     resolution: {integrity: sha512-ZhoIoL7TNV4s5B6+rx5mC//fw8/POGyNxS/DZyCJeiZ12ScLfVwRE/GfsxwiTkMYYD5DmK2/JXnEVXqL4rF+Sw==}
@@ -5088,6 +5110,7 @@ packages:
   phin@3.7.1:
     resolution: {integrity: sha512-GEazpTWwTZaEQ9RhL7Nyz0WwqilbqgLahDM3D0hxWwmVDI52nXEybHqiN6/elwpkJBhcuj+WbBu+QfT0uhPGfQ==}
     engines: {node: '>= 8'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
 
   picocolors@1.0.0:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
@@ -5582,6 +5605,7 @@ packages:
 
   sliced@1.0.1:
     resolution: {integrity: sha512-VZBmZP8WU3sMOZm1bdgTadsQbcscK0UM8oKxKVBs4XAhUo2Xxzm/OFMGBkPusxw9xL3Uy8LrzEqGqJhclsr0yA==}
+    deprecated: Unsupported
 
   source-map-js@1.2.1:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
@@ -5621,7 +5645,7 @@ packages:
     resolution: {integrity: sha512-g5O9B0hm9CvnM36+v7SFl39T7hmAlv541tU81ME8YeSb3i1CIP5/QdDeSB3A0la0bKNHpxpwxOVRo2wFTYEosQ==}
     peerDependencies:
       '@types/three': '*'
-      three: 0.186.0
+      three: '*'
 
   stats.js@0.17.0:
     resolution: {integrity: sha512-hNKz8phvYLPEcRkeG1rsGmV5ChMjKDAWU7/OJJdDErPBNChQXxCo3WZurGpnWc6gZhAzEPFad1aVgyOANH1sMw==}
@@ -5638,6 +5662,7 @@ packages:
 
   stream-to-promise@2.2.0:
     resolution: {integrity: sha512-HAGUASw8NT0k8JvIVutB2Y/9iBk7gpgEyAudXwNJmZERdMITGdajOa4VJfD/kNiA3TppQpTP4J+CtcHwdzKBAw==}
+    deprecated: Deprecated. Use node:stream/promises and node:stream/consumers instead.
 
   string-length@4.0.2:
     resolution: {integrity: sha512-+l6rNN5fYHNhZZy41RXsYptCjA2Igmq4EG7kZAYFQI1E1VTXarr6ZPXBg6eq7Y6eK4FEhY6AJlyuFIb/v/S0VQ==}
@@ -5796,15 +5821,18 @@ packages:
   three-mesh-bvh@0.8.3:
     resolution: {integrity: sha512-4G5lBaF+g2auKX3P0yqx+MJC6oVt6sB5k+CchS6Ob0qvH0YIhuUk1eYr7ktsIpY+albCqE80/FVQGV190PmiAg==}
     peerDependencies:
-      three: 0.186.0
+      three: '>= 0.159.0'
 
   three-stdlib@2.36.1:
     resolution: {integrity: sha512-XyGQrFmNQ5O/IoKm556ftwKsBg11TIb301MB5dWNicziQBEs2g3gtOYIf7pFiLa0zI2gUwhtCjv9fmjnxKZ1Cg==}
     peerDependencies:
-      three: 0.186.0
+      three: '>=0.128.0'
 
-  three@0.186.0:
-    resolution: {integrity: sha512-cr/fIM2ddMSVbYVgkfD4jLJv7Fh/8ZTjvo+7gQeSVGUZHxpx9FDwoL5iC7hUz/LiRA8wMbqfnb90xKfm1/HHkQ==}
+  three@0.165.0:
+    resolution: {integrity: sha512-cc96IlVYGydeceu0e5xq70H8/yoVT/tXBxV/W8A/U6uOq7DXc4/s1Mkmnu6SqoYGhSRWWYFOhVwvq6V0VtbplA==}
+
+  three@0.183.2:
+    resolution: {integrity: sha512-di3BsL2FEQ1PA7Hcvn4fyJOlxRRgFYBpMTcyOgkwJIaDOdJMebEFPA+t98EvjuljDx4hNulAGwF6KIjtwI5jgQ==}
 
   time-span@4.0.0:
     resolution: {integrity: sha512-MyqZCTGLDZ77u4k+jqg4UlrzPTPZ49NDlaekU6uuFaJLzPIN1woaRXCbGeqOfxwc3Y37ZROGAJ614Rdv7Olt+g==}
@@ -5893,7 +5921,7 @@ packages:
   troika-three-text@0.52.4:
     resolution: {integrity: sha512-V50EwcYGruV5rUZ9F4aNsrytGdKcXKALjEtQXIOBfhVoZU9VAqZNIoGQ3TMiooVqFAbR1w15T+f+8gkzoFzawg==}
     peerDependencies:
-      three: 0.186.0
+      three: '>=0.125.0'
 
   troika-three-utils@0.52.0:
     resolution: {integrity: sha512-00oxqIIehtEKInOTQekgyknBuRUj1POfOUE2q1OmL+Xlpp4gIu+S0oA0schTyXsDS4d9DkR04iqCdD40rF5R6w==}
@@ -5903,7 +5931,7 @@ packages:
   troika-three-utils@0.52.4:
     resolution: {integrity: sha512-NORAStSVa/BDiG52Mfudk4j1FG4jC4ILutB3foPnfGbOeIs9+G5vZLa0pnmnaftZUGm4UwSoqEpWdqvC7zms3A==}
     peerDependencies:
-      three: 0.186.0
+      three: '>=0.125.0'
 
   troika-worker-utils@0.52.0:
     resolution: {integrity: sha512-W1CpvTHykaPH5brv5VHLfQo9D1OYuo0cSBEUQFFT/nBUzM8iD6Lq2/tgG/f1OelbAS1WtaTPQzE5uM49egnngw==}
@@ -6142,7 +6170,7 @@ packages:
 
   uuid@3.3.2:
     resolution: {integrity: sha512-yXJmeNaw3DnnKAOKJE51sL/ZaYfWJRl1pK9dr19YFCu0ObS231AB1/LbqTKRAQ5kw8A90rA6fr4riOUpTZvQZA==}
-    deprecated: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
     hasBin: true
 
   v8-compile-cache-lib@3.0.1:
@@ -6552,17 +6580,17 @@ snapshots:
 
   '@babel/compat-data@7.26.5': {}
 
-  '@babel/core@7.26.7(supports-color@8.1.1)':
+  '@babel/core@7.26.7':
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@babel/code-frame': 7.26.2
       '@babel/generator': 7.26.5
       '@babel/helper-compilation-targets': 7.26.5
-      '@babel/helper-module-transforms': 7.26.0(@babel/core@7.26.7(supports-color@8.1.1))(supports-color@8.1.1)
+      '@babel/helper-module-transforms': 7.26.0(@babel/core@7.26.7)
       '@babel/helpers': 7.26.7
       '@babel/parser': 7.26.7
       '@babel/template': 7.25.9
-      '@babel/traverse': 7.26.7(supports-color@8.1.1)
+      '@babel/traverse': 7.26.7
       '@babel/types': 7.26.7
       convert-source-map: 2.0.0
       debug: 4.4.0(supports-color@8.1.1)
@@ -6588,19 +6616,19 @@ snapshots:
       lru-cache: 5.1.1
       semver: 6.3.1
 
-  '@babel/helper-module-imports@7.25.9(supports-color@8.1.1)':
+  '@babel/helper-module-imports@7.25.9':
     dependencies:
-      '@babel/traverse': 7.26.7(supports-color@8.1.1)
+      '@babel/traverse': 7.26.7
       '@babel/types': 7.26.7
     transitivePeerDependencies:
       - supports-color
 
-  '@babel/helper-module-transforms@7.26.0(@babel/core@7.26.7(supports-color@8.1.1))(supports-color@8.1.1)':
+  '@babel/helper-module-transforms@7.26.0(@babel/core@7.26.7)':
     dependencies:
-      '@babel/core': 7.26.7(supports-color@8.1.1)
-      '@babel/helper-module-imports': 7.25.9(supports-color@8.1.1)
+      '@babel/core': 7.26.7
+      '@babel/helper-module-imports': 7.25.9
       '@babel/helper-validator-identifier': 7.25.9
-      '@babel/traverse': 7.26.7(supports-color@8.1.1)
+      '@babel/traverse': 7.26.7
     transitivePeerDependencies:
       - supports-color
 
@@ -6621,116 +6649,116 @@ snapshots:
     dependencies:
       '@babel/types': 7.26.7
 
-  '@babel/plugin-syntax-async-generators@7.8.4(@babel/core@7.26.7(supports-color@8.1.1))':
+  '@babel/plugin-syntax-async-generators@7.8.4(@babel/core@7.26.7)':
     dependencies:
-      '@babel/core': 7.26.7(supports-color@8.1.1)
+      '@babel/core': 7.26.7
       '@babel/helper-plugin-utils': 7.26.5
     optional: true
 
-  '@babel/plugin-syntax-bigint@7.8.3(@babel/core@7.26.7(supports-color@8.1.1))':
+  '@babel/plugin-syntax-bigint@7.8.3(@babel/core@7.26.7)':
     dependencies:
-      '@babel/core': 7.26.7(supports-color@8.1.1)
+      '@babel/core': 7.26.7
       '@babel/helper-plugin-utils': 7.26.5
     optional: true
 
-  '@babel/plugin-syntax-class-properties@7.12.13(@babel/core@7.26.7(supports-color@8.1.1))':
+  '@babel/plugin-syntax-class-properties@7.12.13(@babel/core@7.26.7)':
     dependencies:
-      '@babel/core': 7.26.7(supports-color@8.1.1)
+      '@babel/core': 7.26.7
       '@babel/helper-plugin-utils': 7.26.5
     optional: true
 
-  '@babel/plugin-syntax-class-static-block@7.14.5(@babel/core@7.26.7(supports-color@8.1.1))':
+  '@babel/plugin-syntax-class-static-block@7.14.5(@babel/core@7.26.7)':
     dependencies:
-      '@babel/core': 7.26.7(supports-color@8.1.1)
+      '@babel/core': 7.26.7
       '@babel/helper-plugin-utils': 7.26.5
     optional: true
 
-  '@babel/plugin-syntax-import-attributes@7.26.0(@babel/core@7.26.7(supports-color@8.1.1))':
+  '@babel/plugin-syntax-import-attributes@7.26.0(@babel/core@7.26.7)':
     dependencies:
-      '@babel/core': 7.26.7(supports-color@8.1.1)
+      '@babel/core': 7.26.7
       '@babel/helper-plugin-utils': 7.26.5
     optional: true
 
-  '@babel/plugin-syntax-import-meta@7.10.4(@babel/core@7.26.7(supports-color@8.1.1))':
+  '@babel/plugin-syntax-import-meta@7.10.4(@babel/core@7.26.7)':
     dependencies:
-      '@babel/core': 7.26.7(supports-color@8.1.1)
+      '@babel/core': 7.26.7
       '@babel/helper-plugin-utils': 7.26.5
     optional: true
 
-  '@babel/plugin-syntax-json-strings@7.8.3(@babel/core@7.26.7(supports-color@8.1.1))':
+  '@babel/plugin-syntax-json-strings@7.8.3(@babel/core@7.26.7)':
     dependencies:
-      '@babel/core': 7.26.7(supports-color@8.1.1)
+      '@babel/core': 7.26.7
       '@babel/helper-plugin-utils': 7.26.5
     optional: true
 
-  '@babel/plugin-syntax-jsx@7.25.9(@babel/core@7.26.7(supports-color@8.1.1))':
+  '@babel/plugin-syntax-jsx@7.25.9(@babel/core@7.26.7)':
     dependencies:
-      '@babel/core': 7.26.7(supports-color@8.1.1)
+      '@babel/core': 7.26.7
       '@babel/helper-plugin-utils': 7.26.5
     optional: true
 
-  '@babel/plugin-syntax-logical-assignment-operators@7.10.4(@babel/core@7.26.7(supports-color@8.1.1))':
+  '@babel/plugin-syntax-logical-assignment-operators@7.10.4(@babel/core@7.26.7)':
     dependencies:
-      '@babel/core': 7.26.7(supports-color@8.1.1)
+      '@babel/core': 7.26.7
       '@babel/helper-plugin-utils': 7.26.5
     optional: true
 
-  '@babel/plugin-syntax-nullish-coalescing-operator@7.8.3(@babel/core@7.26.7(supports-color@8.1.1))':
+  '@babel/plugin-syntax-nullish-coalescing-operator@7.8.3(@babel/core@7.26.7)':
     dependencies:
-      '@babel/core': 7.26.7(supports-color@8.1.1)
+      '@babel/core': 7.26.7
       '@babel/helper-plugin-utils': 7.26.5
     optional: true
 
-  '@babel/plugin-syntax-numeric-separator@7.10.4(@babel/core@7.26.7(supports-color@8.1.1))':
+  '@babel/plugin-syntax-numeric-separator@7.10.4(@babel/core@7.26.7)':
     dependencies:
-      '@babel/core': 7.26.7(supports-color@8.1.1)
+      '@babel/core': 7.26.7
       '@babel/helper-plugin-utils': 7.26.5
     optional: true
 
-  '@babel/plugin-syntax-object-rest-spread@7.8.3(@babel/core@7.26.7(supports-color@8.1.1))':
+  '@babel/plugin-syntax-object-rest-spread@7.8.3(@babel/core@7.26.7)':
     dependencies:
-      '@babel/core': 7.26.7(supports-color@8.1.1)
+      '@babel/core': 7.26.7
       '@babel/helper-plugin-utils': 7.26.5
     optional: true
 
-  '@babel/plugin-syntax-optional-catch-binding@7.8.3(@babel/core@7.26.7(supports-color@8.1.1))':
+  '@babel/plugin-syntax-optional-catch-binding@7.8.3(@babel/core@7.26.7)':
     dependencies:
-      '@babel/core': 7.26.7(supports-color@8.1.1)
+      '@babel/core': 7.26.7
       '@babel/helper-plugin-utils': 7.26.5
     optional: true
 
-  '@babel/plugin-syntax-optional-chaining@7.8.3(@babel/core@7.26.7(supports-color@8.1.1))':
+  '@babel/plugin-syntax-optional-chaining@7.8.3(@babel/core@7.26.7)':
     dependencies:
-      '@babel/core': 7.26.7(supports-color@8.1.1)
+      '@babel/core': 7.26.7
       '@babel/helper-plugin-utils': 7.26.5
     optional: true
 
-  '@babel/plugin-syntax-private-property-in-object@7.14.5(@babel/core@7.26.7(supports-color@8.1.1))':
+  '@babel/plugin-syntax-private-property-in-object@7.14.5(@babel/core@7.26.7)':
     dependencies:
-      '@babel/core': 7.26.7(supports-color@8.1.1)
+      '@babel/core': 7.26.7
       '@babel/helper-plugin-utils': 7.26.5
     optional: true
 
-  '@babel/plugin-syntax-top-level-await@7.14.5(@babel/core@7.26.7(supports-color@8.1.1))':
+  '@babel/plugin-syntax-top-level-await@7.14.5(@babel/core@7.26.7)':
     dependencies:
-      '@babel/core': 7.26.7(supports-color@8.1.1)
+      '@babel/core': 7.26.7
       '@babel/helper-plugin-utils': 7.26.5
     optional: true
 
-  '@babel/plugin-syntax-typescript@7.25.9(@babel/core@7.26.7(supports-color@8.1.1))':
+  '@babel/plugin-syntax-typescript@7.25.9(@babel/core@7.26.7)':
     dependencies:
-      '@babel/core': 7.26.7(supports-color@8.1.1)
+      '@babel/core': 7.26.7
       '@babel/helper-plugin-utils': 7.26.5
     optional: true
 
-  '@babel/plugin-transform-react-jsx-self@7.25.9(@babel/core@7.26.7(supports-color@8.1.1))':
+  '@babel/plugin-transform-react-jsx-self@7.25.9(@babel/core@7.26.7)':
     dependencies:
-      '@babel/core': 7.26.7(supports-color@8.1.1)
+      '@babel/core': 7.26.7
       '@babel/helper-plugin-utils': 7.26.5
 
-  '@babel/plugin-transform-react-jsx-source@7.25.9(@babel/core@7.26.7(supports-color@8.1.1))':
+  '@babel/plugin-transform-react-jsx-source@7.25.9(@babel/core@7.26.7)':
     dependencies:
-      '@babel/core': 7.26.7(supports-color@8.1.1)
+      '@babel/core': 7.26.7
       '@babel/helper-plugin-utils': 7.26.5
 
   '@babel/polyfill@7.12.1':
@@ -6748,7 +6776,7 @@ snapshots:
       '@babel/parser': 7.26.7
       '@babel/types': 7.26.7
 
-  '@babel/traverse@7.26.7(supports-color@8.1.1)':
+  '@babel/traverse@7.26.7':
     dependencies:
       '@babel/code-frame': 7.26.2
       '@babel/generator': 7.26.5
@@ -6891,14 +6919,14 @@ snapshots:
   '@esbuild/win32-x64@0.21.5':
     optional: true
 
-  '@eslint-community/eslint-utils@4.4.1(eslint@8.57.1(supports-color@8.1.1))':
+  '@eslint-community/eslint-utils@4.4.1(eslint@8.57.1)':
     dependencies:
-      eslint: 8.57.1(supports-color@8.1.1)
+      eslint: 8.57.1
       eslint-visitor-keys: 3.4.3
 
   '@eslint-community/regexpp@4.12.1': {}
 
-  '@eslint/eslintrc@2.1.4(supports-color@8.1.1)':
+  '@eslint/eslintrc@2.1.4':
     dependencies:
       ajv: 6.12.6
       debug: 4.4.0(supports-color@8.1.1)
@@ -6932,7 +6960,7 @@ snapshots:
       prop-types: 15.8.1
       react: 19.1.0
 
-  '@humanwhocodes/config-array@0.13.0(supports-color@8.1.1)':
+  '@humanwhocodes/config-array@0.13.0':
     dependencies:
       '@humanwhocodes/object-schema': 2.0.3
       debug: 4.4.0(supports-color@8.1.1)
@@ -6975,7 +7003,7 @@ snapshots:
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
       styled-components: 6.1.13(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      three: 0.186.0
+      three: 0.165.0
     transitivePeerDependencies:
       - '@types/react'
       - immer
@@ -6983,7 +7011,7 @@ snapshots:
   '@iwer/sem@0.2.5(iwer@2.1.1)':
     dependencies:
       iwer: 2.1.1
-      three: 0.186.0
+      three: 0.165.0
       ts-proto: 2.7.7
 
   '@jest/console@29.7.0':
@@ -6996,12 +7024,12 @@ snapshots:
       slash: 3.0.0
     optional: true
 
-  '@jest/core@29.7.0(supports-color@8.1.1)(ts-node@10.9.2(@types/node@20.17.16)(typescript@5.7.3))':
+  '@jest/core@29.7.0(ts-node@10.9.2(@types/node@20.17.16)(typescript@5.7.3))':
     dependencies:
       '@jest/console': 29.7.0
-      '@jest/reporters': 29.7.0(supports-color@8.1.1)
+      '@jest/reporters': 29.7.0
       '@jest/test-result': 29.7.0
-      '@jest/transform': 29.7.0(supports-color@8.1.1)
+      '@jest/transform': 29.7.0
       '@jest/types': 29.6.3
       '@types/node': 20.17.16
       ansi-escapes: 4.3.2
@@ -7010,15 +7038,15 @@ snapshots:
       exit: 0.1.2
       graceful-fs: 4.2.11
       jest-changed-files: 29.7.0
-      jest-config: 29.7.0(@types/node@20.17.16)(supports-color@8.1.1)(ts-node@10.9.2(@types/node@20.17.16)(typescript@5.7.3))
+      jest-config: 29.7.0(@types/node@20.17.16)(ts-node@10.9.2(@types/node@20.17.16)(typescript@5.7.3))
       jest-haste-map: 29.7.0
       jest-message-util: 29.7.0
       jest-regex-util: 29.6.3
       jest-resolve: 29.7.0
-      jest-resolve-dependencies: 29.7.0(supports-color@8.1.1)
-      jest-runner: 29.7.0(supports-color@8.1.1)
-      jest-runtime: 29.7.0(supports-color@8.1.1)
-      jest-snapshot: 29.7.0(supports-color@8.1.1)
+      jest-resolve-dependencies: 29.7.0
+      jest-runner: 29.7.0
+      jest-runtime: 29.7.0
+      jest-snapshot: 29.7.0
       jest-util: 29.7.0
       jest-validate: 29.7.0
       jest-watcher: 29.7.0
@@ -7045,10 +7073,10 @@ snapshots:
       jest-get-type: 29.6.3
     optional: true
 
-  '@jest/expect@29.7.0(supports-color@8.1.1)':
+  '@jest/expect@29.7.0':
     dependencies:
       expect: 29.7.0
-      jest-snapshot: 29.7.0(supports-color@8.1.1)
+      jest-snapshot: 29.7.0
     transitivePeerDependencies:
       - supports-color
     optional: true
@@ -7063,22 +7091,22 @@ snapshots:
       jest-util: 29.7.0
     optional: true
 
-  '@jest/globals@29.7.0(supports-color@8.1.1)':
+  '@jest/globals@29.7.0':
     dependencies:
       '@jest/environment': 29.7.0
-      '@jest/expect': 29.7.0(supports-color@8.1.1)
+      '@jest/expect': 29.7.0
       '@jest/types': 29.6.3
       jest-mock: 29.7.0
     transitivePeerDependencies:
       - supports-color
     optional: true
 
-  '@jest/reporters@29.7.0(supports-color@8.1.1)':
+  '@jest/reporters@29.7.0':
     dependencies:
       '@bcoe/v8-coverage': 0.2.3
       '@jest/console': 29.7.0
       '@jest/test-result': 29.7.0
-      '@jest/transform': 29.7.0(supports-color@8.1.1)
+      '@jest/transform': 29.7.0
       '@jest/types': 29.6.3
       '@jridgewell/trace-mapping': 0.3.31
       '@types/node': 20.17.16
@@ -7088,9 +7116,9 @@ snapshots:
       glob: 7.2.3
       graceful-fs: 4.2.11
       istanbul-lib-coverage: 3.2.2
-      istanbul-lib-instrument: 6.0.3(supports-color@8.1.1)
+      istanbul-lib-instrument: 6.0.3
       istanbul-lib-report: 3.0.1
-      istanbul-lib-source-maps: 4.0.1(supports-color@8.1.1)
+      istanbul-lib-source-maps: 4.0.1
       istanbul-reports: 3.1.7
       jest-message-util: 29.7.0
       jest-util: 29.7.0
@@ -7131,12 +7159,12 @@ snapshots:
       slash: 3.0.0
     optional: true
 
-  '@jest/transform@29.7.0(supports-color@8.1.1)':
+  '@jest/transform@29.7.0':
     dependencies:
-      '@babel/core': 7.26.7(supports-color@8.1.1)
+      '@babel/core': 7.26.7
       '@jest/types': 29.6.3
       '@jridgewell/trace-mapping': 0.3.31
-      babel-plugin-istanbul: 6.1.1(supports-color@8.1.1)
+      babel-plugin-istanbul: 6.1.1
       chalk: 4.1.2
       convert-source-map: 2.0.0
       fast-json-stable-stringify: 2.1.0
@@ -7168,9 +7196,9 @@ snapshots:
       '@jimp/utils': 0.22.12
       bmp-js: 0.1.0
 
-  '@jimp/bmp@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))':
+  '@jimp/bmp@0.3.9(@jimp/custom@0.3.9)':
     dependencies:
-      '@jimp/custom': 0.3.9(debug@4.4.3(supports-color@8.1.1))
+      '@jimp/custom': 0.3.9
       '@jimp/utils': 0.3.9
       bmp-js: 0.1.0
       core-js: 2.6.12
@@ -7188,7 +7216,7 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@jimp/core@0.3.9(debug@4.4.3(supports-color@8.1.1))':
+  '@jimp/core@0.3.9':
     dependencies:
       '@jimp/utils': 0.3.9
       any-base: 1.1.0
@@ -7196,7 +7224,7 @@ snapshots:
       core-js: 2.6.12
       exif-parser: 0.1.12
       file-type: 9.0.0
-      load-bmfont: 1.4.2(debug@4.4.3(supports-color@8.1.1))
+      load-bmfont: 1.4.2
       mkdirp: 0.5.1
       phin: 2.9.3
       pixelmatch: 4.0.2
@@ -7210,9 +7238,9 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1))':
+  '@jimp/custom@0.3.9':
     dependencies:
-      '@jimp/core': 0.3.9(debug@4.4.3(supports-color@8.1.1))
+      '@jimp/core': 0.3.9
       core-js: 2.6.12
     transitivePeerDependencies:
       - debug
@@ -7224,9 +7252,9 @@ snapshots:
       gifwrap: 0.10.1
       omggif: 1.0.10
 
-  '@jimp/gif@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))':
+  '@jimp/gif@0.3.9(@jimp/custom@0.3.9)':
     dependencies:
-      '@jimp/custom': 0.3.9(debug@4.4.3(supports-color@8.1.1))
+      '@jimp/custom': 0.3.9
       '@jimp/utils': 0.3.9
       core-js: 2.6.12
       omggif: 1.0.10
@@ -7237,9 +7265,9 @@ snapshots:
       '@jimp/utils': 0.22.12
       jpeg-js: 0.4.4
 
-  '@jimp/jpeg@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))':
+  '@jimp/jpeg@0.3.9(@jimp/custom@0.3.9)':
     dependencies:
-      '@jimp/custom': 0.3.9(debug@4.4.3(supports-color@8.1.1))
+      '@jimp/custom': 0.3.9
       '@jimp/utils': 0.3.9
       core-js: 2.6.12
       jpeg-js: 0.3.7
@@ -7249,9 +7277,9 @@ snapshots:
       '@jimp/custom': 0.22.12
       '@jimp/utils': 0.22.12
 
-  '@jimp/plugin-blit@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))':
+  '@jimp/plugin-blit@0.3.9(@jimp/custom@0.3.9)':
     dependencies:
-      '@jimp/custom': 0.3.9(debug@4.4.3(supports-color@8.1.1))
+      '@jimp/custom': 0.3.9
       '@jimp/utils': 0.3.9
       core-js: 2.6.12
 
@@ -7260,9 +7288,9 @@ snapshots:
       '@jimp/custom': 0.22.12
       '@jimp/utils': 0.22.12
 
-  '@jimp/plugin-blur@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))':
+  '@jimp/plugin-blur@0.3.9(@jimp/custom@0.3.9)':
     dependencies:
-      '@jimp/custom': 0.3.9(debug@4.4.3(supports-color@8.1.1))
+      '@jimp/custom': 0.3.9
       '@jimp/utils': 0.3.9
       core-js: 2.6.12
 
@@ -7277,9 +7305,9 @@ snapshots:
       '@jimp/utils': 0.22.12
       tinycolor2: 1.6.0
 
-  '@jimp/plugin-color@0.3.10(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))':
+  '@jimp/plugin-color@0.3.10(@jimp/custom@0.3.9)':
     dependencies:
-      '@jimp/custom': 0.3.9(debug@4.4.3(supports-color@8.1.1))
+      '@jimp/custom': 0.3.9
       '@jimp/utils': 0.3.9
       core-js: 2.6.12
       tinycolor2: 1.6.0
@@ -7292,12 +7320,12 @@ snapshots:
       '@jimp/plugin-scale': 0.22.12(@jimp/custom@0.22.12)(@jimp/plugin-resize@0.22.12(@jimp/custom@0.22.12))
       '@jimp/utils': 0.22.12
 
-  '@jimp/plugin-contain@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))(@jimp/plugin-blit@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1))))(@jimp/plugin-resize@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1))))(@jimp/plugin-scale@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))(@jimp/plugin-resize@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))))':
+  '@jimp/plugin-contain@0.3.9(@jimp/custom@0.3.9)(@jimp/plugin-blit@0.3.9(@jimp/custom@0.3.9))(@jimp/plugin-resize@0.3.9(@jimp/custom@0.3.9))(@jimp/plugin-scale@0.3.9(@jimp/custom@0.3.9)(@jimp/plugin-resize@0.3.9(@jimp/custom@0.3.9)))':
     dependencies:
-      '@jimp/custom': 0.3.9(debug@4.4.3(supports-color@8.1.1))
-      '@jimp/plugin-blit': 0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))
-      '@jimp/plugin-resize': 0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))
-      '@jimp/plugin-scale': 0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))(@jimp/plugin-resize@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1))))
+      '@jimp/custom': 0.3.9
+      '@jimp/plugin-blit': 0.3.9(@jimp/custom@0.3.9)
+      '@jimp/plugin-resize': 0.3.9(@jimp/custom@0.3.9)
+      '@jimp/plugin-scale': 0.3.9(@jimp/custom@0.3.9)(@jimp/plugin-resize@0.3.9(@jimp/custom@0.3.9))
       '@jimp/utils': 0.3.9
       core-js: 2.6.12
 
@@ -7309,11 +7337,11 @@ snapshots:
       '@jimp/plugin-scale': 0.22.12(@jimp/custom@0.22.12)(@jimp/plugin-resize@0.22.12(@jimp/custom@0.22.12))
       '@jimp/utils': 0.22.12
 
-  '@jimp/plugin-cover@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))(@jimp/plugin-crop@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1))))(@jimp/plugin-scale@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))(@jimp/plugin-resize@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))))':
+  '@jimp/plugin-cover@0.3.9(@jimp/custom@0.3.9)(@jimp/plugin-crop@0.3.9(@jimp/custom@0.3.9))(@jimp/plugin-scale@0.3.9(@jimp/custom@0.3.9)(@jimp/plugin-resize@0.3.9(@jimp/custom@0.3.9)))':
     dependencies:
-      '@jimp/custom': 0.3.9(debug@4.4.3(supports-color@8.1.1))
-      '@jimp/plugin-crop': 0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))
-      '@jimp/plugin-scale': 0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))(@jimp/plugin-resize@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1))))
+      '@jimp/custom': 0.3.9
+      '@jimp/plugin-crop': 0.3.9(@jimp/custom@0.3.9)
+      '@jimp/plugin-scale': 0.3.9(@jimp/custom@0.3.9)(@jimp/plugin-resize@0.3.9(@jimp/custom@0.3.9))
       '@jimp/utils': 0.3.9
       core-js: 2.6.12
 
@@ -7322,9 +7350,9 @@ snapshots:
       '@jimp/custom': 0.22.12
       '@jimp/utils': 0.22.12
 
-  '@jimp/plugin-crop@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))':
+  '@jimp/plugin-crop@0.3.9(@jimp/custom@0.3.9)':
     dependencies:
-      '@jimp/custom': 0.3.9(debug@4.4.3(supports-color@8.1.1))
+      '@jimp/custom': 0.3.9
       '@jimp/utils': 0.3.9
       core-js: 2.6.12
 
@@ -7333,9 +7361,9 @@ snapshots:
       '@jimp/custom': 0.22.12
       '@jimp/utils': 0.22.12
 
-  '@jimp/plugin-displace@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))':
+  '@jimp/plugin-displace@0.3.9(@jimp/custom@0.3.9)':
     dependencies:
-      '@jimp/custom': 0.3.9(debug@4.4.3(supports-color@8.1.1))
+      '@jimp/custom': 0.3.9
       '@jimp/utils': 0.3.9
       core-js: 2.6.12
 
@@ -7344,9 +7372,9 @@ snapshots:
       '@jimp/custom': 0.22.12
       '@jimp/utils': 0.22.12
 
-  '@jimp/plugin-dither@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))':
+  '@jimp/plugin-dither@0.3.9(@jimp/custom@0.3.9)':
     dependencies:
-      '@jimp/custom': 0.3.9(debug@4.4.3(supports-color@8.1.1))
+      '@jimp/custom': 0.3.9
       '@jimp/utils': 0.3.9
       core-js: 2.6.12
 
@@ -7361,10 +7389,10 @@ snapshots:
       '@jimp/plugin-rotate': 0.22.12(@jimp/custom@0.22.12)(@jimp/plugin-blit@0.22.12(@jimp/custom@0.22.12))(@jimp/plugin-crop@0.22.12(@jimp/custom@0.22.12))(@jimp/plugin-resize@0.22.12(@jimp/custom@0.22.12))
       '@jimp/utils': 0.22.12
 
-  '@jimp/plugin-flip@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))(@jimp/plugin-rotate@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))(@jimp/plugin-blit@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1))))(@jimp/plugin-crop@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1))))(@jimp/plugin-resize@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))))':
+  '@jimp/plugin-flip@0.3.9(@jimp/custom@0.3.9)(@jimp/plugin-rotate@0.3.9(@jimp/custom@0.3.9)(@jimp/plugin-blit@0.3.9(@jimp/custom@0.3.9))(@jimp/plugin-crop@0.3.9(@jimp/custom@0.3.9))(@jimp/plugin-resize@0.3.9(@jimp/custom@0.3.9)))':
     dependencies:
-      '@jimp/custom': 0.3.9(debug@4.4.3(supports-color@8.1.1))
-      '@jimp/plugin-rotate': 0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))(@jimp/plugin-blit@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1))))(@jimp/plugin-crop@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1))))(@jimp/plugin-resize@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1))))
+      '@jimp/custom': 0.3.9
+      '@jimp/plugin-rotate': 0.3.9(@jimp/custom@0.3.9)(@jimp/plugin-blit@0.3.9(@jimp/custom@0.3.9))(@jimp/plugin-crop@0.3.9(@jimp/custom@0.3.9))(@jimp/plugin-resize@0.3.9(@jimp/custom@0.3.9))
       '@jimp/utils': 0.3.9
       core-js: 2.6.12
 
@@ -7373,9 +7401,9 @@ snapshots:
       '@jimp/custom': 0.22.12
       '@jimp/utils': 0.22.12
 
-  '@jimp/plugin-gaussian@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))':
+  '@jimp/plugin-gaussian@0.3.9(@jimp/custom@0.3.9)':
     dependencies:
-      '@jimp/custom': 0.3.9(debug@4.4.3(supports-color@8.1.1))
+      '@jimp/custom': 0.3.9
       '@jimp/utils': 0.3.9
       core-js: 2.6.12
 
@@ -7384,9 +7412,9 @@ snapshots:
       '@jimp/custom': 0.22.12
       '@jimp/utils': 0.22.12
 
-  '@jimp/plugin-invert@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))':
+  '@jimp/plugin-invert@0.3.9(@jimp/custom@0.3.9)':
     dependencies:
-      '@jimp/custom': 0.3.9(debug@4.4.3(supports-color@8.1.1))
+      '@jimp/custom': 0.3.9
       '@jimp/utils': 0.3.9
       core-js: 2.6.12
 
@@ -7395,9 +7423,9 @@ snapshots:
       '@jimp/custom': 0.22.12
       '@jimp/utils': 0.22.12
 
-  '@jimp/plugin-mask@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))':
+  '@jimp/plugin-mask@0.3.9(@jimp/custom@0.3.9)':
     dependencies:
-      '@jimp/custom': 0.3.9(debug@4.4.3(supports-color@8.1.1))
+      '@jimp/custom': 0.3.9
       '@jimp/utils': 0.3.9
       core-js: 2.6.12
 
@@ -7406,27 +7434,27 @@ snapshots:
       '@jimp/custom': 0.22.12
       '@jimp/utils': 0.22.12
 
-  '@jimp/plugin-normalize@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))':
+  '@jimp/plugin-normalize@0.3.9(@jimp/custom@0.3.9)':
     dependencies:
-      '@jimp/custom': 0.3.9(debug@4.4.3(supports-color@8.1.1))
+      '@jimp/custom': 0.3.9
       '@jimp/utils': 0.3.9
       core-js: 2.6.12
 
-  '@jimp/plugin-print@0.22.12(@jimp/custom@0.22.12)(@jimp/plugin-blit@0.22.12(@jimp/custom@0.22.12))(debug@4.4.3(supports-color@8.1.1))':
+  '@jimp/plugin-print@0.22.12(@jimp/custom@0.22.12)(@jimp/plugin-blit@0.22.12(@jimp/custom@0.22.12))':
     dependencies:
       '@jimp/custom': 0.22.12
       '@jimp/plugin-blit': 0.22.12(@jimp/custom@0.22.12)
       '@jimp/utils': 0.22.12
-      load-bmfont: 1.4.2(debug@4.4.3(supports-color@8.1.1))
+      load-bmfont: 1.4.2
     transitivePeerDependencies:
       - debug
 
-  '@jimp/plugin-print@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))(debug@4.4.3(supports-color@8.1.1))':
+  '@jimp/plugin-print@0.3.9(@jimp/custom@0.3.9)':
     dependencies:
-      '@jimp/custom': 0.3.9(debug@4.4.3(supports-color@8.1.1))
+      '@jimp/custom': 0.3.9
       '@jimp/utils': 0.3.9
       core-js: 2.6.12
-      load-bmfont: 1.4.2(debug@4.4.3(supports-color@8.1.1))
+      load-bmfont: 1.4.2
     transitivePeerDependencies:
       - debug
 
@@ -7435,9 +7463,9 @@ snapshots:
       '@jimp/custom': 0.22.12
       '@jimp/utils': 0.22.12
 
-  '@jimp/plugin-resize@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))':
+  '@jimp/plugin-resize@0.3.9(@jimp/custom@0.3.9)':
     dependencies:
-      '@jimp/custom': 0.3.9(debug@4.4.3(supports-color@8.1.1))
+      '@jimp/custom': 0.3.9
       '@jimp/utils': 0.3.9
       core-js: 2.6.12
 
@@ -7449,12 +7477,12 @@ snapshots:
       '@jimp/plugin-resize': 0.22.12(@jimp/custom@0.22.12)
       '@jimp/utils': 0.22.12
 
-  '@jimp/plugin-rotate@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))(@jimp/plugin-blit@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1))))(@jimp/plugin-crop@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1))))(@jimp/plugin-resize@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1))))':
+  '@jimp/plugin-rotate@0.3.9(@jimp/custom@0.3.9)(@jimp/plugin-blit@0.3.9(@jimp/custom@0.3.9))(@jimp/plugin-crop@0.3.9(@jimp/custom@0.3.9))(@jimp/plugin-resize@0.3.9(@jimp/custom@0.3.9))':
     dependencies:
-      '@jimp/custom': 0.3.9(debug@4.4.3(supports-color@8.1.1))
-      '@jimp/plugin-blit': 0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))
-      '@jimp/plugin-crop': 0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))
-      '@jimp/plugin-resize': 0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))
+      '@jimp/custom': 0.3.9
+      '@jimp/plugin-blit': 0.3.9(@jimp/custom@0.3.9)
+      '@jimp/plugin-crop': 0.3.9(@jimp/custom@0.3.9)
+      '@jimp/plugin-resize': 0.3.9(@jimp/custom@0.3.9)
       '@jimp/utils': 0.3.9
       core-js: 2.6.12
 
@@ -7464,10 +7492,10 @@ snapshots:
       '@jimp/plugin-resize': 0.22.12(@jimp/custom@0.22.12)
       '@jimp/utils': 0.22.12
 
-  '@jimp/plugin-scale@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))(@jimp/plugin-resize@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1))))':
+  '@jimp/plugin-scale@0.3.9(@jimp/custom@0.3.9)(@jimp/plugin-resize@0.3.9(@jimp/custom@0.3.9))':
     dependencies:
-      '@jimp/custom': 0.3.9(debug@4.4.3(supports-color@8.1.1))
-      '@jimp/plugin-resize': 0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))
+      '@jimp/custom': 0.3.9
+      '@jimp/plugin-resize': 0.3.9(@jimp/custom@0.3.9)
       '@jimp/utils': 0.3.9
       core-js: 2.6.12
 
@@ -7485,7 +7513,7 @@ snapshots:
       '@jimp/plugin-resize': 0.22.12(@jimp/custom@0.22.12)
       '@jimp/utils': 0.22.12
 
-  '@jimp/plugins@0.22.12(@jimp/custom@0.22.12)(debug@4.4.3(supports-color@8.1.1))':
+  '@jimp/plugins@0.22.12(@jimp/custom@0.22.12)':
     dependencies:
       '@jimp/custom': 0.22.12
       '@jimp/plugin-blit': 0.22.12(@jimp/custom@0.22.12)
@@ -7503,7 +7531,7 @@ snapshots:
       '@jimp/plugin-invert': 0.22.12(@jimp/custom@0.22.12)
       '@jimp/plugin-mask': 0.22.12(@jimp/custom@0.22.12)
       '@jimp/plugin-normalize': 0.22.12(@jimp/custom@0.22.12)
-      '@jimp/plugin-print': 0.22.12(@jimp/custom@0.22.12)(@jimp/plugin-blit@0.22.12(@jimp/custom@0.22.12))(debug@4.4.3(supports-color@8.1.1))
+      '@jimp/plugin-print': 0.22.12(@jimp/custom@0.22.12)(@jimp/plugin-blit@0.22.12(@jimp/custom@0.22.12))
       '@jimp/plugin-resize': 0.22.12(@jimp/custom@0.22.12)
       '@jimp/plugin-rotate': 0.22.12(@jimp/custom@0.22.12)(@jimp/plugin-blit@0.22.12(@jimp/custom@0.22.12))(@jimp/plugin-crop@0.22.12(@jimp/custom@0.22.12))(@jimp/plugin-resize@0.22.12(@jimp/custom@0.22.12))
       '@jimp/plugin-scale': 0.22.12(@jimp/custom@0.22.12)(@jimp/plugin-resize@0.22.12(@jimp/custom@0.22.12))
@@ -7513,26 +7541,26 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  '@jimp/plugins@0.3.10(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))(debug@4.4.3(supports-color@8.1.1))':
+  '@jimp/plugins@0.3.10(@jimp/custom@0.3.9)':
     dependencies:
-      '@jimp/custom': 0.3.9(debug@4.4.3(supports-color@8.1.1))
-      '@jimp/plugin-blit': 0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))
-      '@jimp/plugin-blur': 0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))
-      '@jimp/plugin-color': 0.3.10(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))
-      '@jimp/plugin-contain': 0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))(@jimp/plugin-blit@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1))))(@jimp/plugin-resize@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1))))(@jimp/plugin-scale@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))(@jimp/plugin-resize@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))))
-      '@jimp/plugin-cover': 0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))(@jimp/plugin-crop@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1))))(@jimp/plugin-scale@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))(@jimp/plugin-resize@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))))
-      '@jimp/plugin-crop': 0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))
-      '@jimp/plugin-displace': 0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))
-      '@jimp/plugin-dither': 0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))
-      '@jimp/plugin-flip': 0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))(@jimp/plugin-rotate@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))(@jimp/plugin-blit@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1))))(@jimp/plugin-crop@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1))))(@jimp/plugin-resize@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))))
-      '@jimp/plugin-gaussian': 0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))
-      '@jimp/plugin-invert': 0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))
-      '@jimp/plugin-mask': 0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))
-      '@jimp/plugin-normalize': 0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))
-      '@jimp/plugin-print': 0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))(debug@4.4.3(supports-color@8.1.1))
-      '@jimp/plugin-resize': 0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))
-      '@jimp/plugin-rotate': 0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))(@jimp/plugin-blit@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1))))(@jimp/plugin-crop@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1))))(@jimp/plugin-resize@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1))))
-      '@jimp/plugin-scale': 0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))(@jimp/plugin-resize@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1))))
+      '@jimp/custom': 0.3.9
+      '@jimp/plugin-blit': 0.3.9(@jimp/custom@0.3.9)
+      '@jimp/plugin-blur': 0.3.9(@jimp/custom@0.3.9)
+      '@jimp/plugin-color': 0.3.10(@jimp/custom@0.3.9)
+      '@jimp/plugin-contain': 0.3.9(@jimp/custom@0.3.9)(@jimp/plugin-blit@0.3.9(@jimp/custom@0.3.9))(@jimp/plugin-resize@0.3.9(@jimp/custom@0.3.9))(@jimp/plugin-scale@0.3.9(@jimp/custom@0.3.9)(@jimp/plugin-resize@0.3.9(@jimp/custom@0.3.9)))
+      '@jimp/plugin-cover': 0.3.9(@jimp/custom@0.3.9)(@jimp/plugin-crop@0.3.9(@jimp/custom@0.3.9))(@jimp/plugin-scale@0.3.9(@jimp/custom@0.3.9)(@jimp/plugin-resize@0.3.9(@jimp/custom@0.3.9)))
+      '@jimp/plugin-crop': 0.3.9(@jimp/custom@0.3.9)
+      '@jimp/plugin-displace': 0.3.9(@jimp/custom@0.3.9)
+      '@jimp/plugin-dither': 0.3.9(@jimp/custom@0.3.9)
+      '@jimp/plugin-flip': 0.3.9(@jimp/custom@0.3.9)(@jimp/plugin-rotate@0.3.9(@jimp/custom@0.3.9)(@jimp/plugin-blit@0.3.9(@jimp/custom@0.3.9))(@jimp/plugin-crop@0.3.9(@jimp/custom@0.3.9))(@jimp/plugin-resize@0.3.9(@jimp/custom@0.3.9)))
+      '@jimp/plugin-gaussian': 0.3.9(@jimp/custom@0.3.9)
+      '@jimp/plugin-invert': 0.3.9(@jimp/custom@0.3.9)
+      '@jimp/plugin-mask': 0.3.9(@jimp/custom@0.3.9)
+      '@jimp/plugin-normalize': 0.3.9(@jimp/custom@0.3.9)
+      '@jimp/plugin-print': 0.3.9(@jimp/custom@0.3.9)
+      '@jimp/plugin-resize': 0.3.9(@jimp/custom@0.3.9)
+      '@jimp/plugin-rotate': 0.3.9(@jimp/custom@0.3.9)(@jimp/plugin-blit@0.3.9(@jimp/custom@0.3.9))(@jimp/plugin-crop@0.3.9(@jimp/custom@0.3.9))(@jimp/plugin-resize@0.3.9(@jimp/custom@0.3.9))
+      '@jimp/plugin-scale': 0.3.9(@jimp/custom@0.3.9)(@jimp/plugin-resize@0.3.9(@jimp/custom@0.3.9))
       core-js: 2.6.12
       timm: 1.7.1
     transitivePeerDependencies:
@@ -7544,9 +7572,9 @@ snapshots:
       '@jimp/utils': 0.22.12
       pngjs: 6.0.0
 
-  '@jimp/png@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))':
+  '@jimp/png@0.3.9(@jimp/custom@0.3.9)':
     dependencies:
-      '@jimp/custom': 0.3.9(debug@4.4.3(supports-color@8.1.1))
+      '@jimp/custom': 0.3.9
       '@jimp/utils': 0.3.9
       core-js: 2.6.12
       pngjs: 3.4.0
@@ -7556,9 +7584,9 @@ snapshots:
       '@jimp/custom': 0.22.12
       utif2: 4.1.0
 
-  '@jimp/tiff@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))':
+  '@jimp/tiff@0.3.9(@jimp/custom@0.3.9)':
     dependencies:
-      '@jimp/custom': 0.3.9(debug@4.4.3(supports-color@8.1.1))
+      '@jimp/custom': 0.3.9
       core-js: 2.6.12
       utif: 2.0.1
 
@@ -7572,14 +7600,14 @@ snapshots:
       '@jimp/tiff': 0.22.12(@jimp/custom@0.22.12)
       timm: 1.7.1
 
-  '@jimp/types@0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))':
+  '@jimp/types@0.3.9(@jimp/custom@0.3.9)':
     dependencies:
-      '@jimp/bmp': 0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))
-      '@jimp/custom': 0.3.9(debug@4.4.3(supports-color@8.1.1))
-      '@jimp/gif': 0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))
-      '@jimp/jpeg': 0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))
-      '@jimp/png': 0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))
-      '@jimp/tiff': 0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))
+      '@jimp/bmp': 0.3.9(@jimp/custom@0.3.9)
+      '@jimp/custom': 0.3.9
+      '@jimp/gif': 0.3.9(@jimp/custom@0.3.9)
+      '@jimp/jpeg': 0.3.9(@jimp/custom@0.3.9)
+      '@jimp/png': 0.3.9(@jimp/custom@0.3.9)
+      '@jimp/tiff': 0.3.9(@jimp/custom@0.3.9)
       core-js: 2.6.12
       timm: 1.7.1
 
@@ -7626,10 +7654,10 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@mapbox/node-pre-gyp@1.0.11(supports-color@8.1.1)':
+  '@mapbox/node-pre-gyp@1.0.11':
     dependencies:
       detect-libc: 2.0.3
-      https-proxy-agent: 5.0.1(supports-color@8.1.1)
+      https-proxy-agent: 5.0.1
       make-dir: 3.1.0
       node-fetch: 2.7.0
       nopt: 5.0.0
@@ -7641,7 +7669,7 @@ snapshots:
       - encoding
       - supports-color
 
-  '@mdx-js/mdx@3.1.1(supports-color@8.1.1)':
+  '@mdx-js/mdx@3.1.1':
     dependencies:
       '@types/estree': 1.0.6
       '@types/estree-jsx': 1.0.5
@@ -7653,14 +7681,14 @@ snapshots:
       estree-util-is-identifier-name: 3.0.0
       estree-util-scope: 1.0.0
       estree-walker: 3.0.3
-      hast-util-to-jsx-runtime: 2.3.6(supports-color@8.1.1)
+      hast-util-to-jsx-runtime: 2.3.6
       markdown-extensions: 2.0.0
       recma-build-jsx: 1.0.0
       recma-jsx: 1.0.1(acorn@8.15.0)
       recma-stringify: 1.0.0
-      rehype-recma: 1.0.0(supports-color@8.1.1)
-      remark-mdx: 3.1.1(supports-color@8.1.1)
-      remark-parse: 11.0.0(supports-color@8.1.1)
+      rehype-recma: 1.0.0
+      remark-mdx: 3.1.1
+      remark-parse: 11.0.0
       remark-rehype: 11.1.2
       source-map: 0.7.6
       unified: 11.0.5
@@ -7673,10 +7701,10 @@ snapshots:
 
   '@mediapipe/tasks-vision@0.10.17': {}
 
-  '@monogrid/gainmap-js@3.1.0(three@0.186.0)':
+  '@monogrid/gainmap-js@3.1.0(three@0.183.2)':
     dependencies:
       promise-worker-transferable: 1.0.4
-      three: 0.186.0
+      three: 0.183.2
 
   '@napi-rs/nice-android-arm-eabi@1.0.1':
     optional: true
@@ -7852,14 +7880,14 @@ snapshots:
     dependencies:
       '@preact/signals-core': 1.8.0
 
-  '@pmndrs/xr@6.6.29(@types/react@19.0.8)(react@19.0.0)(three@0.186.0)':
+  '@pmndrs/xr@6.6.29(@types/react@19.0.8)(react@19.0.0)(three@0.183.2)':
     dependencies:
       '@iwer/devui': 1.1.2(@types/react@19.0.8)(iwer@2.1.1)
       '@iwer/sem': 0.2.5(iwer@2.1.1)
       '@pmndrs/pointer-events': 6.6.29
       iwer: 2.1.1
-      meshline: 3.3.1(three@0.186.0)
-      three: 0.186.0
+      meshline: 3.3.1(three@0.183.2)
+      three: 0.183.2
       zustand: 4.5.6(@types/react@19.0.8)(react@19.0.0)
     transitivePeerDependencies:
       - '@types/react'
@@ -7889,40 +7917,40 @@ snapshots:
       '@react-spring/types': 9.7.5
       react: 18.3.1
 
-  '@react-spring/three@9.7.5(@react-three/fiber@8.17.12(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.186.0))(react@18.3.1)(three@0.186.0)':
+  '@react-spring/three@9.7.5(@react-three/fiber@8.17.12(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.183.2))(react@18.3.1)(three@0.183.2)':
     dependencies:
       '@react-spring/animated': 9.7.5(react@18.3.1)
       '@react-spring/core': 9.7.5(react@18.3.1)
       '@react-spring/shared': 9.7.5(react@18.3.1)
       '@react-spring/types': 9.7.5
-      '@react-three/fiber': 8.17.12(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.186.0)
+      '@react-three/fiber': 8.17.12(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.183.2)
       react: 18.3.1
-      three: 0.186.0
+      three: 0.183.2
 
   '@react-spring/types@9.7.5': {}
 
-  '@react-three/drei@10.4.2(@react-three/fiber@9.0.0-rc.10(@types/react@19.0.8)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(three@0.186.0)(use-sync-external-store@1.4.0(react@19.0.0)))(@types/react@19.0.8)(@types/three@0.175.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(three@0.186.0)':
+  '@react-three/drei@10.4.2(@react-three/fiber@9.0.0-rc.10(@types/react@19.0.8)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(three@0.183.2)(use-sync-external-store@1.4.0(react@19.0.0)))(@types/react@19.0.8)(@types/three@0.175.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(three@0.183.2)':
     dependencies:
       '@babel/runtime': 7.26.7
       '@mediapipe/tasks-vision': 0.10.17
-      '@monogrid/gainmap-js': 3.1.0(three@0.186.0)
-      '@react-three/fiber': 9.0.0-rc.10(@types/react@19.0.8)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(three@0.186.0)(use-sync-external-store@1.4.0(react@19.0.0))
+      '@monogrid/gainmap-js': 3.1.0(three@0.183.2)
+      '@react-three/fiber': 9.0.0-rc.10(@types/react@19.0.8)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(three@0.183.2)(use-sync-external-store@1.4.0(react@19.0.0))
       '@use-gesture/react': 10.3.1(react@19.0.0)
-      camera-controls: 2.9.0(three@0.186.0)
+      camera-controls: 2.9.0(three@0.183.2)
       cross-env: 7.0.3
       detect-gpu: 5.0.66
       glsl-noise: 0.0.0
       hls.js: 1.5.20
-      maath: 0.10.8(@types/three@0.175.0)(three@0.186.0)
-      meshline: 3.3.1(three@0.186.0)
+      maath: 0.10.8(@types/three@0.175.0)(three@0.183.2)
+      meshline: 3.3.1(three@0.183.2)
       react: 19.0.0
-      stats-gl: 2.4.2(@types/three@0.175.0)(three@0.186.0)
+      stats-gl: 2.4.2(@types/three@0.175.0)(three@0.183.2)
       stats.js: 0.17.0
       suspend-react: 0.1.3(react@19.0.0)
-      three: 0.186.0
-      three-mesh-bvh: 0.8.3(three@0.186.0)
-      three-stdlib: 2.36.1(three@0.186.0)
-      troika-three-text: 0.52.4(three@0.186.0)
+      three: 0.183.2
+      three-mesh-bvh: 0.8.3(three@0.183.2)
+      three-stdlib: 2.36.1(three@0.183.2)
+      troika-three-text: 0.52.4(three@0.183.2)
       tunnel-rat: 0.1.2(@types/react@19.0.8)(react@19.0.0)
       use-sync-external-store: 1.4.0(react@19.0.0)
       utility-types: 3.11.0
@@ -7934,30 +7962,30 @@ snapshots:
       - '@types/three'
       - immer
 
-  '@react-three/drei@9.121.4(@react-three/fiber@8.17.12(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.186.0))(@types/react@18.3.18)(@types/three@0.175.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.186.0)(use-sync-external-store@1.4.0(react@18.3.1))':
+  '@react-three/drei@9.121.4(@react-three/fiber@8.17.12(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.183.2))(@types/react@18.3.18)(@types/three@0.175.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.183.2)(use-sync-external-store@1.4.0(react@18.3.1))':
     dependencies:
       '@babel/runtime': 7.26.7
       '@mediapipe/tasks-vision': 0.10.17
-      '@monogrid/gainmap-js': 3.1.0(three@0.186.0)
-      '@react-spring/three': 9.7.5(@react-three/fiber@8.17.12(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.186.0))(react@18.3.1)(three@0.186.0)
-      '@react-three/fiber': 8.17.12(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.186.0)
+      '@monogrid/gainmap-js': 3.1.0(three@0.183.2)
+      '@react-spring/three': 9.7.5(@react-three/fiber@8.17.12(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.183.2))(react@18.3.1)(three@0.183.2)
+      '@react-three/fiber': 8.17.12(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.183.2)
       '@use-gesture/react': 10.3.1(react@18.3.1)
-      camera-controls: 2.9.0(three@0.186.0)
+      camera-controls: 2.9.0(three@0.183.2)
       cross-env: 7.0.3
       detect-gpu: 5.0.66
       glsl-noise: 0.0.0
       hls.js: 1.5.20
-      maath: 0.10.8(@types/three@0.175.0)(three@0.186.0)
-      meshline: 3.3.1(three@0.186.0)
+      maath: 0.10.8(@types/three@0.175.0)(three@0.183.2)
+      meshline: 3.3.1(three@0.183.2)
       react: 18.3.1
       react-composer: 5.0.3(react@18.3.1)
-      stats-gl: 2.4.2(@types/three@0.175.0)(three@0.186.0)
+      stats-gl: 2.4.2(@types/three@0.175.0)(three@0.183.2)
       stats.js: 0.17.0
       suspend-react: 0.1.3(react@18.3.1)
-      three: 0.186.0
-      three-mesh-bvh: 0.7.8(three@0.186.0)
-      three-stdlib: 2.36.1(three@0.186.0)
-      troika-three-text: 0.52.3(three@0.186.0)
+      three: 0.183.2
+      three-mesh-bvh: 0.7.8(three@0.183.2)
+      three-stdlib: 2.36.1(three@0.183.2)
+      troika-three-text: 0.52.3(three@0.183.2)
       tunnel-rat: 0.1.2(@types/react@18.3.18)(react@18.3.1)
       utility-types: 3.11.0
       zustand: 5.0.15(@types/react@18.3.18)(react@18.3.1)(use-sync-external-store@1.4.0(react@18.3.1))
@@ -7969,14 +7997,14 @@ snapshots:
       - immer
       - use-sync-external-store
 
-  '@react-three/eslint-plugin@0.1.2(supports-color@8.1.1)':
+  '@react-three/eslint-plugin@0.1.2':
     dependencies:
       '@babel/runtime': 7.26.7
-      eslint: 8.57.1(supports-color@8.1.1)
+      eslint: 8.57.1
     transitivePeerDependencies:
       - supports-color
 
-  '@react-three/fiber@8.17.12(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.186.0)':
+  '@react-three/fiber@8.17.12(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.183.2)':
     dependencies:
       '@babel/runtime': 7.26.7
       '@types/debounce': 1.2.4
@@ -7990,14 +8018,14 @@ snapshots:
       react-reconciler: 0.27.0(react@18.3.1)
       scheduler: 0.21.0
       suspend-react: 0.1.3(react@18.3.1)
-      three: 0.186.0
+      three: 0.183.2
       zustand: 3.7.2(react@18.3.1)
     optionalDependencies:
       react-dom: 18.3.1(react@18.3.1)
     transitivePeerDependencies:
       - '@types/react'
 
-  '@react-three/fiber@9.0.0-rc.10(@types/react@19.0.8)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(three@0.186.0)(use-sync-external-store@1.4.0(react@19.0.0))':
+  '@react-three/fiber@9.0.0-rc.10(@types/react@19.0.8)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(three@0.183.2)(use-sync-external-store@1.4.0(react@19.0.0))':
     dependencies:
       '@babel/runtime': 7.26.7
       '@types/react-reconciler': 0.28.9(@types/react@19.0.8)
@@ -8010,7 +8038,7 @@ snapshots:
       react-use-measure: 2.1.7(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       scheduler: 0.25.0
       suspend-react: 0.1.3(react@19.0.0)
-      three: 0.186.0
+      three: 0.183.2
       zustand: 5.0.15(@types/react@19.0.8)(react@19.0.0)(use-sync-external-store@1.4.0(react@19.0.0))
     optionalDependencies:
       react-dom: 19.0.0(react@19.0.0)
@@ -8019,7 +8047,7 @@ snapshots:
       - immer
       - use-sync-external-store
 
-  '@react-three/fiber@9.0.0-rc.10(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.186.0)(use-sync-external-store@1.4.0(react@19.1.0))':
+  '@react-three/fiber@9.0.0-rc.10(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.183.2)(use-sync-external-store@1.4.0(react@19.1.0))':
     dependencies:
       '@babel/runtime': 7.26.7
       '@types/react-reconciler': 0.28.9(@types/react@19.1.8)
@@ -8032,7 +8060,7 @@ snapshots:
       react-use-measure: 2.1.7(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       scheduler: 0.25.0
       suspend-react: 0.1.3(react@19.1.0)
-      three: 0.186.0
+      three: 0.183.2
       zustand: 5.0.15(@types/react@19.1.8)(react@19.1.0)(use-sync-external-store@1.4.0(react@19.1.0))
     optionalDependencies:
       react-dom: 19.1.0(react@19.1.0)
@@ -8041,30 +8069,30 @@ snapshots:
       - immer
       - use-sync-external-store
 
-  '@react-three/rapier@1.5.0(@react-three/fiber@8.17.12(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.186.0))(react@18.3.1)(three@0.186.0)':
+  '@react-three/rapier@1.5.0(@react-three/fiber@8.17.12(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.183.2))(react@18.3.1)(three@0.183.2)':
     dependencies:
       '@dimforge/rapier3d-compat': 0.14.0
-      '@react-three/fiber': 8.17.12(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.186.0)
+      '@react-three/fiber': 8.17.12(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.183.2)
       react: 18.3.1
       suspend-react: 0.1.3(react@18.3.1)
-      three: 0.186.0
-      three-stdlib: 2.36.1(three@0.186.0)
+      three: 0.183.2
+      three-stdlib: 2.36.1(three@0.183.2)
 
-  '@react-three/test-renderer@9.1.0(@react-three/fiber@9.0.0-rc.10(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.186.0)(use-sync-external-store@1.4.0(react@19.1.0)))(react@19.1.0)(three@0.186.0)':
+  '@react-three/test-renderer@9.1.0(@react-three/fiber@9.0.0-rc.10(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.183.2)(use-sync-external-store@1.4.0(react@19.1.0)))(react@19.1.0)(three@0.183.2)':
     dependencies:
-      '@react-three/fiber': 9.0.0-rc.10(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.186.0)(use-sync-external-store@1.4.0(react@19.1.0))
+      '@react-three/fiber': 9.0.0-rc.10(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.183.2)(use-sync-external-store@1.4.0(react@19.1.0))
       react: 19.1.0
-      three: 0.186.0
+      three: 0.183.2
 
-  '@react-three/xr@6.6.29(@react-three/fiber@9.0.0-rc.10(@types/react@19.0.8)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(three@0.186.0)(use-sync-external-store@1.4.0(react@19.0.0)))(@types/react@19.0.8)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(three@0.186.0)':
+  '@react-three/xr@6.6.29(@react-three/fiber@9.0.0-rc.10(@types/react@19.0.8)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(three@0.183.2)(use-sync-external-store@1.4.0(react@19.0.0)))(@types/react@19.0.8)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(three@0.183.2)':
     dependencies:
       '@pmndrs/pointer-events': 6.6.29
-      '@pmndrs/xr': 6.6.29(@types/react@19.0.8)(react@19.0.0)(three@0.186.0)
-      '@react-three/fiber': 9.0.0-rc.10(@types/react@19.0.8)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(three@0.186.0)(use-sync-external-store@1.4.0(react@19.0.0))
+      '@pmndrs/xr': 6.6.29(@types/react@19.0.8)(react@19.0.0)(three@0.183.2)
+      '@react-three/fiber': 9.0.0-rc.10(@types/react@19.0.8)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(three@0.183.2)(use-sync-external-store@1.4.0(react@19.0.0))
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
       suspend-react: 0.1.3(react@19.0.0)
-      three: 0.186.0
+      three: 0.183.2
       tunnel-rat: 0.1.2(@types/react@19.0.8)(react@19.0.0)
       zustand: 4.5.6(@types/react@19.0.8)(react@19.0.0)
     transitivePeerDependencies:
@@ -8203,15 +8231,15 @@ snapshots:
       '@sinonjs/commons': 3.0.1
     optional: true
 
-  '@splinetool/loader@1.9.59(three@0.186.0)':
+  '@splinetool/loader@1.9.59(three@0.183.2)':
     dependencies:
       semver-compare: 1.0.0
-      three: 0.186.0
+      three: 0.183.2
 
-  '@splinetool/r3f-spline@1.0.2(@react-three/fiber@8.17.12(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.186.0))(@splinetool/loader@1.9.59(three@0.186.0))':
+  '@splinetool/r3f-spline@1.0.2(@react-three/fiber@8.17.12(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.183.2))(@splinetool/loader@1.9.59(three@0.183.2))':
     dependencies:
-      '@react-three/fiber': 8.17.12(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.186.0)
-      '@splinetool/loader': 1.9.59(three@0.186.0)
+      '@react-three/fiber': 8.17.12(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.183.2)
+      '@splinetool/loader': 1.9.59(three@0.183.2)
 
   '@standard-schema/spec@1.0.0': {}
 
@@ -8460,15 +8488,15 @@ snapshots:
       '@types/yargs-parser': 21.0.3
     optional: true
 
-  '@typescript-eslint/eslint-plugin@7.18.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1(supports-color@8.1.1))(supports-color@8.1.1)(typescript@5.7.3))(eslint@8.57.1(supports-color@8.1.1))(supports-color@8.1.1)(typescript@5.7.3)':
+  '@typescript-eslint/eslint-plugin@7.18.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.7.3))(eslint@8.57.1)(typescript@5.7.3)':
     dependencies:
       '@eslint-community/regexpp': 4.12.1
-      '@typescript-eslint/parser': 7.18.0(eslint@8.57.1(supports-color@8.1.1))(supports-color@8.1.1)(typescript@5.7.3)
+      '@typescript-eslint/parser': 7.18.0(eslint@8.57.1)(typescript@5.7.3)
       '@typescript-eslint/scope-manager': 7.18.0
-      '@typescript-eslint/type-utils': 7.18.0(eslint@8.57.1(supports-color@8.1.1))(supports-color@8.1.1)(typescript@5.7.3)
-      '@typescript-eslint/utils': 7.18.0(eslint@8.57.1(supports-color@8.1.1))(supports-color@8.1.1)(typescript@5.7.3)
+      '@typescript-eslint/type-utils': 7.18.0(eslint@8.57.1)(typescript@5.7.3)
+      '@typescript-eslint/utils': 7.18.0(eslint@8.57.1)(typescript@5.7.3)
       '@typescript-eslint/visitor-keys': 7.18.0
-      eslint: 8.57.1(supports-color@8.1.1)
+      eslint: 8.57.1
       graphemer: 1.4.0
       ignore: 5.3.2
       natural-compare: 1.4.0
@@ -8478,14 +8506,14 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/parser@7.18.0(eslint@8.57.1(supports-color@8.1.1))(supports-color@8.1.1)(typescript@5.7.3)':
+  '@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.7.3)':
     dependencies:
       '@typescript-eslint/scope-manager': 7.18.0
       '@typescript-eslint/types': 7.18.0
-      '@typescript-eslint/typescript-estree': 7.18.0(supports-color@8.1.1)(typescript@5.7.3)
+      '@typescript-eslint/typescript-estree': 7.18.0(typescript@5.7.3)
       '@typescript-eslint/visitor-keys': 7.18.0
       debug: 4.4.0(supports-color@8.1.1)
-      eslint: 8.57.1(supports-color@8.1.1)
+      eslint: 8.57.1
     optionalDependencies:
       typescript: 5.7.3
     transitivePeerDependencies:
@@ -8501,12 +8529,12 @@ snapshots:
       '@typescript-eslint/types': 7.18.0
       '@typescript-eslint/visitor-keys': 7.18.0
 
-  '@typescript-eslint/type-utils@7.18.0(eslint@8.57.1(supports-color@8.1.1))(supports-color@8.1.1)(typescript@5.7.3)':
+  '@typescript-eslint/type-utils@7.18.0(eslint@8.57.1)(typescript@5.7.3)':
     dependencies:
-      '@typescript-eslint/typescript-estree': 7.18.0(supports-color@8.1.1)(typescript@5.7.3)
-      '@typescript-eslint/utils': 7.18.0(eslint@8.57.1(supports-color@8.1.1))(supports-color@8.1.1)(typescript@5.7.3)
+      '@typescript-eslint/typescript-estree': 7.18.0(typescript@5.7.3)
+      '@typescript-eslint/utils': 7.18.0(eslint@8.57.1)(typescript@5.7.3)
       debug: 4.4.0(supports-color@8.1.1)
-      eslint: 8.57.1(supports-color@8.1.1)
+      eslint: 8.57.1
       ts-api-utils: 1.4.3(typescript@5.7.3)
     optionalDependencies:
       typescript: 5.7.3
@@ -8517,7 +8545,7 @@ snapshots:
 
   '@typescript-eslint/types@7.18.0': {}
 
-  '@typescript-eslint/typescript-estree@5.62.0(supports-color@8.1.1)(typescript@5.7.3)':
+  '@typescript-eslint/typescript-estree@5.62.0(typescript@5.7.3)':
     dependencies:
       '@typescript-eslint/types': 5.62.0
       '@typescript-eslint/visitor-keys': 5.62.0
@@ -8531,7 +8559,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/typescript-estree@7.18.0(supports-color@8.1.1)(typescript@5.7.3)':
+  '@typescript-eslint/typescript-estree@7.18.0(typescript@5.7.3)':
     dependencies:
       '@typescript-eslint/types': 7.18.0
       '@typescript-eslint/visitor-keys': 7.18.0
@@ -8546,28 +8574,28 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/utils@5.62.0(eslint@8.57.1(supports-color@8.1.1))(supports-color@8.1.1)(typescript@5.7.3)':
+  '@typescript-eslint/utils@5.62.0(eslint@8.57.1)(typescript@5.7.3)':
     dependencies:
-      '@eslint-community/eslint-utils': 4.4.1(eslint@8.57.1(supports-color@8.1.1))
+      '@eslint-community/eslint-utils': 4.4.1(eslint@8.57.1)
       '@types/json-schema': 7.0.15
       '@types/semver': 7.5.8
       '@typescript-eslint/scope-manager': 5.62.0
       '@typescript-eslint/types': 5.62.0
-      '@typescript-eslint/typescript-estree': 5.62.0(supports-color@8.1.1)(typescript@5.7.3)
-      eslint: 8.57.1(supports-color@8.1.1)
+      '@typescript-eslint/typescript-estree': 5.62.0(typescript@5.7.3)
+      eslint: 8.57.1
       eslint-scope: 5.1.1
       semver: 7.6.3
     transitivePeerDependencies:
       - supports-color
       - typescript
 
-  '@typescript-eslint/utils@7.18.0(eslint@8.57.1(supports-color@8.1.1))(supports-color@8.1.1)(typescript@5.7.3)':
+  '@typescript-eslint/utils@7.18.0(eslint@8.57.1)(typescript@5.7.3)':
     dependencies:
-      '@eslint-community/eslint-utils': 4.4.1(eslint@8.57.1(supports-color@8.1.1))
+      '@eslint-community/eslint-utils': 4.4.1(eslint@8.57.1)
       '@typescript-eslint/scope-manager': 7.18.0
       '@typescript-eslint/types': 7.18.0
-      '@typescript-eslint/typescript-estree': 7.18.0(supports-color@8.1.1)(typescript@5.7.3)
-      eslint: 8.57.1(supports-color@8.1.1)
+      '@typescript-eslint/typescript-estree': 7.18.0(typescript@5.7.3)
+      eslint: 8.57.1
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -8600,11 +8628,11 @@ snapshots:
 
   '@vercel/error-utils@2.0.2': {}
 
-  '@vercel/fun@1.1.0(supports-color@8.1.1)':
+  '@vercel/fun@1.1.0':
     dependencies:
       '@tootallnate/once': 2.0.0
       async-listen: 1.2.0
-      debug: 4.1.1(supports-color@8.1.1)
+      debug: 4.1.1
       execa: 3.2.0
       fs-extra: 8.1.0
       generic-pool: 3.4.2
@@ -8646,16 +8674,16 @@ snapshots:
       '@vercel/static-config': 3.0.0
       ts-morph: 12.0.0
 
-  '@vercel/next@4.3.2(supports-color@8.1.1)':
+  '@vercel/next@4.3.2':
     dependencies:
-      '@vercel/nft': 0.27.2(supports-color@8.1.1)
+      '@vercel/nft': 0.27.2
     transitivePeerDependencies:
       - encoding
       - supports-color
 
-  '@vercel/nft@0.27.2(supports-color@8.1.1)':
+  '@vercel/nft@0.27.2':
     dependencies:
-      '@mapbox/node-pre-gyp': 1.0.11(supports-color@8.1.1)
+      '@mapbox/node-pre-gyp': 1.0.11
       '@rollup/pluginutils': 4.2.1
       acorn: 8.15.0
       acorn-import-attributes: 1.9.5(acorn@8.15.0)
@@ -8671,7 +8699,7 @@ snapshots:
       - encoding
       - supports-color
 
-  '@vercel/node@3.2.3(supports-color@8.1.1)':
+  '@vercel/node@3.2.3':
     dependencies:
       '@edge-runtime/node-utils': 2.3.0
       '@edge-runtime/primitives': 4.1.0
@@ -8679,7 +8707,7 @@ snapshots:
       '@types/node': 16.18.11
       '@vercel/build-utils': 8.3.2
       '@vercel/error-utils': 2.0.2
-      '@vercel/nft': 0.27.2(supports-color@8.1.1)
+      '@vercel/nft': 0.27.2
       '@vercel/static-config': 3.0.0
       async-listen: 3.0.0
       cjs-module-lexer: 1.2.3
@@ -8701,9 +8729,9 @@ snapshots:
 
   '@vercel/python@4.3.0': {}
 
-  '@vercel/redwood@2.1.0(supports-color@8.1.1)':
+  '@vercel/redwood@2.1.0':
     dependencies:
-      '@vercel/nft': 0.27.2(supports-color@8.1.1)
+      '@vercel/nft': 0.27.2
       '@vercel/routing-utils': 3.1.0
       '@vercel/static-config': 3.0.0
       semver: 6.3.1
@@ -8712,10 +8740,10 @@ snapshots:
       - encoding
       - supports-color
 
-  '@vercel/remix-builder@2.1.10(supports-color@8.1.1)':
+  '@vercel/remix-builder@2.1.10':
     dependencies:
       '@vercel/error-utils': 2.0.2
-      '@vercel/nft': 0.27.2(supports-color@8.1.1)
+      '@vercel/nft': 0.27.2
       '@vercel/static-config': 3.0.0
       ts-morph: 12.0.0
     transitivePeerDependencies:
@@ -8743,33 +8771,33 @@ snapshots:
       json-schema-to-ts: 1.6.4
       ts-morph: 12.0.0
 
-  '@vitejs/plugin-react@4.3.4(supports-color@8.1.1)(vite@5.4.14(@types/node@20.17.16)(terser@5.43.1))':
+  '@vitejs/plugin-react@4.3.4(vite@5.4.14(@types/node@20.17.16)(terser@5.43.1))':
     dependencies:
-      '@babel/core': 7.26.7(supports-color@8.1.1)
-      '@babel/plugin-transform-react-jsx-self': 7.25.9(@babel/core@7.26.7(supports-color@8.1.1))
-      '@babel/plugin-transform-react-jsx-source': 7.25.9(@babel/core@7.26.7(supports-color@8.1.1))
+      '@babel/core': 7.26.7
+      '@babel/plugin-transform-react-jsx-self': 7.25.9(@babel/core@7.26.7)
+      '@babel/plugin-transform-react-jsx-source': 7.25.9(@babel/core@7.26.7)
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.2
       vite: 5.4.14(@types/node@20.17.16)(terser@5.43.1)
     transitivePeerDependencies:
       - supports-color
 
-  '@vitest/coverage-v8@3.2.4(supports-color@8.1.1)(vitest@3.2.4(@edge-runtime/vm@3.2.0)(@types/debug@4.1.12)(@types/node@20.17.16)(jsdom@27.0.0(postcss@8.5.1)(supports-color@8.1.1))(supports-color@8.1.1)(terser@5.43.1))':
+  '@vitest/coverage-v8@3.2.4(vitest@3.2.4(@edge-runtime/vm@3.2.0)(@types/debug@4.1.12)(@types/node@20.17.16)(jsdom@27.0.0(postcss@8.5.1))(terser@5.43.1))':
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@bcoe/v8-coverage': 1.0.2
       ast-v8-to-istanbul: 0.3.5
-      debug: 4.4.3(supports-color@8.1.1)
+      debug: 4.4.3
       istanbul-lib-coverage: 3.2.2
       istanbul-lib-report: 3.0.1
-      istanbul-lib-source-maps: 5.0.6(supports-color@8.1.1)
+      istanbul-lib-source-maps: 5.0.6
       istanbul-reports: 3.1.7
       magic-string: 0.30.19
       magicast: 0.3.5
       std-env: 3.9.0
       test-exclude: 7.0.1
       tinyrainbow: 2.0.0
-      vitest: 3.2.4(@edge-runtime/vm@3.2.0)(@types/debug@4.1.12)(@types/node@20.17.16)(jsdom@27.0.0(postcss@8.5.1)(supports-color@8.1.1))(supports-color@8.1.1)(terser@5.43.1)
+      vitest: 3.2.4(@edge-runtime/vm@3.2.0)(@types/debug@4.1.12)(@types/node@20.17.16)(jsdom@27.0.0(postcss@8.5.1))(terser@5.43.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -8843,7 +8871,7 @@ snapshots:
 
   acorn@8.15.0: {}
 
-  agent-base@6.0.2(supports-color@8.1.1):
+  agent-base@6.0.2:
     dependencies:
       debug: 4.4.0(supports-color@8.1.1)
     transitivePeerDependencies:
@@ -9015,21 +9043,21 @@ snapshots:
     dependencies:
       possible-typed-array-names: 1.0.0
 
-  axios@1.7.9(debug@4.4.0(supports-color@8.1.1)):
+  axios@1.7.9(debug@4.4.0):
     dependencies:
-      follow-redirects: 1.15.9(debug@4.4.0(supports-color@8.1.1))
+      follow-redirects: 1.15.9(debug@4.4.0)
       form-data: 4.0.1
       proxy-from-env: 1.1.0
     transitivePeerDependencies:
       - debug
 
-  babel-jest@29.7.0(@babel/core@7.26.7(supports-color@8.1.1))(supports-color@8.1.1):
+  babel-jest@29.7.0(@babel/core@7.26.7):
     dependencies:
-      '@babel/core': 7.26.7(supports-color@8.1.1)
-      '@jest/transform': 29.7.0(supports-color@8.1.1)
+      '@babel/core': 7.26.7
+      '@jest/transform': 29.7.0
       '@types/babel__core': 7.20.5
-      babel-plugin-istanbul: 6.1.1(supports-color@8.1.1)
-      babel-preset-jest: 29.6.3(@babel/core@7.26.7(supports-color@8.1.1))
+      babel-plugin-istanbul: 6.1.1
+      babel-preset-jest: 29.6.3(@babel/core@7.26.7)
       chalk: 4.1.2
       graceful-fs: 4.2.11
       slash: 3.0.0
@@ -9037,12 +9065,12 @@ snapshots:
       - supports-color
     optional: true
 
-  babel-plugin-istanbul@6.1.1(supports-color@8.1.1):
+  babel-plugin-istanbul@6.1.1:
     dependencies:
       '@babel/helper-plugin-utils': 7.26.5
       '@istanbuljs/load-nyc-config': 1.1.0
       '@istanbuljs/schema': 0.1.3
-      istanbul-lib-instrument: 5.2.1(supports-color@8.1.1)
+      istanbul-lib-instrument: 5.2.1
       test-exclude: 6.0.0
     transitivePeerDependencies:
       - supports-color
@@ -9056,31 +9084,31 @@ snapshots:
       '@types/babel__traverse': 7.20.6
     optional: true
 
-  babel-preset-current-node-syntax@1.1.0(@babel/core@7.26.7(supports-color@8.1.1)):
+  babel-preset-current-node-syntax@1.1.0(@babel/core@7.26.7):
     dependencies:
-      '@babel/core': 7.26.7(supports-color@8.1.1)
-      '@babel/plugin-syntax-async-generators': 7.8.4(@babel/core@7.26.7(supports-color@8.1.1))
-      '@babel/plugin-syntax-bigint': 7.8.3(@babel/core@7.26.7(supports-color@8.1.1))
-      '@babel/plugin-syntax-class-properties': 7.12.13(@babel/core@7.26.7(supports-color@8.1.1))
-      '@babel/plugin-syntax-class-static-block': 7.14.5(@babel/core@7.26.7(supports-color@8.1.1))
-      '@babel/plugin-syntax-import-attributes': 7.26.0(@babel/core@7.26.7(supports-color@8.1.1))
-      '@babel/plugin-syntax-import-meta': 7.10.4(@babel/core@7.26.7(supports-color@8.1.1))
-      '@babel/plugin-syntax-json-strings': 7.8.3(@babel/core@7.26.7(supports-color@8.1.1))
-      '@babel/plugin-syntax-logical-assignment-operators': 7.10.4(@babel/core@7.26.7(supports-color@8.1.1))
-      '@babel/plugin-syntax-nullish-coalescing-operator': 7.8.3(@babel/core@7.26.7(supports-color@8.1.1))
-      '@babel/plugin-syntax-numeric-separator': 7.10.4(@babel/core@7.26.7(supports-color@8.1.1))
-      '@babel/plugin-syntax-object-rest-spread': 7.8.3(@babel/core@7.26.7(supports-color@8.1.1))
-      '@babel/plugin-syntax-optional-catch-binding': 7.8.3(@babel/core@7.26.7(supports-color@8.1.1))
-      '@babel/plugin-syntax-optional-chaining': 7.8.3(@babel/core@7.26.7(supports-color@8.1.1))
-      '@babel/plugin-syntax-private-property-in-object': 7.14.5(@babel/core@7.26.7(supports-color@8.1.1))
-      '@babel/plugin-syntax-top-level-await': 7.14.5(@babel/core@7.26.7(supports-color@8.1.1))
+      '@babel/core': 7.26.7
+      '@babel/plugin-syntax-async-generators': 7.8.4(@babel/core@7.26.7)
+      '@babel/plugin-syntax-bigint': 7.8.3(@babel/core@7.26.7)
+      '@babel/plugin-syntax-class-properties': 7.12.13(@babel/core@7.26.7)
+      '@babel/plugin-syntax-class-static-block': 7.14.5(@babel/core@7.26.7)
+      '@babel/plugin-syntax-import-attributes': 7.26.0(@babel/core@7.26.7)
+      '@babel/plugin-syntax-import-meta': 7.10.4(@babel/core@7.26.7)
+      '@babel/plugin-syntax-json-strings': 7.8.3(@babel/core@7.26.7)
+      '@babel/plugin-syntax-logical-assignment-operators': 7.10.4(@babel/core@7.26.7)
+      '@babel/plugin-syntax-nullish-coalescing-operator': 7.8.3(@babel/core@7.26.7)
+      '@babel/plugin-syntax-numeric-separator': 7.10.4(@babel/core@7.26.7)
+      '@babel/plugin-syntax-object-rest-spread': 7.8.3(@babel/core@7.26.7)
+      '@babel/plugin-syntax-optional-catch-binding': 7.8.3(@babel/core@7.26.7)
+      '@babel/plugin-syntax-optional-chaining': 7.8.3(@babel/core@7.26.7)
+      '@babel/plugin-syntax-private-property-in-object': 7.14.5(@babel/core@7.26.7)
+      '@babel/plugin-syntax-top-level-await': 7.14.5(@babel/core@7.26.7)
     optional: true
 
-  babel-preset-jest@29.6.3(@babel/core@7.26.7(supports-color@8.1.1)):
+  babel-preset-jest@29.6.3(@babel/core@7.26.7):
     dependencies:
-      '@babel/core': 7.26.7(supports-color@8.1.1)
+      '@babel/core': 7.26.7
       babel-plugin-jest-hoist: 29.6.3
-      babel-preset-current-node-syntax: 1.1.0(@babel/core@7.26.7(supports-color@8.1.1))
+      babel-preset-current-node-syntax: 1.1.0(@babel/core@7.26.7)
     optional: true
 
   bail@2.0.2: {}
@@ -9209,9 +9237,9 @@ snapshots:
 
   camelize@1.0.1: {}
 
-  camera-controls@2.9.0(three@0.186.0):
+  camera-controls@2.9.0(three@0.183.2):
     dependencies:
-      three: 0.186.0
+      three: 0.183.2
 
   caniuse-lite@1.0.30001695: {}
 
@@ -9219,9 +9247,9 @@ snapshots:
 
   ccount@2.0.1: {}
 
-  centra@2.7.0(debug@4.4.3(supports-color@8.1.1)):
+  centra@2.7.0:
     dependencies:
-      follow-redirects: 1.15.9(debug@4.4.3(supports-color@8.1.1))
+      follow-redirects: 1.15.9(debug@4.4.0)
     transitivePeerDependencies:
       - debug
 
@@ -9388,13 +9416,13 @@ snapshots:
 
   core-js@2.6.12: {}
 
-  create-jest@29.7.0(@types/node@20.17.16)(supports-color@8.1.1)(ts-node@10.9.2(@types/node@20.17.16)(typescript@5.7.3)):
+  create-jest@29.7.0(@types/node@20.17.16)(ts-node@10.9.2(@types/node@20.17.16)(typescript@5.7.3)):
     dependencies:
       '@jest/types': 29.6.3
       chalk: 4.1.2
       exit: 0.1.2
       graceful-fs: 4.2.11
-      jest-config: 29.7.0(@types/node@20.17.16)(supports-color@8.1.1)(ts-node@10.9.2(@types/node@20.17.16)(typescript@5.7.3))
+      jest-config: 29.7.0(@types/node@20.17.16)(ts-node@10.9.2(@types/node@20.17.16)(typescript@5.7.3))
       jest-util: 29.7.0
       prompts: 2.4.2
     transitivePeerDependencies:
@@ -9466,17 +9494,13 @@ snapshots:
 
   debounce@1.2.1: {}
 
-  debug@3.2.7(supports-color@8.1.1):
+  debug@3.2.7:
     dependencies:
       ms: 2.1.3
-    optionalDependencies:
-      supports-color: 8.1.1
 
-  debug@4.1.1(supports-color@8.1.1):
+  debug@4.1.1:
     dependencies:
       ms: 2.1.3
-    optionalDependencies:
-      supports-color: 8.1.1
 
   debug@4.4.0(supports-color@8.1.1):
     dependencies:
@@ -9484,11 +9508,9 @@ snapshots:
     optionalDependencies:
       supports-color: 8.1.1
 
-  debug@4.4.3(supports-color@8.1.1):
+  debug@4.4.3:
     dependencies:
       ms: 2.1.3
-    optionalDependencies:
-      supports-color: 8.1.1
 
   decamelize@4.0.0: {}
 
@@ -9876,44 +9898,44 @@ snapshots:
 
   escape-string-regexp@4.0.0: {}
 
-  eslint-config-prettier@9.1.0(eslint@8.57.1(supports-color@8.1.1)):
+  eslint-config-prettier@9.1.0(eslint@8.57.1):
     dependencies:
-      eslint: 8.57.1(supports-color@8.1.1)
+      eslint: 8.57.1
 
-  eslint-import-resolver-alias@1.1.2(eslint-plugin-import@2.31.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1(supports-color@8.1.1))(supports-color@8.1.1)(typescript@5.7.3))(eslint@8.57.1(supports-color@8.1.1))(supports-color@8.1.1)):
+  eslint-import-resolver-alias@1.1.2(eslint-plugin-import@2.31.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.7.3))(eslint@8.57.1)):
     dependencies:
-      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1(supports-color@8.1.1))(supports-color@8.1.1)(typescript@5.7.3))(eslint@8.57.1(supports-color@8.1.1))(supports-color@8.1.1)
+      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.7.3))(eslint@8.57.1)
 
-  eslint-import-resolver-node@0.3.9(supports-color@8.1.1):
+  eslint-import-resolver-node@0.3.9:
     dependencies:
-      debug: 3.2.7(supports-color@8.1.1)
+      debug: 3.2.7
       is-core-module: 2.16.1
       resolve: 1.22.10
     transitivePeerDependencies:
       - supports-color
 
-  eslint-module-utils@2.12.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1(supports-color@8.1.1))(supports-color@8.1.1)(typescript@5.7.3))(eslint-import-resolver-node@0.3.9(supports-color@8.1.1))(eslint@8.57.1(supports-color@8.1.1))(supports-color@8.1.1):
+  eslint-module-utils@2.12.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.7.3))(eslint-import-resolver-node@0.3.9)(eslint@8.57.1):
     dependencies:
-      debug: 3.2.7(supports-color@8.1.1)
+      debug: 3.2.7
     optionalDependencies:
-      '@typescript-eslint/parser': 7.18.0(eslint@8.57.1(supports-color@8.1.1))(supports-color@8.1.1)(typescript@5.7.3)
-      eslint: 8.57.1(supports-color@8.1.1)
-      eslint-import-resolver-node: 0.3.9(supports-color@8.1.1)
+      '@typescript-eslint/parser': 7.18.0(eslint@8.57.1)(typescript@5.7.3)
+      eslint: 8.57.1
+      eslint-import-resolver-node: 0.3.9
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import@2.31.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1(supports-color@8.1.1))(supports-color@8.1.1)(typescript@5.7.3))(eslint@8.57.1(supports-color@8.1.1))(supports-color@8.1.1):
+  eslint-plugin-import@2.31.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.7.3))(eslint@8.57.1):
     dependencies:
       '@rtsao/scc': 1.1.0
       array-includes: 3.1.8
       array.prototype.findlastindex: 1.2.5
       array.prototype.flat: 1.3.3
       array.prototype.flatmap: 1.3.3
-      debug: 3.2.7(supports-color@8.1.1)
+      debug: 3.2.7
       doctrine: 2.1.0
-      eslint: 8.57.1(supports-color@8.1.1)
-      eslint-import-resolver-node: 0.3.9(supports-color@8.1.1)
-      eslint-module-utils: 2.12.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1(supports-color@8.1.1))(supports-color@8.1.1)(typescript@5.7.3))(eslint-import-resolver-node@0.3.9(supports-color@8.1.1))(eslint@8.57.1(supports-color@8.1.1))(supports-color@8.1.1)
+      eslint: 8.57.1
+      eslint-import-resolver-node: 0.3.9
+      eslint-module-utils: 2.12.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.7.3))(eslint-import-resolver-node@0.3.9)(eslint@8.57.1)
       hasown: 2.0.2
       is-core-module: 2.16.1
       is-glob: 4.0.3
@@ -9925,38 +9947,38 @@ snapshots:
       string.prototype.trimend: 1.0.9
       tsconfig-paths: 3.15.0
     optionalDependencies:
-      '@typescript-eslint/parser': 7.18.0(eslint@8.57.1(supports-color@8.1.1))(supports-color@8.1.1)(typescript@5.7.3)
+      '@typescript-eslint/parser': 7.18.0(eslint@8.57.1)(typescript@5.7.3)
     transitivePeerDependencies:
       - eslint-import-resolver-typescript
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-plugin-jest@27.9.0(@typescript-eslint/eslint-plugin@7.18.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1(supports-color@8.1.1))(supports-color@8.1.1)(typescript@5.7.3))(eslint@8.57.1(supports-color@8.1.1))(supports-color@8.1.1)(typescript@5.7.3))(eslint@8.57.1(supports-color@8.1.1))(jest@29.7.0(@types/node@20.17.16)(supports-color@8.1.1)(ts-node@10.9.2(@types/node@20.17.16)(typescript@5.7.3)))(supports-color@8.1.1)(typescript@5.7.3):
+  eslint-plugin-jest@27.9.0(@typescript-eslint/eslint-plugin@7.18.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.7.3))(eslint@8.57.1)(typescript@5.7.3))(eslint@8.57.1)(jest@29.7.0(@types/node@20.17.16)(ts-node@10.9.2(@types/node@20.17.16)(typescript@5.7.3)))(typescript@5.7.3):
     dependencies:
-      '@typescript-eslint/utils': 5.62.0(eslint@8.57.1(supports-color@8.1.1))(supports-color@8.1.1)(typescript@5.7.3)
-      eslint: 8.57.1(supports-color@8.1.1)
+      '@typescript-eslint/utils': 5.62.0(eslint@8.57.1)(typescript@5.7.3)
+      eslint: 8.57.1
     optionalDependencies:
-      '@typescript-eslint/eslint-plugin': 7.18.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1(supports-color@8.1.1))(supports-color@8.1.1)(typescript@5.7.3))(eslint@8.57.1(supports-color@8.1.1))(supports-color@8.1.1)(typescript@5.7.3)
-      jest: 29.7.0(@types/node@20.17.16)(supports-color@8.1.1)(ts-node@10.9.2(@types/node@20.17.16)(typescript@5.7.3))
+      '@typescript-eslint/eslint-plugin': 7.18.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.7.3))(eslint@8.57.1)(typescript@5.7.3)
+      jest: 29.7.0(@types/node@20.17.16)(ts-node@10.9.2(@types/node@20.17.16)(typescript@5.7.3))
     transitivePeerDependencies:
       - supports-color
       - typescript
 
-  eslint-plugin-prettier@5.2.3(@types/eslint@9.6.1)(eslint-config-prettier@9.1.0(eslint@8.57.1(supports-color@8.1.1)))(eslint@8.57.1(supports-color@8.1.1))(prettier@3.4.2):
+  eslint-plugin-prettier@5.2.3(@types/eslint@9.6.1)(eslint-config-prettier@9.1.0(eslint@8.57.1))(eslint@8.57.1)(prettier@3.4.2):
     dependencies:
-      eslint: 8.57.1(supports-color@8.1.1)
+      eslint: 8.57.1
       prettier: 3.4.2
       prettier-linter-helpers: 1.0.0
       synckit: 0.9.2
     optionalDependencies:
       '@types/eslint': 9.6.1
-      eslint-config-prettier: 9.1.0(eslint@8.57.1(supports-color@8.1.1))
+      eslint-config-prettier: 9.1.0(eslint@8.57.1)
 
-  eslint-plugin-react-hooks@4.6.2(eslint@8.57.1(supports-color@8.1.1)):
+  eslint-plugin-react-hooks@4.6.2(eslint@8.57.1):
     dependencies:
-      eslint: 8.57.1(supports-color@8.1.1)
+      eslint: 8.57.1
 
-  eslint-plugin-react@7.37.4(eslint@8.57.1(supports-color@8.1.1)):
+  eslint-plugin-react@7.37.4(eslint@8.57.1):
     dependencies:
       array-includes: 3.1.8
       array.prototype.findlast: 1.2.5
@@ -9964,7 +9986,7 @@ snapshots:
       array.prototype.tosorted: 1.1.4
       doctrine: 2.1.0
       es-iterator-helpers: 1.2.1
-      eslint: 8.57.1(supports-color@8.1.1)
+      eslint: 8.57.1
       estraverse: 5.3.0
       hasown: 2.0.2
       jsx-ast-utils: 3.3.5
@@ -9990,13 +10012,13 @@ snapshots:
 
   eslint-visitor-keys@3.4.3: {}
 
-  eslint@8.57.1(supports-color@8.1.1):
+  eslint@8.57.1:
     dependencies:
-      '@eslint-community/eslint-utils': 4.4.1(eslint@8.57.1(supports-color@8.1.1))
+      '@eslint-community/eslint-utils': 4.4.1(eslint@8.57.1)
       '@eslint-community/regexpp': 4.12.1
-      '@eslint/eslintrc': 2.1.4(supports-color@8.1.1)
+      '@eslint/eslintrc': 2.1.4
       '@eslint/js': 8.57.1
-      '@humanwhocodes/config-array': 0.13.0(supports-color@8.1.1)
+      '@humanwhocodes/config-array': 0.13.0
       '@humanwhocodes/module-importer': 1.0.1
       '@nodelib/fs.walk': 1.2.8
       '@ungap/structured-clone': 1.3.0
@@ -10217,13 +10239,9 @@ snapshots:
 
   flatted@3.3.2: {}
 
-  follow-redirects@1.15.9(debug@4.4.0(supports-color@8.1.1)):
+  follow-redirects@1.15.9(debug@4.4.0):
     optionalDependencies:
       debug: 4.4.0(supports-color@8.1.1)
-
-  follow-redirects@1.15.9(debug@4.4.3(supports-color@8.1.1)):
-    optionalDependencies:
-      debug: 4.4.3(supports-color@8.1.1)
 
   for-each@0.3.4:
     dependencies:
@@ -10483,7 +10501,7 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
-  hast-util-to-estree@3.1.3(supports-color@8.1.1):
+  hast-util-to-estree@3.1.3:
     dependencies:
       '@types/estree': 1.0.6
       '@types/estree-jsx': 1.0.5
@@ -10493,9 +10511,9 @@ snapshots:
       estree-util-attach-comments: 3.0.0
       estree-util-is-identifier-name: 3.0.0
       hast-util-whitespace: 3.0.0
-      mdast-util-mdx-expression: 2.0.1(supports-color@8.1.1)
-      mdast-util-mdx-jsx: 3.2.0(supports-color@8.1.1)
-      mdast-util-mdxjs-esm: 2.0.1(supports-color@8.1.1)
+      mdast-util-mdx-expression: 2.0.1
+      mdast-util-mdx-jsx: 3.2.0
+      mdast-util-mdxjs-esm: 2.0.1
       property-information: 7.1.0
       space-separated-tokens: 2.0.2
       style-to-js: 1.1.17
@@ -10504,7 +10522,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  hast-util-to-jsx-runtime@2.3.6(supports-color@8.1.1):
+  hast-util-to-jsx-runtime@2.3.6:
     dependencies:
       '@types/estree': 1.0.6
       '@types/hast': 3.0.4
@@ -10513,9 +10531,9 @@ snapshots:
       devlop: 1.1.0
       estree-util-is-identifier-name: 3.0.0
       hast-util-whitespace: 3.0.0
-      mdast-util-mdx-expression: 2.0.1(supports-color@8.1.1)
-      mdast-util-mdx-jsx: 3.2.0(supports-color@8.1.1)
-      mdast-util-mdxjs-esm: 2.0.1(supports-color@8.1.1)
+      mdast-util-mdx-expression: 2.0.1
+      mdast-util-mdx-jsx: 3.2.0
+      mdast-util-mdxjs-esm: 2.0.1
       property-information: 7.1.0
       space-separated-tokens: 2.0.2
       style-to-js: 1.1.17
@@ -10553,21 +10571,21 @@ snapshots:
       statuses: 1.5.0
       toidentifier: 1.0.0
 
-  http-proxy-agent@7.0.2(supports-color@8.1.1):
+  http-proxy-agent@7.0.2:
     dependencies:
       agent-base: 7.1.4
       debug: 4.4.0(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
 
-  https-proxy-agent@5.0.1(supports-color@8.1.1):
+  https-proxy-agent@5.0.1:
     dependencies:
-      agent-base: 6.0.2(supports-color@8.1.1)
+      agent-base: 6.0.2
       debug: 4.4.0(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
 
-  https-proxy-agent@7.0.6(supports-color@8.1.1):
+  https-proxy-agent@7.0.6:
     dependencies:
       agent-base: 7.1.4
       debug: 4.4.0(supports-color@8.1.1)
@@ -10815,9 +10833,9 @@ snapshots:
 
   istanbul-lib-coverage@3.2.2: {}
 
-  istanbul-lib-instrument@5.2.1(supports-color@8.1.1):
+  istanbul-lib-instrument@5.2.1:
     dependencies:
-      '@babel/core': 7.26.7(supports-color@8.1.1)
+      '@babel/core': 7.26.7
       '@babel/parser': 7.26.7
       '@istanbuljs/schema': 0.1.3
       istanbul-lib-coverage: 3.2.2
@@ -10826,9 +10844,9 @@ snapshots:
       - supports-color
     optional: true
 
-  istanbul-lib-instrument@6.0.3(supports-color@8.1.1):
+  istanbul-lib-instrument@6.0.3:
     dependencies:
-      '@babel/core': 7.26.7(supports-color@8.1.1)
+      '@babel/core': 7.26.7
       '@babel/parser': 7.26.7
       '@istanbuljs/schema': 0.1.3
       istanbul-lib-coverage: 3.2.2
@@ -10843,19 +10861,19 @@ snapshots:
       make-dir: 4.0.0
       supports-color: 7.2.0
 
-  istanbul-lib-source-maps@4.0.1(supports-color@8.1.1):
+  istanbul-lib-source-maps@4.0.1:
     dependencies:
-      debug: 4.4.3(supports-color@8.1.1)
+      debug: 4.4.3
       istanbul-lib-coverage: 3.2.2
       source-map: 0.6.1
     transitivePeerDependencies:
       - supports-color
     optional: true
 
-  istanbul-lib-source-maps@5.0.6(supports-color@8.1.1):
+  istanbul-lib-source-maps@5.0.6:
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
-      debug: 4.4.3(supports-color@8.1.1)
+      debug: 4.4.3
       istanbul-lib-coverage: 3.2.2
     transitivePeerDependencies:
       - supports-color
@@ -10913,10 +10931,10 @@ snapshots:
       p-limit: 3.1.0
     optional: true
 
-  jest-circus@29.7.0(supports-color@8.1.1):
+  jest-circus@29.7.0:
     dependencies:
       '@jest/environment': 29.7.0
-      '@jest/expect': 29.7.0(supports-color@8.1.1)
+      '@jest/expect': 29.7.0
       '@jest/test-result': 29.7.0
       '@jest/types': 29.6.3
       '@types/node': 20.17.16
@@ -10927,8 +10945,8 @@ snapshots:
       jest-each: 29.7.0
       jest-matcher-utils: 29.7.0
       jest-message-util: 29.7.0
-      jest-runtime: 29.7.0(supports-color@8.1.1)
-      jest-snapshot: 29.7.0(supports-color@8.1.1)
+      jest-runtime: 29.7.0
+      jest-snapshot: 29.7.0
       jest-util: 29.7.0
       p-limit: 3.1.0
       pretty-format: 29.7.0
@@ -10940,16 +10958,16 @@ snapshots:
       - supports-color
     optional: true
 
-  jest-cli@29.7.0(@types/node@20.17.16)(supports-color@8.1.1)(ts-node@10.9.2(@types/node@20.17.16)(typescript@5.7.3)):
+  jest-cli@29.7.0(@types/node@20.17.16)(ts-node@10.9.2(@types/node@20.17.16)(typescript@5.7.3)):
     dependencies:
-      '@jest/core': 29.7.0(supports-color@8.1.1)(ts-node@10.9.2(@types/node@20.17.16)(typescript@5.7.3))
+      '@jest/core': 29.7.0(ts-node@10.9.2(@types/node@20.17.16)(typescript@5.7.3))
       '@jest/test-result': 29.7.0
       '@jest/types': 29.6.3
       chalk: 4.1.2
-      create-jest: 29.7.0(@types/node@20.17.16)(supports-color@8.1.1)(ts-node@10.9.2(@types/node@20.17.16)(typescript@5.7.3))
+      create-jest: 29.7.0(@types/node@20.17.16)(ts-node@10.9.2(@types/node@20.17.16)(typescript@5.7.3))
       exit: 0.1.2
       import-local: 3.2.0
-      jest-config: 29.7.0(@types/node@20.17.16)(supports-color@8.1.1)(ts-node@10.9.2(@types/node@20.17.16)(typescript@5.7.3))
+      jest-config: 29.7.0(@types/node@20.17.16)(ts-node@10.9.2(@types/node@20.17.16)(typescript@5.7.3))
       jest-util: 29.7.0
       jest-validate: 29.7.0
       yargs: 17.7.2
@@ -10960,23 +10978,23 @@ snapshots:
       - ts-node
     optional: true
 
-  jest-config@29.7.0(@types/node@20.17.16)(supports-color@8.1.1)(ts-node@10.9.2(@types/node@20.17.16)(typescript@5.7.3)):
+  jest-config@29.7.0(@types/node@20.17.16)(ts-node@10.9.2(@types/node@20.17.16)(typescript@5.7.3)):
     dependencies:
-      '@babel/core': 7.26.7(supports-color@8.1.1)
+      '@babel/core': 7.26.7
       '@jest/test-sequencer': 29.7.0
       '@jest/types': 29.6.3
-      babel-jest: 29.7.0(@babel/core@7.26.7(supports-color@8.1.1))(supports-color@8.1.1)
+      babel-jest: 29.7.0(@babel/core@7.26.7)
       chalk: 4.1.2
       ci-info: 3.9.0
       deepmerge: 4.3.1
       glob: 7.2.3
       graceful-fs: 4.2.11
-      jest-circus: 29.7.0(supports-color@8.1.1)
+      jest-circus: 29.7.0
       jest-environment-node: 29.7.0
       jest-get-type: 29.6.3
       jest-regex-util: 29.6.3
       jest-resolve: 29.7.0
-      jest-runner: 29.7.0(supports-color@8.1.1)
+      jest-runner: 29.7.0
       jest-util: 29.7.0
       jest-validate: 29.7.0
       micromatch: 4.0.8
@@ -11086,10 +11104,10 @@ snapshots:
   jest-regex-util@29.6.3:
     optional: true
 
-  jest-resolve-dependencies@29.7.0(supports-color@8.1.1):
+  jest-resolve-dependencies@29.7.0:
     dependencies:
       jest-regex-util: 29.6.3
-      jest-snapshot: 29.7.0(supports-color@8.1.1)
+      jest-snapshot: 29.7.0
     transitivePeerDependencies:
       - supports-color
     optional: true
@@ -11107,12 +11125,12 @@ snapshots:
       slash: 3.0.0
     optional: true
 
-  jest-runner@29.7.0(supports-color@8.1.1):
+  jest-runner@29.7.0:
     dependencies:
       '@jest/console': 29.7.0
       '@jest/environment': 29.7.0
       '@jest/test-result': 29.7.0
-      '@jest/transform': 29.7.0(supports-color@8.1.1)
+      '@jest/transform': 29.7.0
       '@jest/types': 29.6.3
       '@types/node': 20.17.16
       chalk: 4.1.2
@@ -11124,7 +11142,7 @@ snapshots:
       jest-leak-detector: 29.7.0
       jest-message-util: 29.7.0
       jest-resolve: 29.7.0
-      jest-runtime: 29.7.0(supports-color@8.1.1)
+      jest-runtime: 29.7.0
       jest-util: 29.7.0
       jest-watcher: 29.7.0
       jest-worker: 29.7.0
@@ -11134,14 +11152,14 @@ snapshots:
       - supports-color
     optional: true
 
-  jest-runtime@29.7.0(supports-color@8.1.1):
+  jest-runtime@29.7.0:
     dependencies:
       '@jest/environment': 29.7.0
       '@jest/fake-timers': 29.7.0
-      '@jest/globals': 29.7.0(supports-color@8.1.1)
+      '@jest/globals': 29.7.0
       '@jest/source-map': 29.6.3
       '@jest/test-result': 29.7.0
-      '@jest/transform': 29.7.0(supports-color@8.1.1)
+      '@jest/transform': 29.7.0
       '@jest/types': 29.6.3
       '@types/node': 20.17.16
       chalk: 4.1.2
@@ -11154,7 +11172,7 @@ snapshots:
       jest-mock: 29.7.0
       jest-regex-util: 29.6.3
       jest-resolve: 29.7.0
-      jest-snapshot: 29.7.0(supports-color@8.1.1)
+      jest-snapshot: 29.7.0
       jest-util: 29.7.0
       slash: 3.0.0
       strip-bom: 4.0.0
@@ -11162,17 +11180,17 @@ snapshots:
       - supports-color
     optional: true
 
-  jest-snapshot@29.7.0(supports-color@8.1.1):
+  jest-snapshot@29.7.0:
     dependencies:
-      '@babel/core': 7.26.7(supports-color@8.1.1)
+      '@babel/core': 7.26.7
       '@babel/generator': 7.26.5
-      '@babel/plugin-syntax-jsx': 7.25.9(@babel/core@7.26.7(supports-color@8.1.1))
-      '@babel/plugin-syntax-typescript': 7.25.9(@babel/core@7.26.7(supports-color@8.1.1))
+      '@babel/plugin-syntax-jsx': 7.25.9(@babel/core@7.26.7)
+      '@babel/plugin-syntax-typescript': 7.25.9(@babel/core@7.26.7)
       '@babel/types': 7.26.7
       '@jest/expect-utils': 29.7.0
-      '@jest/transform': 29.7.0(supports-color@8.1.1)
+      '@jest/transform': 29.7.0
       '@jest/types': 29.6.3
-      babel-preset-current-node-syntax: 1.1.0(@babel/core@7.26.7(supports-color@8.1.1))
+      babel-preset-current-node-syntax: 1.1.0(@babel/core@7.26.7)
       chalk: 4.1.2
       expect: 29.7.0
       graceful-fs: 4.2.11
@@ -11228,12 +11246,12 @@ snapshots:
       supports-color: 8.1.1
     optional: true
 
-  jest@29.7.0(@types/node@20.17.16)(supports-color@8.1.1)(ts-node@10.9.2(@types/node@20.17.16)(typescript@5.7.3)):
+  jest@29.7.0(@types/node@20.17.16)(ts-node@10.9.2(@types/node@20.17.16)(typescript@5.7.3)):
     dependencies:
-      '@jest/core': 29.7.0(supports-color@8.1.1)(ts-node@10.9.2(@types/node@20.17.16)(typescript@5.7.3))
+      '@jest/core': 29.7.0(ts-node@10.9.2(@types/node@20.17.16)(typescript@5.7.3))
       '@jest/types': 29.6.3
       import-local: 3.2.0
-      jest-cli: 29.7.0(@types/node@20.17.16)(supports-color@8.1.1)(ts-node@10.9.2(@types/node@20.17.16)(typescript@5.7.3))
+      jest-cli: 29.7.0(@types/node@20.17.16)(ts-node@10.9.2(@types/node@20.17.16)(typescript@5.7.3))
     transitivePeerDependencies:
       - '@types/node'
       - babel-plugin-macros
@@ -11241,22 +11259,22 @@ snapshots:
       - ts-node
     optional: true
 
-  jimp@0.22.12(debug@4.4.3(supports-color@8.1.1)):
+  jimp@0.22.12:
     dependencies:
       '@jimp/custom': 0.22.12
-      '@jimp/plugins': 0.22.12(@jimp/custom@0.22.12)(debug@4.4.3(supports-color@8.1.1))
+      '@jimp/plugins': 0.22.12(@jimp/custom@0.22.12)
       '@jimp/types': 0.22.12(@jimp/custom@0.22.12)
       regenerator-runtime: 0.13.11
     transitivePeerDependencies:
       - debug
       - encoding
 
-  jimp@0.3.11(debug@4.4.3(supports-color@8.1.1)):
+  jimp@0.3.11:
     dependencies:
       '@babel/polyfill': 7.12.1
-      '@jimp/custom': 0.3.9(debug@4.4.3(supports-color@8.1.1))
-      '@jimp/plugins': 0.3.10(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))(debug@4.4.3(supports-color@8.1.1))
-      '@jimp/types': 0.3.9(@jimp/custom@0.3.9(debug@4.4.3(supports-color@8.1.1)))
+      '@jimp/custom': 0.3.9
+      '@jimp/plugins': 0.3.10(@jimp/custom@0.3.9)
+      '@jimp/types': 0.3.9(@jimp/custom@0.3.9)
       core-js: 2.6.12
     transitivePeerDependencies:
       - debug
@@ -11283,15 +11301,15 @@ snapshots:
     dependencies:
       xmlcreate: 2.0.4
 
-  jsdom@27.0.0(postcss@8.5.1)(supports-color@8.1.1):
+  jsdom@27.0.0(postcss@8.5.1):
     dependencies:
       '@asamuzakjp/dom-selector': 6.5.6
       cssstyle: 5.3.1(postcss@8.5.1)
       data-urls: 6.0.0
       decimal.js: 10.6.0
       html-encoding-sniffer: 4.0.0
-      http-proxy-agent: 7.0.2(supports-color@8.1.1)
-      https-proxy-agent: 7.0.6(supports-color@8.1.1)
+      http-proxy-agent: 7.0.2
+      https-proxy-agent: 7.0.6
       is-potential-custom-element-name: 1.0.1
       parse5: 7.3.0
       rrweb-cssom: 0.8.0
@@ -11386,14 +11404,14 @@ snapshots:
   lines-and-columns@1.2.4:
     optional: true
 
-  load-bmfont@1.4.2(debug@4.4.3(supports-color@8.1.1)):
+  load-bmfont@1.4.2:
     dependencies:
       buffer-equal: 0.0.1
       mime: 1.6.0
       parse-bmfont-ascii: 1.0.6
       parse-bmfont-binary: 1.0.6
       parse-bmfont-xml: 1.1.6
-      phin: 3.7.1(debug@4.4.3(supports-color@8.1.1))
+      phin: 3.7.1
       xhr: 2.6.0
       xtend: 4.0.2
     transitivePeerDependencies:
@@ -11449,10 +11467,10 @@ snapshots:
 
   lz-string@1.5.0: {}
 
-  maath@0.10.8(@types/three@0.175.0)(three@0.186.0):
+  maath@0.10.8(@types/three@0.175.0)(three@0.183.2):
     dependencies:
       '@types/three': 0.175.0
-      three: 0.186.0
+      three: 0.183.2
 
   magic-string@0.30.19:
     dependencies:
@@ -11489,14 +11507,14 @@ snapshots:
 
   maxrects-packer@2.7.3: {}
 
-  mdast-util-from-markdown@2.0.2(supports-color@8.1.1):
+  mdast-util-from-markdown@2.0.2:
     dependencies:
       '@types/mdast': 4.0.4
       '@types/unist': 3.0.3
       decode-named-character-reference: 1.2.0
       devlop: 1.1.0
       mdast-util-to-string: 4.0.0
-      micromark: 4.0.2(supports-color@8.1.1)
+      micromark: 4.0.2
       micromark-util-decode-numeric-character-reference: 2.0.2
       micromark-util-decode-string: 2.0.1
       micromark-util-normalize-identifier: 2.0.1
@@ -11506,18 +11524,18 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  mdast-util-mdx-expression@2.0.1(supports-color@8.1.1):
+  mdast-util-mdx-expression@2.0.1:
     dependencies:
       '@types/estree-jsx': 1.0.5
       '@types/hast': 3.0.4
       '@types/mdast': 4.0.4
       devlop: 1.1.0
-      mdast-util-from-markdown: 2.0.2(supports-color@8.1.1)
+      mdast-util-from-markdown: 2.0.2
       mdast-util-to-markdown: 2.1.2
     transitivePeerDependencies:
       - supports-color
 
-  mdast-util-mdx-jsx@3.2.0(supports-color@8.1.1):
+  mdast-util-mdx-jsx@3.2.0:
     dependencies:
       '@types/estree-jsx': 1.0.5
       '@types/hast': 3.0.4
@@ -11525,7 +11543,7 @@ snapshots:
       '@types/unist': 3.0.3
       ccount: 2.0.1
       devlop: 1.1.0
-      mdast-util-from-markdown: 2.0.2(supports-color@8.1.1)
+      mdast-util-from-markdown: 2.0.2
       mdast-util-to-markdown: 2.1.2
       parse-entities: 4.0.2
       stringify-entities: 4.0.4
@@ -11534,23 +11552,23 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  mdast-util-mdx@3.0.0(supports-color@8.1.1):
+  mdast-util-mdx@3.0.0:
     dependencies:
-      mdast-util-from-markdown: 2.0.2(supports-color@8.1.1)
-      mdast-util-mdx-expression: 2.0.1(supports-color@8.1.1)
-      mdast-util-mdx-jsx: 3.2.0(supports-color@8.1.1)
-      mdast-util-mdxjs-esm: 2.0.1(supports-color@8.1.1)
+      mdast-util-from-markdown: 2.0.2
+      mdast-util-mdx-expression: 2.0.1
+      mdast-util-mdx-jsx: 3.2.0
+      mdast-util-mdxjs-esm: 2.0.1
       mdast-util-to-markdown: 2.1.2
     transitivePeerDependencies:
       - supports-color
 
-  mdast-util-mdxjs-esm@2.0.1(supports-color@8.1.1):
+  mdast-util-mdxjs-esm@2.0.1:
     dependencies:
       '@types/estree-jsx': 1.0.5
       '@types/hast': 3.0.4
       '@types/mdast': 4.0.4
       devlop: 1.1.0
-      mdast-util-from-markdown: 2.0.2(supports-color@8.1.1)
+      mdast-util-from-markdown: 2.0.2
       mdast-util-to-markdown: 2.1.2
     transitivePeerDependencies:
       - supports-color
@@ -11594,9 +11612,9 @@ snapshots:
 
   merge2@1.4.1: {}
 
-  meshline@3.3.1(three@0.186.0):
+  meshline@3.3.1(three@0.183.2):
     dependencies:
-      three: 0.186.0
+      three: 0.183.2
 
   meshoptimizer@0.18.1: {}
 
@@ -11790,10 +11808,10 @@ snapshots:
 
   micromark-util-types@2.0.2: {}
 
-  micromark@4.0.2(supports-color@8.1.1):
+  micromark@4.0.2:
     dependencies:
       '@types/debug': 4.1.12
-      debug: 4.4.3(supports-color@8.1.1)
+      debug: 4.4.3
       decode-named-character-reference: 1.2.0
       devlop: 1.1.0
       micromark-core-commonmark: 2.0.3
@@ -11914,14 +11932,14 @@ snapshots:
 
   ms@2.1.3: {}
 
-  msdf-bmfont-xml@2.7.0(debug@4.4.3(supports-color@8.1.1)):
+  msdf-bmfont-xml@2.7.0:
     dependencies:
       arabic-persian-reshaper: 1.0.1
       cli-progress: 3.12.0
       commander: 2.20.3
       handlebars: 4.7.8
       is-invalid-path: 1.0.2
-      jimp: 0.3.11(debug@4.4.3(supports-color@8.1.1))
+      jimp: 0.3.11
       js2xmlparser: 4.0.2
       map-limit: 0.0.1
       maxrects-packer: 2.7.3
@@ -12058,20 +12076,20 @@ snapshots:
 
   os-paths@4.4.0: {}
 
-  oslllo-potrace@3.0.0(debug@4.4.3(supports-color@8.1.1)):
+  oslllo-potrace@3.0.0:
     dependencies:
-      jimp: 0.22.12(debug@4.4.3(supports-color@8.1.1))
+      jimp: 0.22.12
     transitivePeerDependencies:
       - debug
       - encoding
 
-  oslllo-svg-fixer@5.0.0(debug@4.4.3(supports-color@8.1.1)):
+  oslllo-svg-fixer@5.0.0:
     dependencies:
       ansi-colors: 4.1.3
       cli-progress: 3.12.0
       fast-glob: 3.3.3
-      oslllo-potrace: 3.0.0(debug@4.4.3(supports-color@8.1.1))
-      oslllo-svg2: 3.0.0(debug@4.4.3(supports-color@8.1.1))
+      oslllo-potrace: 3.0.0
+      oslllo-svg2: 3.0.0
       oslllo-validator: 3.1.0
       piscina: 4.8.0
       yargs: 16.2.0
@@ -12079,11 +12097,11 @@ snapshots:
       - debug
       - encoding
 
-  oslllo-svg2@3.0.0(debug@4.4.3(supports-color@8.1.1)):
+  oslllo-svg2@3.0.0:
     dependencies:
       '@resvg/resvg-js': 2.6.2
       domino: 2.1.6
-      jimp: 0.22.12(debug@4.4.3(supports-color@8.1.1))
+      jimp: 0.22.12
       oslllo-validator: 3.1.0
     transitivePeerDependencies:
       - debug
@@ -12219,9 +12237,9 @@ snapshots:
 
   phin@2.9.3: {}
 
-  phin@3.7.1(debug@4.4.3(supports-color@8.1.1)):
+  phin@3.7.1:
     dependencies:
-      centra: 2.7.0(debug@4.4.3(supports-color@8.1.1))
+      centra: 2.7.0
     transitivePeerDependencies:
       - debug
 
@@ -12525,25 +12543,25 @@ snapshots:
     dependencies:
       rc: 1.2.8
 
-  rehype-recma@1.0.0(supports-color@8.1.1):
+  rehype-recma@1.0.0:
     dependencies:
       '@types/estree': 1.0.6
       '@types/hast': 3.0.4
-      hast-util-to-estree: 3.1.3(supports-color@8.1.1)
+      hast-util-to-estree: 3.1.3
     transitivePeerDependencies:
       - supports-color
 
-  remark-mdx@3.1.1(supports-color@8.1.1):
+  remark-mdx@3.1.1:
     dependencies:
-      mdast-util-mdx: 3.0.0(supports-color@8.1.1)
+      mdast-util-mdx: 3.0.0
       micromark-extension-mdxjs: 3.0.0
     transitivePeerDependencies:
       - supports-color
 
-  remark-parse@11.0.0(supports-color@8.1.1):
+  remark-parse@11.0.0:
     dependencies:
       '@types/mdast': 4.0.4
-      mdast-util-from-markdown: 2.0.2(supports-color@8.1.1)
+      mdast-util-from-markdown: 2.0.2
       micromark-util-types: 2.0.2
       unified: 11.0.5
     transitivePeerDependencies:
@@ -12830,10 +12848,10 @@ snapshots:
 
   stat-mode@0.3.0: {}
 
-  stats-gl@2.4.2(@types/three@0.175.0)(three@0.186.0):
+  stats-gl@2.4.2(@types/three@0.175.0)(three@0.183.2):
     dependencies:
       '@types/three': 0.175.0
-      three: 0.186.0
+      three: 0.183.2
 
   stats.js@0.17.0: {}
 
@@ -13062,15 +13080,15 @@ snapshots:
 
   text-table@0.2.0: {}
 
-  three-mesh-bvh@0.7.8(three@0.186.0):
+  three-mesh-bvh@0.7.8(three@0.183.2):
     dependencies:
-      three: 0.186.0
+      three: 0.183.2
 
-  three-mesh-bvh@0.8.3(three@0.186.0):
+  three-mesh-bvh@0.8.3(three@0.183.2):
     dependencies:
-      three: 0.186.0
+      three: 0.183.2
 
-  three-stdlib@2.36.1(three@0.186.0):
+  three-stdlib@2.36.1(three@0.183.2):
     dependencies:
       '@types/draco3d': 1.4.10
       '@types/offscreencanvas': 2019.7.3
@@ -13078,9 +13096,11 @@ snapshots:
       draco3d: 1.5.7
       fflate: 0.6.10
       potpack: 1.0.2
-      three: 0.186.0
+      three: 0.183.2
 
-  three@0.186.0: {}
+  three@0.165.0: {}
+
+  three@0.183.2: {}
 
   time-span@4.0.0:
     dependencies:
@@ -13143,29 +13163,29 @@ snapshots:
 
   trim-lines@3.0.1: {}
 
-  troika-three-text@0.52.3(three@0.186.0):
+  troika-three-text@0.52.3(three@0.183.2):
     dependencies:
       bidi-js: 1.0.3
-      three: 0.186.0
-      troika-three-utils: 0.52.0(three@0.186.0)
+      three: 0.183.2
+      troika-three-utils: 0.52.0(three@0.183.2)
       troika-worker-utils: 0.52.0
       webgl-sdf-generator: 1.1.1
 
-  troika-three-text@0.52.4(three@0.186.0):
+  troika-three-text@0.52.4(three@0.183.2):
     dependencies:
       bidi-js: 1.0.3
-      three: 0.186.0
-      troika-three-utils: 0.52.4(three@0.186.0)
+      three: 0.183.2
+      troika-three-utils: 0.52.4(three@0.183.2)
       troika-worker-utils: 0.52.0
       webgl-sdf-generator: 1.1.1
 
-  troika-three-utils@0.52.0(three@0.186.0):
+  troika-three-utils@0.52.0(three@0.183.2):
     dependencies:
-      three: 0.186.0
+      three: 0.183.2
 
-  troika-three-utils@0.52.4(three@0.186.0):
+  troika-three-utils@0.52.4(three@0.183.2):
     dependencies:
-      three: 0.186.0
+      three: 0.183.2
 
   troika-worker-utils@0.52.0: {}
 
@@ -13497,17 +13517,17 @@ snapshots:
 
   validator@13.12.0: {}
 
-  vercel@34.4.0(supports-color@8.1.1):
+  vercel@34.4.0:
     dependencies:
       '@vercel/build-utils': 8.3.2
-      '@vercel/fun': 1.1.0(supports-color@8.1.1)
+      '@vercel/fun': 1.1.0
       '@vercel/go': 3.1.1
       '@vercel/hydrogen': 1.0.2
-      '@vercel/next': 4.3.2(supports-color@8.1.1)
-      '@vercel/node': 3.2.3(supports-color@8.1.1)
+      '@vercel/next': 4.3.2
+      '@vercel/node': 3.2.3
       '@vercel/python': 4.3.0
-      '@vercel/redwood': 2.1.0(supports-color@8.1.1)
-      '@vercel/remix-builder': 2.1.10(supports-color@8.1.1)
+      '@vercel/redwood': 2.1.0
+      '@vercel/remix-builder': 2.1.10
       '@vercel/ruby': 2.1.0
       '@vercel/static-build': 2.5.14
       chokidar: 3.3.1
@@ -13527,10 +13547,10 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.3
 
-  vite-node@3.2.4(@types/node@20.17.16)(supports-color@8.1.1)(terser@5.43.1):
+  vite-node@3.2.4(@types/node@20.17.16)(terser@5.43.1):
     dependencies:
       cac: 6.7.14
-      debug: 4.4.3(supports-color@8.1.1)
+      debug: 4.4.3
       es-module-lexer: 1.7.0
       pathe: 2.0.3
       vite: 5.4.14(@types/node@20.17.16)(terser@5.43.1)
@@ -13545,10 +13565,10 @@ snapshots:
       - supports-color
       - terser
 
-  vite-plugin-mkcert@1.17.6(supports-color@8.1.1)(vite@5.4.14(@types/node@20.17.16)(terser@5.43.1)):
+  vite-plugin-mkcert@1.17.6(vite@5.4.14(@types/node@20.17.16)(terser@5.43.1)):
     dependencies:
       '@octokit/rest': 20.1.1
-      axios: 1.7.9(debug@4.4.0(supports-color@8.1.1))
+      axios: 1.7.9(debug@4.4.0)
       debug: 4.4.0(supports-color@8.1.1)
       picocolors: 1.1.1
       vite: 5.4.14(@types/node@20.17.16)(terser@5.43.1)
@@ -13565,7 +13585,7 @@ snapshots:
       fsevents: 2.3.3
       terser: 5.43.1
 
-  vitest@3.2.4(@edge-runtime/vm@3.2.0)(@types/debug@4.1.12)(@types/node@20.17.16)(jsdom@27.0.0(postcss@8.5.1)(supports-color@8.1.1))(supports-color@8.1.1)(terser@5.43.1):
+  vitest@3.2.4(@edge-runtime/vm@3.2.0)(@types/debug@4.1.12)(@types/node@20.17.16)(jsdom@27.0.0(postcss@8.5.1))(terser@5.43.1):
     dependencies:
       '@types/chai': 5.2.2
       '@vitest/expect': 3.2.4
@@ -13576,7 +13596,7 @@ snapshots:
       '@vitest/spy': 3.2.4
       '@vitest/utils': 3.2.4
       chai: 5.3.3
-      debug: 4.4.3(supports-color@8.1.1)
+      debug: 4.4.3
       expect-type: 1.2.2
       magic-string: 0.30.19
       pathe: 2.0.3
@@ -13588,13 +13608,13 @@ snapshots:
       tinypool: 1.1.1
       tinyrainbow: 2.0.0
       vite: 5.4.14(@types/node@20.17.16)(terser@5.43.1)
-      vite-node: 3.2.4(@types/node@20.17.16)(supports-color@8.1.1)(terser@5.43.1)
+      vite-node: 3.2.4(@types/node@20.17.16)(terser@5.43.1)
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@edge-runtime/vm': 3.2.0
       '@types/debug': 4.1.12
       '@types/node': 20.17.16
-      jsdom: 27.0.0(postcss@8.5.1)(supports-color@8.1.1)
+      jsdom: 27.0.0(postcss@8.5.1)
     transitivePeerDependencies:
       - less
       - lightningcss

@@ -180,11 +180,20 @@ export function createPanelTSLNode({
 }
 
 export function applyPanelMaterialTSL(material: Material, info: PanelMaterialInfo) {
+  const map = (material as any).map
+  // Skip redundant re-conversion. uikit's Image re-runs this on every texture
+  // update, but when the underlying map is unchanged the existing conversion is
+  // still valid — re-running rebuilds the whole panel node graph (~1s of TSL
+  // codegen per panel) for nothing. A genuinely new map falls through and is
+  // re-converted below.
+  if ((material as any).__xbPanelApplied === true && (material as any).__xbPanelAppliedMap === map) {
+    return
+  }
   const instanced = info.type === 'instanced'
   const dataMatrix =
     info.type === 'normal' ? (info.data instanceof Matrix4 ? info.data : new Matrix4().fromArray(info.data)) : undefined
   const dataNode = info.type === 'normal' ? uniform((material as any).dataUniform || dataMatrix) : undefined
-  const mapTexture = (material as any).map ? TSL.texture((material as any).map) : undefined
+  const mapTexture = map ? TSL.texture(map) : undefined
   let customGradient: any
   const cacheKey = (material as any).customProgramCacheKey?.()
   if (cacheKey === 'DarkBackgroundMaterial-uvGradient-v1') {
@@ -192,10 +201,19 @@ export function applyPanelMaterialTSL(material: Material, info: PanelMaterialInf
   } else if (cacheKey === 'LightBackgroundMaterial-uvGradient-v1') {
     customGradient = TSL.mix(TSL.color(0xf2f2f2), TSL.color(0xffffff), TSL.uv().y)
   }
-  const diffuseColor = (material as any).colorNode || customGradient || mapTexture || undefined
+  // The diffuse source is the panel's gradient or its map. Never fall back to
+  // `material.colorNode` here: this function writes its output (`res.rgb`, a vec3
+  // swizzle with no alpha) to `colorNode`, so on uikit's texture-update
+  // re-conversion the previous output would be reused as the source — dropping
+  // the texture's alpha (transparent canvas textures render as solid black) and
+  // ignoring the newly-updated texture. Deriving from the map restores the alpha
+  // and picks up the current texture.
+  const diffuseColor = customGradient || mapTexture || undefined
   const panelTSL = createPanelTSLNode({ instanced, dataNode, diffuseColor })
   const res = panelTSL()
   material.transparent = true
   ;(material as any).colorNode = res.rgb
   ;(material as any).opacityNode = res.a
+  ;(material as any).__xbPanelApplied = true
+  ;(material as any).__xbPanelAppliedMap = map
 }

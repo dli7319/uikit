@@ -1,4 +1,4 @@
-import { Material, Matrix4 } from 'three'
+import { Material, Matrix4, Vector4 } from 'three'
 import * as TSL from 'three/tsl'
 import type { PanelMaterialInfo } from './create.js'
 
@@ -16,6 +16,8 @@ const {
   fwidth,
   smoothstep,
   positionLocal,
+  positionWorld,
+  materialOpacity,
   min,
   max,
   abs,
@@ -51,26 +53,50 @@ const calculateCornerIntersection = (cornerRadius: any, borderSizes: any, aspect
   return min(xIntersection, yIntersection)
 }
 
+export function createMaterialClipPlanesNodes(material?: Material) {
+  return Array.from({ length: 4 }, (_, i) => {
+    const u = uniform(new Vector4(0, 0, 0, 1))
+    return u.onObjectUpdate(({ material: renderedMaterial }: { material?: Material | null } = {}, node: any = u) => {
+      const plane = ((renderedMaterial as Material | undefined) ?? material)?.clippingPlanes?.[i]
+      if (!plane) return node.value.set(0, 0, 0, 1)
+      const { x, y, z } = plane.normal
+      return node.value.set(x, y, z, plane.constant)
+    })
+  })
+}
+
+export function createWorldClipOpacityNode(clipPlanesNode: any) {
+  return Fn(() => {
+    const clipOpacity = float(1.0).toVar()
+    const worldPos = positionWorld
+    for (let i = 0; i < 4; i++) {
+      const plane = Array.isArray(clipPlanesNode) ? clipPlanesNode[i]! : clipPlanesNode.element(i)
+      const validPlane = plane.w.lessThan(1e10)
+      const distanceToPlane = dot(worldPos, plane.xyz).add(plane.w)
+      const planeDistanceGradient = max(fwidth(distanceToPlane).mul(0.5), float(0.00001))
+      const stepVal = smoothstep(planeDistanceGradient.negate(), planeDistanceGradient, distanceToPlane)
+      clipOpacity.mulAssign(validPlane.select(stepVal, float(1.0)))
+    }
+    return clipOpacity
+  })
+}
+
 export function createPanelTSLNode({
   instanced,
   diffuseColor,
   dataNode,
+  clipPlanesNode,
 }: {
   instanced: boolean
   diffuseColor?: any
   dataNode?: any
+  clipPlanesNode?: any
 }) {
   return Fn(() => {
     const data0 = instanced ? attribute('aData0', 'vec4') : dataNode ? dataNode.element(0) : attribute('aData0', 'vec4')
     const data1 = instanced ? attribute('aData1', 'vec4') : dataNode ? dataNode.element(1) : attribute('aData1', 'vec4')
     const data2 = instanced ? attribute('aData2', 'vec4') : dataNode ? dataNode.element(2) : attribute('aData2', 'vec4')
     const data3 = instanced ? attribute('aData3', 'vec4') : dataNode ? dataNode.element(3) : attribute('aData3', 'vec4')
-
-    const clip0 = attribute('aClipping0', 'vec4')
-    const clip1 = attribute('aClipping1', 'vec4')
-    const clip2 = attribute('aClipping2', 'vec4')
-    const clip3 = attribute('aClipping3', 'vec4')
-    const clippingPlanes = [clip0, clip1, clip2, clip3]
 
     const packed = int(data2.x)
     const r0 = float(mod(packed.div(125000), int(50))).mul(0.01)
@@ -81,11 +107,26 @@ export function createPanelTSLNode({
 
     const clipOpacity = float(1.0).toVar()
     if (instanced) {
+      const clip0 = attribute('aClipping0', 'vec4')
+      const clip1 = attribute('aClipping1', 'vec4')
+      const clip2 = attribute('aClipping2', 'vec4')
+      const clip3 = attribute('aClipping3', 'vec4')
+      const clippingPlanes = [clip0, clip1, clip2, clip3]
       const localPos = positionLocal
       for (let i = 0; i < 4; i++) {
         const plane = clippingPlanes[i]!
         const validPlane = plane.w.lessThan(1e10)
         const distanceToPlane = dot(localPos, plane.xyz).add(plane.w)
+        const planeDistanceGradient = max(fwidth(distanceToPlane).mul(0.5), float(0.00001))
+        const stepVal = smoothstep(planeDistanceGradient.negate(), planeDistanceGradient, distanceToPlane)
+        clipOpacity.mulAssign(validPlane.select(stepVal, float(1.0)))
+      }
+    } else if (clipPlanesNode) {
+      const worldPos = positionWorld
+      for (let i = 0; i < 4; i++) {
+        const plane = Array.isArray(clipPlanesNode) ? clipPlanesNode[i]! : clipPlanesNode.element(i)
+        const validPlane = plane.w.lessThan(1e10)
+        const distanceToPlane = dot(worldPos, plane.xyz).add(plane.w)
         const planeDistanceGradient = max(fwidth(distanceToPlane).mul(0.5), float(0.00001))
         const stepVal = smoothstep(planeDistanceGradient.negate(), planeDistanceGradient, distanceToPlane)
         clipOpacity.mulAssign(validPlane.select(stepVal, float(1.0)))
@@ -166,7 +207,7 @@ export function createPanelTSLNode({
     const fullBackgroundOpacity = diffuseAlpha.mul(backgroundOpacity)
     const fullBorderOpacity = min(float(1.0), borderOpacity.add(fullBackgroundOpacity))
 
-    const outOpacity = (instanced ? clipOpacity.mul(outer) : outer).mul(
+    const outOpacity = (instanced || clipPlanesNode ? clipOpacity.mul(outer) : outer).mul(
       mix(fullBorderOpacity, fullBackgroundOpacity, transition),
     )
 
@@ -196,6 +237,7 @@ export function applyPanelMaterialTSL(material: Material, info: PanelMaterialInf
   }
   const instanced = info.type === 'instanced'
   let dataNode: any
+  let clipPlanesNode: Array<any> | undefined
   if (info.type === 'normal') {
     const dataMatrix: Matrix4 = mat.dataUniform ?? (mat.dataUniform = new Matrix4())
     if (info.data instanceof Matrix4) {
@@ -210,6 +252,7 @@ export function applyPanelMaterialTSL(material: Material, info: PanelMaterialInf
         dataMatrix.fromArray(info.data)
       }
     })
+    clipPlanesNode = mat.clipPlanesUniforms ?? (mat.clipPlanesUniforms = createMaterialClipPlanesNodes(material))
   }
   const mapTexture = map ? TSL.texture(map) : undefined
   let customGradient: any
@@ -225,7 +268,7 @@ export function applyPanelMaterialTSL(material: Material, info: PanelMaterialInf
   // uikit's texture-update re-conversion that would drop the texture's alpha
   // and ignore the newly-updated texture.
   const diffuseColor = mat.__tslInitialColorNode || customGradient || mapTexture || undefined
-  const panelTSL = createPanelTSLNode({ instanced, dataNode, diffuseColor })
+  const panelTSL = createPanelTSLNode({ instanced, dataNode, diffuseColor, clipPlanesNode })
   const res = panelTSL()
   material.transparent = true
   mat.colorNode = res.rgb
@@ -239,4 +282,18 @@ export function applyPanelMaterialTSL(material: Material, info: PanelMaterialInf
   mat.__tslPanelAppliedMap = map
   mat.__xbPanelApplied = true
   mat.__xbPanelAppliedMap = map
+}
+
+export function applyClippingMaterialTSL(material: Material) {
+  const mat = material as any
+  if (mat.__tslClippingApplied === true || mat.__tslPanelApplied === true) {
+    return
+  }
+  const initialOpacityNode = mat.opacityNode ?? materialOpacity
+  mat.__tslInitialOpacityNode = initialOpacityNode
+  const clipPlanesNode = mat.clipPlanesUniforms ?? (mat.clipPlanesUniforms = createMaterialClipPlanesNodes(material))
+  const clipOpacity = createWorldClipOpacityNode(clipPlanesNode)()
+  material.transparent = true
+  mat.opacityNode = initialOpacityNode.mul(clipOpacity)
+  mat.__tslClippingApplied = true
 }

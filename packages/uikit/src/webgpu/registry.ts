@@ -5,6 +5,7 @@ import type { Font } from '../text/font.js'
 export type WebGPUHandlers = {
   applyPanelMaterial: (material: Material, info: PanelMaterialInfo) => void
   applyGlyphMaterial: (material: Material, font: Font) => void
+  applyClippingMaterial?: (material: Material) => void
 }
 
 let handlers: WebGPUHandlers | undefined

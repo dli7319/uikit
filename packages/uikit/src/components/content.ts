@@ -18,6 +18,7 @@ import { InstancedPanelMesh } from '../panel/instance/mesh.js'
 import { componentDefaults } from '../properties/defaults.js'
 import { RenderContext } from '../context.js'
 import { parseNumberValue } from '../properties/values.js'
+import { getWebGPUHandlers } from '../webgpu/registry.js'
 export const contentOutPropertiesSchema = /* @__PURE__ */ defineSchema(() =>
   baseOutPropertiesSchema.extend({
     depthAlign: enumSchema(['back', 'center', 'middle', 'front']).optional(),
@@ -251,6 +252,7 @@ export class Content<
       }
       setupRenderOrder(descendant, this.root, this.orderInfo)
       descendant.material.clippingPlanes = this.clippingPlanes
+      getWebGPUHandlers()?.applyClippingMaterial?.(descendant.material)
       descendant.material.needsUpdate = true
       descendant.material.transparent = true
       descendant.raycast = makeClippedCast(

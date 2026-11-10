@@ -9,6 +9,7 @@ import { Component } from './component.js'
 import { Material, MeshDepthMaterial, MeshDistanceMaterial } from 'three'
 import { RenderContext } from '../context.js'
 import { parseNumberValue } from '../properties/values.js'
+import { getWebGPUHandlers } from '../webgpu/registry.js'
 export const CustomPropertiesSchema = /* @__PURE__ */ defineSchema(() =>
   createInPropertiesSchema(baseOutPropertiesSchema),
 )
@@ -49,6 +50,7 @@ export class Custom<OutProperties extends CustomOutProperties = CustomOutPropert
     this.material.clippingPlanes = clippingPlanes
     this.customDepthMaterial.clippingPlanes = clippingPlanes
     this.customDistanceMaterial.clippingPlanes = clippingPlanes
+    getWebGPUHandlers()?.applyClippingMaterial?.(this.material)
 
     abortableEffect(() => {
       this.material.depthTest = this.properties.value.depthTest
